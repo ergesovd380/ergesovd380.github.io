@@ -1,0 +1,16 @@
+.header {
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+}
+span {
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section {
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #333;
+}
