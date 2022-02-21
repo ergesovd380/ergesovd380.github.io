@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="LESS/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Rubik&display=swap" rel="stylesheet">
+    <title>Игра</title>
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <div class="col-md-10 offset-md-1">
+                <h1><i>Играем и развиваемся</i></h1>
+                <div class="cloud-1 cloud" type="button" onclick="window.location.href='http:index_easy.html';">
+                    <div class="cld-circle-1 cld-circle">Игрa</div>
+                    <div class="cld-main-1 cld-main">Легкая</div>
+                </div>
+                <div class="cloud-2 cloud" type="button" onclick="window.location.href='http:index_medium.html';">
+                    <div class="cld-circle-2 cld-circle">Игрa</div>
+                    <div class="cld-main-2 cld-main">Средняя</div>
+                </div>
+                <div class="cloud-3 cloud" type="button" onclick="window.location.href='http:index_hard.html';">
+                    <div class="cld-circle-3 cld-circle">Игрa</div>
+                    <div class="cld-main-3 cld-main">Трудная</div>
+                </div>
+            </div>
+        <script>
+            var Number1, Number2, Operator, result, answer, True=0, False=0
+            Number1=document.getElementById('number1')
+            Number2=document.getElementById('number2')
+            Operator=document.getElementById('operator')
+            result=document.getElementById('result')
+            answer=document.getElementById('answer')
+            True=document.getElementById('true')
+            False=document.getElementById('false')
+            function RandomNumber(min,max){
+                var number=Math.floor(Math.random()*(max-min))+min
+                return number
+            }
+            function newQuestion(){
+                var operation=['+','-','x',':']
+                Operator.textContent=operation[RandomNumber(0,4)]
+                Number1.textContent=RandomNumber(0,50)
+                Number2.textContent=RandomNumber(0,50)
+                if(Operator.textContent==':'){
+                    while(true){
+                        if(Number1.textContent % Number2.textContent==0){
+                            break
+                        }else{
+                            newQuestion()
+                        }
+                    }
+                }
+            }
+            window.onload=function(){
+                newQuestion()
+            }
+            answer.onclick=function(){
+                var ans,n1,n2
+                n1=Number(Number1.textContent)
+                n2=Number(Number2.textContent)
+                switch(Operator.textContent){
+                    case '+':ans=n1+n2;break
+                    case '-':ans=n1-n2;break
+                    case 'x':ans=n1*n2;break
+                    case ':':ans=n1/n2;break
+                    default:break
+                }
+                if(result.value==ans){
+                    True.textContent=Number(True.textContent)+1
+                 }else{
+                      False.textContent=Number(False.textContent)+1
+                 }
+                newQuestion()
+            }
+        </script>
+    </section>
+</body>
+</html>

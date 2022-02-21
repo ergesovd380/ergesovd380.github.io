@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="LESS/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Средняя</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <!--Pacman-->
+            <div class="d22"></div>
+            <!--Gun-->
+            <div class="sun" type="button" onclick="window.location.href='http:index.html';">
+                <div id="line1" class="line1 line"></div>
+                <div id="line2"class="line2 line"></div>
+                <div id="line3"class="line3 line"></div>
+                <div id="line4"class="line4 line"></div>
+                <div id="line5"class="line5 line"></div>
+    
+                <div id="circle" class="circle">Меню</div>
+            </div>
+            <div class="cloud-easy cloud-medium">
+                <div class="cld-circle-easy">Игрa</div>
+                <div class="cld-main-easy">Средняя</div>
+            </div>
+            <div class="col-md-6 col-sm-8 offset-lg-3 offset-sm-2 game" id="game">
+                <div class="game2">
+                </div>
+                <div class="game3">
+                    <span id="number1" class="number1">0</span>
+                    <span id="operator" class="operator">*</span>
+                    <span id="number2" class="number2">0</span>
+                    <span class="operator1">=</span>
+                    <input id="result" class="result" type="text" placeholder="Ответ">
+                    <input id="answer" class="answer" type="button" value="Подтвердить">
+                    <div style="clear: both"></div>
+                    <div id="true" class="true">0</div>
+                    <div id="false" class="false">0</div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var Number1, Number2, Operator, result, answer, True=0, False=0
+            Number1=document.getElementById('number1')
+            Number2=document.getElementById('number2')
+            Operator=document.getElementById('operator')
+            result=document.getElementById('result')
+            answer=document.getElementById('answer')
+            True=document.getElementById('true')
+            False=document.getElementById('false')
+            function RandomNumber(min,max){
+                var number=Math.floor(Math.random()*(max-min))+min
+                return number
+            }
+            function newQuestion(){
+                var operation=['+','-','x',]
+                Operator.textContent=operation[RandomNumber(0,3)]
+                Number1.textContent=RandomNumber(0,50)
+                Number2.textContent=RandomNumber(0,25)
+            }
+            window.onload=function(){
+                newQuestion()
+            }
+            answer.onclick=function(){
+                var ans,n1,n2
+                n1=Number(Number1.textContent)
+                n2=Number(Number2.textContent)
+                switch(Operator.textContent){
+                    case '+':ans=n1+n2;break
+                    case '-':ans=n1-n2;break
+                    case 'x':ans=n1*n2;break
+                    default:break
+                }
+                if(result.value==ans){
+                    True.textContent=Number(True.textContent)+1
+                 }else{
+                      False.textContent=Number(False.textContent)+1
+                 }
+                newQuestion()
+                result.value=''
+            }
+        </script>
+    </section>
+</body>
+</html>
