@@ -87,11 +87,15 @@
                     case '-':ans=n1-n2;break
                     default:break
                 }
+                var win = new Audio('audio/win1.mp3')
+                var lose = new Audio('audio/lose1.mp3')
                 if(result.value==ans){
                     True.textContent=Number(True.textContent)+1
-                 }else{
+                    win.play()
+                }else{
                     False.textContent=Number(False.textContent)+1
-                 }
+                    lose.play()
+                }
                 newQuestion()
                 result.value=''
             }
