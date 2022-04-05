@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-5 offset-md-3">
+                        <div class="box">
+                                <p class="time"></p>
+                                <p class="text" id="text">Вас устраивает ваша зарплата?</p>
+                                <button type="button" class="btn btn-success" id="yes" onclick="show()">ДА</button>
+                                <button type="button" class="btn btn-danger" id="obj">Нет</button>
+                        </div>
+                </div>
+        </div>
+</div>
+<script>
+        var obj, xpos, ypos, yes
+        yes=document.querySelector('#yes')
+        obj=document.querySelector('#obj')
+        obj.onmouseover=function(){
+                xpos=parseInt(Math.random()*1000)
+                ypos=parseInt(Math.random()*500)
+                obj.style.left=xpos+'px'
+                obj.style.top=ypos+'px'
+        }
+        go('html/Lesson 102.html', 30)
+        function go(ID,second){
+                if(second===-1){
+                window.location.href=ID
+                }
+                document.querySelector('.time').innerText='0:'+second
+                second--
+                setTimeout(function(){
+                        go(ID, second)
+                },1000)
+        }
+        function show(){
+                window.location.href='html/Lesson 102 (2).html'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.box{
+    text-align: center;
+    height: 250px;
+    width: 650px;
+    margin-top: 10rem;
+    background-color: #fff;
+    padding-top: 2rem;
+    border: 2px solid rgb(2, 73, 8);
+    box-shadow: 7px 12px 0px rgba(0, 0, 0, 0.17);
+    border-radius: 15px;
+}
+.text{
+    font-size: 2rem;
+    color:rgb(2, 73, 8);
+}
+.time{
+    font-size: 2rem;
+    color:rgb(2, 73, 8);
+}
+.btn{
+    margin-top: 1rem;
+    height: 50px;
+    width: 75px;
+    position: absolute;
+}
+.btn-success{
+    right: 50%;
+}
+.btn-danger{
+    margin-left: 25px;
+}
