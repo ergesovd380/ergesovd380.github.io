@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-5 offset-md-3">
+                        <div class="box">
+                                <p class="text">Вас устраивает ваша зарплата?</p>
+                                <button type="button" class="btn btn-success" id="yes" onclick="show()">ДА</button>
+                                <button type="button" class="btn btn-danger" id="obj">Нет</button>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        var obj, xpos, ypos
+        obj=document.querySelector('#obj')
+        obj.onmouseover=function(){
+                xpos=parseInt(Math.random()*1300)
+                ypos=parseInt(Math.random()*700)
+                obj.style.left=xpos+'px'
+                obj.style.top=ypos+'px'
+        }
+        function show(){
+                document.querySelector('.text').innerText='Мы очень рады за вас :)'
+        }
+    </script>
+</body>
+</html>
