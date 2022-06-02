@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DovletErgeshov">
+    <meta name="discription" content="Bootstrap 5 Lessons">
+    <meta name="keywords" content="webSite, Bootstrap5, webDeveloper">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="less/style.css">
+    <title>Bootstrap 5</title>
+</head>
+<body id="page-body">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="bootstrap 5 website link">Bootstrap5</a>
+            <button type="button" class="navbar navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end" tabindex="1" id="myNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-warning" id="myLabel">Menu</h5>
+                    <button class="btn btn-close text-reset bg-warning" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 text-upperase ms-auto py-lg-2">
+                        <li class="nav-item"><a href="#services" class="nav-link btn-close-canvas">Сервисы</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link btn-close-canvas">Портфолио</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">О нас</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link btn-close-canvas">Группа</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Heading start -->
+    <header class="backImage text-white text-center">
+        <div class="container">
+            <div class="backImage-sub">Добро пожаловать в студию</div>
+            <div class="backImage-heading text-uppercase">Рад знакомуству</div>
+            <a href="#services" type="button" class="btn btn-warning btn-lg p-lg-4 fw-bold text-uppercase">Больше информации</a>
+        </div>
+    </header>
+    <!-- Heading end -->
+
+    <!-- Services start -->
+    <section id="services" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold">Сервисы</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, laborum!</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-warning text-white d-flex align-items-center justify-content-center m-auto" style="width: 8rem; height: 8rem">
+                        <i class="bi bi-cart" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold ser-heading">Электронная коммерция</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vero culpa sit officia corrupti, deserunt mollitia ab veritatis? Necessitatibus, ex doloremque! In possimus ut perspiciatis.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-warning text-white d-flex align-items-center justify-content-center m-auto" style="width: 8rem; height: 8rem">
+                        <i class="bi bi-laptop" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold ser-heading">Адаптивный дизайн</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vero culpa sit officia corrupti, deserunt mollitia ab veritatis? Necessitatibus, ex doloremque! In possimus ut perspiciatis.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-warning text-white d-flex align-items-center justify-content-center m-auto" style="width: 8rem; height: 8rem">
+                        <i class="bi bi-shield-lock" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold ser-heading">Защита</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vero culpa sit officia corrupti, deserunt mollitia ab veritatis? Necessitatibus, ex doloremque! In possimus ut perspiciatis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services end  -->
+
+    <!-- Portfolio start -->
+    <section id="portfolio" class="mySection bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold">Портфолио</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal1" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png1.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Галактика</div>
+                            <div class="pc-subheading text-muted fst-italic">Наука</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal2" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png2.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Презентация</div>
+                            <div class="pc-subheading text-muted fst-italic">Бизнес</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal3" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png3.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Умение</div>
+                            <div class="pc-subheading text-muted fst-italic">Изобретение</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal4" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png4.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Саморазвитие</div>
+                            <div class="pc-subheading text-muted fst-italic">Фотограф</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal5" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png5.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Точность</div>
+                            <div class="pc-subheading text-muted fst-italic">Дизайнер</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal6" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-warning">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/png6.png" class="img-fluid" alt="..">
+                        </a>
+                        <div class="p-caption text-center bg-white p-3">
+                            <div class="pc-heading fw-bold">Терпение</div>
+                            <div class="pc-subheading text-muted fst-italic">Программист</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio modals -->
+            <div class="modal fade p-modal" id="PModal1" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Космос</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png1.png" class="img-fluid d-block m-auto" alt="...">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil odit velit voluptate praesentium quos, aperiam necessitatibus iste. Temporibus obcaecati natus doloremque minima. Esse, sint.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade p-modal" id="PModal2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Бизнес</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png2.png" class="img-fluid d-block m-auto" alt="">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sint expedita, quibusdam exercitationem corrupti optio perspiciatis necessitatibus illum nesciunt, ullam incidunt nemo commodi voluptates nam.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade p-modal" id="PModal3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Учиться</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png3.png" class="img-fluid d-block m-auto" alt="">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sint expedita, quibusdam exercitationem corrupti optio perspiciatis necessitatibus illum nesciunt, ullam incidunt nemo commodi voluptates nam.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade p-modal" id="PModal4" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Крассиво</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png4.png" class="img-fluid d-block m-auto" alt="">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sint expedita, quibusdam exercitationem corrupti optio perspiciatis necessitatibus illum nesciunt, ullam incidunt nemo commodi voluptates nam.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade p-modal" id="PModal5" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Чисто</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png5.png" class="img-fluid d-block m-auto" alt="">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sint expedita, quibusdam exercitationem corrupti optio perspiciatis necessitatibus illum nesciunt, ullam incidunt nemo commodi voluptates nam.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade p-modal" id="PModal6" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <button class="btn btn-close close-modal" data-bs-dismiss="modal"></button>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <h2 class="modal-title">Адоптация</h2>
+                                        <p class="p-intro mt-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta!</p>
+                                        <img src="img/portfolio/png6.png" class="img-fluid d-block m-auto" alt="">
+                                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sint expedita, quibusdam exercitationem corrupti optio perspiciatis necessitatibus illum nesciunt, ullam incidunt nemo commodi voluptates nam.</p>
+                                        <ul class="list-inline mb-4">
+                                            <li>Категория: </li>
+                                            <li>Заказчик: </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Portfolio end -->
+
+    <!-- About start -->
+    <section id="about" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <h2 class="s-heading text-uppercase fw-bold">О нас</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="t-image">
+                        <img src="img/about/jpg1.jpg" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="t-plan">
+                        <div class="t-heading">
+                            <h2>Apple</h2>
+                            <h4 class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In id ut nobis illum reiciendis nostrum, distinctio fuga alias beatae omnis ipsam temporibus veniam modi saepe consectetur aspernatur, excepturi soluta quaerat autem mollitia et similique repellat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="t-right">
+                    <div class="t-image">
+                        <img src="img/about/jpg2.jpg" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="t-plan">
+                        <div class="t-heading">
+                            <h2>Samsung</h2>
+                            <h4 class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In id ut nobis illum reiciendis nostrum, distinctio fuga alias beatae omnis ipsam temporibus veniam modi saepe consectetur aspernatur, excepturi soluta quaerat autem mollitia et similique repellat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <img src="img/about/jpg3.jpg" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="t-plan">
+                        <div class="t-heading">
+                            <h2>Dell</h2>
+                            <h4 class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In id ut nobis illum reiciendis nostrum, distinctio fuga alias beatae omnis ipsam temporibus veniam modi saepe consectetur aspernatur, excepturi soluta quaerat autem mollitia et similique repellat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="t-right">
+                    <div class="t-image">
+                        <img src="img/about/jpg4.jpg" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="t-plan">
+                        <div class="t-heading">
+                            <h2>Xiamo</h2>
+                            <h4 class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In id ut nobis illum reiciendis nostrum, distinctio fuga alias beatae omnis ipsam temporibus veniam modi saepe consectetur aspernatur, excepturi soluta quaerat autem mollitia et similique repellat.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <h4>Top <br> technology <br> componies</h4>
+                    </div>
+                </li>
+              </ul>  
+        </div>
+    </section>
+    <!-- About end -->
+
+    <!-- Team start -->
+    <section id="team" class="mySection bg-light">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <h2 class="s-heading text-uppercase fw-bold">Группа</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="t-member">
+                        <img src="img/team/boy.jpg" alt="" class="mx-auto rounded-circle">
+                        <h4>Dovlet Ergeshov</h4>
+                        <p class="text-muted">Главный дебил</p>
+                        <a href="https://ergesovd380.github.io/Salary/html/Lesson%20102.html" class="btn btn-success mx-2 d-none d-lg-inline">
+                            <i class="bi bi-currency-dollar"></i>
+                        </a>
+                        <a href="https://ergesovd380.github.io/Math/" class="btn btn-info mx-2">
+                            <i class="bi bi-123"></i>
+                        </a>
+                        <a href="https://ergesovd380.github.io/MSU/" class="btn btn-warning mx-2">
+                            <i class="bi bi-building"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="t-member">
+                        <img src="img/team/girl.jpg" alt="" class="mx-auto rounded-circle">
+                        <h4>Selbi Babayeva</h4>
+                        <p class="text-muted">Главная дура</p>
+                        <a href="https://www.google.com/search?q=%D1%82%D1%83%D1%80%D0%B5%D1%86%D0%BA%D0%B8%D0%B9+%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB&rlz=1C1GCEA_enRU988RU988&oq=%D1%82%D1%83%D1%80%D0%B5%D1%86%D0%BA%D0%B8%D0%B9+%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB&aqs=chrome..69i57j35i39j46i512j0i3j46i512l6.6878j0j7&sourceid=chrome&ie=UTF-8" class="btn btn-success mx-2 d-none d-lg-inline">
+                            <i class="bi bi-film"></i>
+                        </a>
+                        <a href="https://ergesovd380.github.io/Math/" class="btn btn-info mx-2">
+                            <i class="bi bi-123"></i>
+                        </a>
+                        <a href="https://ergesovd380.github.io/MSU/" class="btn btn-warning mx-2">
+                            <i class="bi bi-building"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse nesciunt eius, consequatur ut amet commodi reprehenderit voluptate, atque ipsa voluptatibus excepturi hic dicta quas repudiandae exercitationem laboriosam eos ratione quasi sit tempore modi. Ratione numquam porro, consectetur iste quas tenetur maiores totam, voluptatem placeat officiis cumque laudantium reprehenderit aspernatur.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6 col-lg-3">                   
+                    <div class="brow-logo"><i class="bi bi-google text-info"></i><br>Google</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">                
+                    <div class="brow-logo"><i class="bi bi-microsoft text-warning"></i><br>Microsoft</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">                
+                    <div class="brow-logo"><i class="bi bi-youtube text-danger"></i><br>Youtube</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="brow-logo"><i class="bi bi-windows text-primary"></i><br>Windows</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team end -->
+
+    <!-- Contact start  -->
+    <section id="contact" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5 pb-3 text-white">
+                <h2 class="s-heading text-uppercase fw-bold">Контакты</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tenetur.</h3>
+            </div>
+            <form id="formContact" novalidate>
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                            <input type="text" id="name" class="form-control" placeholder="Напишите имя" required>
+                            <label for="name">Имя</label>
+                            <div class="invalid-feedback" id="errName">Напишите ваше имя</div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" id="email" class="form-control" placeholder="Напишите E-Mail" required>
+                            <label for="email">E-Mail</label>
+                            <div class="invalid-feedback" id="errMail">Напишите ваш E-Mail</div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="number" id="number" class="form-control" placeholder="Напишите телефон номер" required>
+                            <label for="number">Номер</label>
+                            <div class="invalid-feedback" id="errNumber">Напишите ваш Номер телефона</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating form-textarea mb-4">
+                            <textarea id="message" placeholder="Сообщение" class="form-control" required></textarea>
+                            <label for="message">Сообщение</label>
+                            <div class="invalid-feedback" id="errMessage">Пишите ваше сообщение</div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-light btn-lg text-upperase py-3" type="submit">Отправить сообщению</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact end  -->
+
+    <!-- Footer start  -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-lg-4 text-lg-start text-muted">
+                    Copyright &copy; New Design 2022
+                </div>
+                <div class="col-lg-3 my-3 my-lg-0">
+                    <a href="https://ergesovd380.github.io/Salary/html/Lesson%20102.html" class="btn btn-success mx-2 d-none d-lg-inline">
+                        <i class="bi bi-currency-dollar"></i>
+                    </a>
+                    <a href="https://ergesovd380.github.io/Math/" class="btn btn-info mx-2">
+                        <i class="bi bi-123"></i>
+                    </a>
+                    <a href="https://ergesovd380.github.io/MSU/" class="btn btn-warning mx-2">
+                        <i class="bi bi-building"></i>
+                    </a>
+                </div>
+                <div class="col-lg-5 text-lg-end">
+                    <a href="#" class="link-info text-decoration-none me-3">Политика конфиденциальности</a>
+                    <a href="#" class="link-secondary text-decoration-none">Домашняя страница</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end  -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
