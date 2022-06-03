@@ -505,7 +505,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating form-textarea">
-                            <textarea id="message" placeholder="Сообщение" class="form-control" required></textarea>
+                            <textarea id="message" placeholder="Сообщение" class="form-control" maxlength="300" required></textarea>
                             <label for="message">Сообщение
                                 <span class="text-danger">*</span>
                             </label>
@@ -517,7 +517,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-outline-light btn-lg text-upperase py-3" type="submit">Отправить сообщению</button>
+                        <button class="btn btn-outline-light btn-lg text-upperase py-3" id="formBtn" type="submit">Отправить сообщению</button>
                     </div>
                 </div>
             </form>
