@@ -40,6 +40,8 @@ function closeCanvas(){
     var myEmail = document.querySelector('#email')
     var mailErr = document.querySelector('#errMail')
     var myForm = document.querySelector('#formContact')
+    var myBtn = document.querySelector('#formBtn')
+    var cal = document.querySelector('#calculate')
     const spacePattern = /^\S*$/                                                                    // bosh yerin kody 
     const myEmailPattern = /^([a-zA-Z0-9_\-?\.?]){3,}@([a-zA-Z]){3,}\.([a-zA-Z]){2,5}$/             // email pochtanyn kody             
     
@@ -117,6 +119,14 @@ function closeCanvas(){
     }
 
     //Message
+    myMessage.addEventListener('keyup', function(){
+        cal.textContent = myMessage.value.length
+        if(myMessage.value.length >= 10) {
+            myBtn.disabled = false
+        }else{
+            myBtn.disabled = true
+        }
+    })
     myMessage.addEventListener('blur', controlMessage)
     function controlMessage() {
         if(myMessage.value.length==0) {
