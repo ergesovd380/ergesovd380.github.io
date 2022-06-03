@@ -20,11 +20,13 @@ window.addEventListener('DOMContentLoaded', event=>{
         })
     }
 })
-var btnCanvas = document.querySelectorAll('.btn-close-canvas')
-for(let i=0; i<btnCanvas.length; i++){
-    btnCanvas[i].addEventListener('click', function(){
-       document.querySelector('[data-bs-dismiss="offcanvas"]').click()
-    })
+
+// OffCanvasy yapyan 0.5 sekuntdan son
+function start(){
+    setTimeout(closeCanvas, 500)
+}
+function closeCanvas(){
+    document.querySelector('[data-bs-dismiss="offcanvas"]').click()
 }
     // Form 
 (function(){
