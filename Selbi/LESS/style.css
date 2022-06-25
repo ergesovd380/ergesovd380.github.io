@@ -1,0 +1,129 @@
+body {
+  font-family: 'Alice', serif;
+  background: url(../img/fon.jpg) no-repeat;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+section {
+  padding-top: 12rem;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+.header-section {
+  padding-top: 5rem;
+}
+.header-section h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  color: #340391;
+  animation: backInDown 1s;
+}
+.cloud-1 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 40%;
+  top: 60%;
+  color: red;
+}
+.cld-main:hover {
+  animation: shakeY 1s;
+}
+.cld-main-1 {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 380px;
+  height: 80px;
+  border-radius: 40px;
+  background: #b7f8f8;
+  box-shadow: 0 15px 15px -15px #333;
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.cld-circle {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 205px;
+  height: 205px;
+  -webkit-border-radius: 205px;
+  -moz-border-radius: 205px;
+  -o-border-radius: 205px;
+  -ms-border-radius: 205px;
+  border-radius: 205px;
+  bottom: 0px;
+  left: 100px;
+}
+.cld-circle::before {
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -o-border-radius: 150px;
+  -ms-border-radius: 150px;
+  border-radius: 150px;
+  bottom: 10px;
+  left: 150px;
+}
+.cld-circle::after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  -o-border-radius: 130px;
+  -ms-border-radius: 130px;
+  border-radius: 130px;
+  bottom: 40px;
+  left: -80px;
+}
+.cld-circle:hover {
+  animation: rubberBand 2s;
+}
+@media (max-width: 884px) {
+  section {
+    display: none;
+  }
+}
+.box {
+  text-align: center;
+  height: 300px;
+  width: 650px;
+  margin-top: 10rem;
+  background-color: #fff;
+  padding-top: 2rem;
+  border: 2px solid #024908;
+  box-shadow: 7px 12px 0px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+}
+.text {
+  font-size: 2rem;
+  color: #024908;
+}
+.time {
+  font-size: 2rem;
+  color: #024908;
+}
+.btn {
+  margin-top: 1rem;
+  height: 50px;
+  width: 75px;
+  position: absolute;
+}
+.btn-success {
+  right: 50%;
+}
+.btn-danger {
+  margin-left: 25px;
+}
