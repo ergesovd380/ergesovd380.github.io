@@ -1,6 +1,6 @@
 body {
   font-family: 'Alice', serif;
-  background: url(../img/fon.jpg) no-repeat;
+  background-color: rgb(207, 191, 41);
   overflow-x: hidden;
   overflow-y: hidden;
 }
