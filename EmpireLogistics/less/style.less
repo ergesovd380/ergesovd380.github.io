@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@font-roboto: 'Roboto', serif;
+@font-montserrat: 'Montserrat', serif;
+
+// Mavbar
+#mainNavbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(40, 40, 40);
+    .navbar-nav .nav-item .nav-link{
+        font-family: @font-montserrat;
+        font-size: 1rem;
+        letter-spacing: 0.06em;
+    }
+    .navbar-nav .nav-item .nav-link.active,
+    .navbar-nav .nav-item .nav-link:hover{
+        text-underline-offset: 10px;
+        text-decoration: underline;
+        text-decoration-color: orange;
+    }
+}
+ 
+//body
+// Heading
+.heading-section{
+    position: relative;
+    .backImage {
+        background-image: url(../img/home/mainBanner.jpg);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .backImage-title{
+            margin-top: -8rem;
+        }
+    }
+    .counter{
+        background: url(../img/home/map.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 1000px;
+        height: 380px;
+        position: absolute;
+        margin: auto;
+        top: 85%;
+        left: 0;
+        right: 0;
+        .counter-title{
+            margin-top: 5rem;
+            .counter-number{
+                color: rgb(196, 161, 9);
+            }
+            .counter-text{
+                font-size: 12px;
+            }
+        }
+        .counter-subtitle{
+            margin-top: 3rem;
+        }
+    }
+}
+
+//Parallax
+.parallax {
+    background-image: url(../img/home/map.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-window {
+    background-image: url(../img/home/map.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .form-title{
+        font-family: @font-montserrat;
+        text-decoration: underline;
+        text-decoration-color: orange;
+        text-underline-offset: 10px;
+        padding-top: 450px;
+        text-align: end;
+    }
+}
+
+
+
+// ourServices
+#services{
+    .mySection {
+        padding: 5rem 0;
+        background-color: rgb(40, 40, 40);
+        .s-heading{
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            font-family: @font-montserrat;
+            text-decoration: underline;
+            text-decoration-color: orange;
+            text-underline-offset: 10px;
+        }
+        .s-r-title{
+            position: relative;
+            .s-r-heading{
+                position: absolute;
+                top: 10%;
+                right: 50%;
+                font-family: @font-montserrat;
+                text-decoration: underline;
+                text-decoration-color: orange;
+                text-underline-offset: 10px;
+            }
+        }
+        .servicesImgDiv{
+            width: 17rem;
+            height: 17rem;
+            overflow: hidden;
+            .servicesImg{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .serviceName{
+                font-size: 15px;
+                text-align: end;
+                margin: 15px 10px 0px 0px;
+            }
+            .serviceSubName{
+                margin-top: -15px;
+            }
+        }
+        .servicesImgDiv > .servicesImg{
+            display: block;
+            margin-left: -80px;
+        }
+        //News
+        .news{
+            position: relative;
+            padding: 5rem 0 10rem 0;
+            .news-content{
+                position: absolute;
+                padding-top: 5rem;
+                .p-item{
+                    max-width: 26rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .p-caption{
+                        background-color: rgb(40, 40, 40);
+                        .pc-heading{
+                            color: rgb(196, 161, 9);
+                            font-size: 1.5rem;
+                            font-family: @font-montserrat;
+                            margin-bottom: 0;
+                        }
+                        .pc-subheading{
+                            font-family: @font-roboto;
+                            font-weight: 900;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//FormPage
+.formPage{
+    position: relative;
+    .mySection {
+        padding: 5rem 0;
+        background-color: rgb(40, 40, 40);
+        .inputs{
+            background-color: transparent;
+        }
+        .form-btn{
+            border: 1px solid rgb(196, 161, 9);
+            color: #fff;
+            width: 200px;
+        }
+        .form-btn:hover{
+            background-color: rgb(196, 161, 9);
+        }
+    }
+    .info-text{
+        margin-top: 35px;
+        color: rgb(196, 161, 9);
+    }
+}
+
+//Footer
+.footerPage{
+    .mySection {
+        padding: 5rem 0;
+        background-color: rgb(226, 224, 224);
+        .foot-item .foot-link{
+            color:rgb(40, 40, 40);
+            text-decoration: none;
+            font-family: @font-montserrat;
+            font-size: 1rem;
+        }
+        .foot-item .foot-link.active,
+        .foot-item .foot-link:hover{
+            text-underline-offset: 10px;
+            text-decoration: underline;
+            text-decoration-color: orange;
+        }
+    }
+}
+
+// Large ekrana chenli 
+@media(max-width: 991.98px) {
+    .heading-section{
+        .backImage{
+            padding-top: 11rem;
+            padding-bottom: 13rem;
+            .backImage-title{
+                padding-top: 5rem;
+            }
+        }
+        .counter{
+            width: 750px;
+        }
+    }
+    .offcanvas{
+        background: rgb(66, 66, 66);
+    }
+}
+
+//Large ekran we ondan uly
+@media(min-width: 992px){
+    .backImage{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+    #mainNavbar{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -moz-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -ms-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -o-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        .navbar-nav .nav-item{
+            margin-right: 1rem;
+        }
+        .navbar-nav .nav-item:last-child{
+            margin-right: 1rem;
+        }
+    }
+    #mainNavbar.navbar-mobile{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: rgb(40, 40, 40);
+    }
+}
+
+// For phone
+@media(max-width: 450px){
+    .heading-section{
+        .counter{
+            width: 350px;
+            height: 350px;
+            top: 85%;
+            .counter-title{
+                margin-top: 25px;
+                .counter-text{
+                    font-size: 10px;
+                }
+            }
+            .counter-subtitle{
+                margin-top: 10px;
+            }
+        }
+    }
+    .formPage{
+        margin-top: 45em;
+    }
+    .form-title{
+        display: none;
+    }
+}
