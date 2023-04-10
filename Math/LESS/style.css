@@ -5,7 +5,8 @@ section {
   padding-top: 12rem;
   text-align: center;
   position: relative;
-  background: url(../img/fon.jpg) no-repeat;
+  background: url(../img/fon.jpg) no-repeat center;
+  background-size: cover;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -27,22 +28,6 @@ section {
   top: 50%;
   color: red;
 }
-.cld-main:hover {
-  animation: shakeY 1s;
-}
-.cld-main-1 {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 325px;
-  height: 80px;
-  border-radius: 40px;
-  background: #b7f8f8;
-  box-shadow: 0 15px 15px -15px #333;
-  font-weight: 900;
-  font-size: 2.5rem;
-  padding: 1rem;
-}
 .cloud-2 {
   position: absolute;
   width: 200px;
@@ -50,19 +35,6 @@ section {
   left: 38%;
   top: 50%;
   color: #d8d803;
-}
-.cld-main-2 {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 325px;
-  height: 80px;
-  border-radius: 40px;
-  background: #b7f8f8;
-  box-shadow: 0 15px 15px -15px #333;
-  font-weight: 900;
-  font-size: 2.5rem;
-  padding: 1rem;
 }
 .cloud-3 {
   position: absolute;
@@ -72,7 +44,10 @@ section {
   top: 50%;
   color: #ac72c7;
 }
-.cld-main-3 {
+.cld-main:hover {
+  animation: shakeY 1s;
+}
+.cld-main {
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -174,7 +149,7 @@ section {
   border-radius: 50% 50% 0;
 }
 .sun {
-  animation: fadeInLeft 2s;
+  animation: fadeIn 2s;
 }
 .circle {
   background-color: #fef504;
