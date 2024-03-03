@@ -1,0 +1,116 @@
+.footer {
+  margin-top: 50px;
+  background-color: var(--dark);
+
+  &_first {
+    background-color: var(--white);
+
+    &-items {
+      height: 64px;
+      @include flex-all-sb;
+    }
+
+    &-contact {
+      margin-right: 70px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &-link {
+      color: var(--dark);
+      text-decoration: underline;
+    }
+
+    &-email {
+      color: var(--dark);
+    }
+  }
+
+  &_second {
+    margin: 60px auto;
+    color: var(--white);
+
+    &-items {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    &-menu {
+      margin-top: 10px;
+      list-style: none;
+      cursor: pointer;
+
+      &-item {
+        margin-top: 15px;
+      }
+    }
+
+    &-fGroup {
+
+      &-icons {
+        margin-top: 30px;
+      }
+
+      &-icon {
+        margin-right: 28px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      &-yandex {
+        margin-top: 39px;
+      }
+    }
+
+    &-Group2 {
+      margin-top: 50px;
+    }
+
+    &-email {
+      margin-top: 28px;
+      cursor: pointer;
+    }
+
+    &-address {
+      width: 200px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+
+    &-banks {
+      margin-top: 40px;
+
+      &-item {
+        margin-right: 30px;
+        cursor: pointer;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+  }
+
+  &_third {
+    height: 82px;
+    @include flex-all-center;
+    color: var(--optianal-gray);
+  }
+
+  &_divider {
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
+}

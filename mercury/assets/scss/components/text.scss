@@ -1,0 +1,75 @@
+.title {
+  &_h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  &_h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  &_h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  &_h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &_h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &_h6 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.phone {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--dark);
+}
+
+.input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--optianal-gray);
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.card_types {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.card_grade {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card_price {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+}

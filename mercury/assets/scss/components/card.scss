@@ -1,0 +1,117 @@
+.card {
+  width: 318px;
+  height: 421px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--white);
+
+  
+  &_swiper {
+    width: 298px;
+    height: 213px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &_img {
+    position: relative;
+  }
+
+  &_heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  &_type {
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+    color: var(--white);
+
+    &-item {
+      @include flex_all_center;
+      margin: 5px 0 5px 10px;
+      height: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+
+  &_hit {
+    width: 35px;
+    background-color: var(--yellow);
+  }
+
+  &_new {
+    width: 64px;
+    background-color: var(--success);
+  }
+
+  &_sale {
+    width: 49px;
+    background-color: var(--danger);
+  }
+
+  &_title {
+    margin: 10px 0;
+  }
+
+  &_rate {
+    display: flex;
+
+    &-star {
+      width: 16px;
+      height: 16px;
+    }
+
+    &-grade {
+      margin: 0 15px 0 10px;
+      color: var(--danger);
+    }
+  }
+
+  &_comment {
+    width: 65px;
+    height: 18px;
+    border: 1px solid var(--optianal-gray);
+    border-radius: 2px;
+    color: var(--optianal-gray);
+    text-align: center;
+  }
+
+  &_cost {
+    display: flex;
+    margin-top: 20px;
+
+    &-price {
+      margin-right: 20px;
+
+      &-sale {
+        color: var(--optianal-gray);
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &_stock {
+    margin: 15px 0;
+    color: var(--optianal-gray);
+  }
+
+  &_btn {
+    width: 145px;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    line-height: 25.5px;
+
+    &:hover {
+      background-color: var(--danger);
+      color: var(--white);
+      border: none;
+    }
+  }
+}

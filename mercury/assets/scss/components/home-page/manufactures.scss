@@ -1,0 +1,15 @@
+.manufactures {
+  
+  &_items {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &_brand {
+    width: 318px;
+    height: 125px;
+    cursor: pointer;
+  }
+}

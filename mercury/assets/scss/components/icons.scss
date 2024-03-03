@@ -1,0 +1,39 @@
+.icons {
+  margin-right: 35px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: var(--gray);
+  }
+
+  &_cart {
+    position: relative;
+
+    &-count {
+      @include flex-all-center;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+
+      background-color: var(--danger);
+      color: var(--white);
+
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12px;
+    }
+  }
+}
