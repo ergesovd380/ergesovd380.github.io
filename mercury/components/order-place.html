@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nouislider.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Mercury</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <!-- Topbar section -->
+      <div class="header_topbar container">
+        <div class="header_topbar_items">   
+          <!-- Place -->  
+          <div class="all_sb">
+            <img 
+              src="../assets/img/icons/map.svg" 
+              alt="icon" 
+              class="header_topbar_icon pointer"
+            >
+            <div class="title_h6 pointer">
+              Москва
+            </div>
+          </div>   
+          <div class="all_sb">
+            <!-- Shop -->
+            <div class="title_h6 header_topbar_adr pointer">Магазин в Санкт-Петербурге</div>
+            <!-- Phone -->
+            <a href="tel:+7999999999" type="tel" class="phone pointer">+7 (999) 99-99-99</a>
+            <!-- WhatsApp -->
+            <img src="../assets/img/header/whatsapp.svg" class="header_topbar_whatsapp" alt="whatsapp">
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondbar section -->
+      <div class="header_secondbar">
+        <!-- Secondbar first section -->
+        <div class="header_secondbar_fSection container">
+          <!-- Logo -->
+          <a href="../index.html"><img src="../assets/img/header/logo.png" class="header_secondbar-logo pointer" alt="logo"></a>
+          <!-- Form -->
+          <form class="all_sb header_secondbar-mob">
+            <!-- Search -->
+            <input 
+              type="text"
+              placeholder="Поиск..."
+              class="header_secondbar_input title_h4"
+            >
+            <!-- Select -->
+            <select class="header_secondbar_select title_h5 pointer">
+              <option 
+                value="all categories" 
+                disabled 
+                selected
+              ><h5>Все категории</h5></option>
+              <option value="first category"><h5>Первая категория</h5></option>
+              <option value="second category"><h5>Вторая категория</h5></option>
+              <option value="third category"><h5>Третья категория</h5></option>
+            </select>
+            <!-- Button -->
+            <button class="header_secondbar_btn pointer">
+              <img src="../assets/img/icons/search-line.svg" alt="search">
+            </button>
+          </form>
+
+          <!-- Header icons -->
+          <div class="all_sb header_secondbar-mob">
+            <button class="icons pointer">
+              <img src="../assets/img/icons/account.svg" alt="account">
+            </button>
+            <button class="icons pointer">
+              <img src="../assets/img/icons/eay.svg" alt="eay">
+            </button>
+            <button class="icons pointer">
+              <img src="../assets/img/icons/heart.svg" alt="heart">
+            </button>
+            <button class="icons icons_cart pointer">
+              <a href="./cart.html">
+                <img src="../assets/img/icons/cart.svg" alt="cart">
+                <div class="icons_cart-count">12</div>
+              </a>
+            </button>
+          </div>
+
+          <!-- Mobile burger -->
+          <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <button 
+              type="button" 
+              class="navbar navbar-toggler" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#myNavbar"
+              id="openmyNavbar"
+            >
+              <img src="../assets/img/header/burger.svg" alt="burger">
+            </button>
+          </nav>
+          <!-- Mobile Dialog -->
+          <div 
+            class="offcanvas offcanvas-end" 
+            tabindex="-1" 
+            id="myNavbar"
+          >
+            <div class="offcanvas-header">
+                <div></div>
+                <button class="btn" data-bs-dismiss="offcanvas">
+                  <img src="../assets/img/header/burger-close.svg" alt="Close navabar">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-first-item">
+                    <select class="header_secondbar_select title_h5 pointer">
+                      <option 
+                        value="all categories" 
+                        disabled 
+                        selected
+                      ><h5>Все категории</h5></option>
+                      <option value="first category"><h5>Первая категория</h5></option>
+                      <option value="second category"><h5>Вторая категория</h5></option>
+                      <option value="third category"><h5>Третья категория</h5></option>
+                    </select>
+                  </li>
+                  <li class="nav-first-item">
+                    <input 
+                      type="text"
+                      placeholder="Поиск..."
+                      class="header_secondbar_input title_h4"
+                    >
+                    <button class="header_secondbar_btn pointer">
+                      <img src="../assets/img/icons/search-line.svg" alt="search">
+                    </button>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./catalog.html"><h1 class="title_h1 pointer">Каталог</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./designer.html"><h1 class="title_h1 pointer">Дизайнерам</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./services.html"><h1 class="title_h1 pointer">Услуги</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./sale/sale-catalog.html"><h1 class="title_h1 pointer">Акции</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./brands.html"><h1 class="title_h1 pointer">Бренды</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <h1 class="title_h1 pointer">Покупателям</h1>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./about-company.html"><h1 class="title_h1 pointer">О компании</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./contact.html"><h1 class="title_h1 pointer">Контакты</h1></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header_divider"></div>
+
+        <!-- Secondbar second section -->
+        <div class="header_secondbar_sSection container all_sb">
+          <a href="./catalog.html"><h4 class="title_h4 pointer">Каталог</h4></a>
+          <a href="./designer.html"><h4 class="title_h4 pointer">Дизайнерам</h4></a>
+          <a href="./services.html"><h4 class="title_h4 pointer">Услуги</h4></a>
+          <a href="./sale/sale-catalog.html"><h4 class="title_h4 pointer">Акции</h4></a>
+          <a href="./brands.html"><h4 class="title_h4 pointer">Бренды</h4></a>
+          <h4 class="title_h4 pointer">Покупателям</h4>
+          <a href="./about-company.html"><h4 class="title_h4 pointer">О компании</h4></a>
+          <a href="./contact.html"><h4 class="title_h4 pointer">Контакты</h4></a>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main section start -->
+    <main class="main container">
+      <!-- Order section start -->
+      <section class="order-place">
+        <!-- Bred crumbs -->
+        <h6 class="breadCrumbs title_h6">Главная / Каталог / Люстры</h6>
+        <!-- Order title -->
+        <h1 class="title_h1 order-place_title">Оформление заказа</h1>
+        <!-- Order body -->
+        <div class="row">
+          <!-- Order start-->
+          <div class="col-12 col-xl-9">
+            <!-- Client start -->
+            <div class="order-place_client">
+              <div class="order-place_client-confirmation title_h5">
+                После оформления вам позвонит менеджер для  подтверждения заказа.
+              </div>
+              <h2 class="order-place_client-title title_h2">Покупатель</h2>
+              <!-- Client filter -->
+              <div class="order-place_tabs">
+                <!-- Filter list -->
+                <div class="nav tabs-order" id="nav-tab" role="tablist">
+                  <!-- Filter Физ.лицо -->
+                  <div 
+                    class="tabs-order_items title_h4 active" 
+                    id="nav-fizface-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#nav-fizface" 
+                    role="tab" 
+                    aria-controls="nav-fizface" 
+                    aria-selected="true"
+                  >
+                    Физическое лицо
+                  </div>
+                  <!-- Filter Юр.лицо -->
+                  <div 
+                    class="tabs-order_items title_h4" 
+                    id="nav-yurface-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#nav-yurface" 
+                    role="tab" 
+                    aria-controls="nav-yurface" 
+                    aria-selected="false"
+                  >
+                    Юридическое лицо
+                  </div>
+                </div>
+              </div>
+              <!-- Client filter content -->
+              <div class="tab-content tabs-order_content" id="nav-tabContent">
+                <!-- Filter content Физ.лицо -->
+                <div 
+                  class="tab-pane fade show active" 
+                  id="nav-fizface" 
+                  role="tabpanel" 
+                  aria-labelledby="nav-fizface-tab"
+                >
+                  <form class="tabs-order_content-form" action="">
+                    <div class="tabs-order_content-form-blog">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Фамилия">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Имя">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Отчество">
+                    </div>
+                    <div>
+                      <input type="email" class="form_input tabs-order_content-input title_h6" placeholder="E-mail">
+                      <input type="number" class="form_input tabs-order_content-input title_h6" placeholder="Телефон">
+                    </div>
+                  </form>
+                </div>
+                <!-- Filter content Юр.лицо -->
+                <div 
+                  class="tab-pane fade" 
+                  id="nav-yurface" 
+                  role="tabpanel" 
+                  aria-labelledby="nav-yurface-tab"
+                >
+                  <form class="tabs-order_content-form" action="">
+                    <div class="tabs-order_content-form-blog">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="ИНН">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="КПП">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="КПП">
+                    </div>
+                    <div>
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Название компании">
+                      <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="ОГРН">
+                    </div>
+                  </form>
+                  <div class="tabs-order_content-contactFace">
+                    <h4 class="tabs-order_content-contactFace-title">Контактное лицо</h4>
+                    <form class="tabs-order_content-form" action="">
+                      <div class="tabs-order_content-form-blog">
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Фамилия">
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Имя">
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Отчество">
+                      </div>
+                      <div>
+                        <input type="email" class="form_input tabs-order_content-input title_h6" placeholder="E-mail">
+                        <input type="number" class="form_input tabs-order_content-input title_h6" placeholder="Телефон">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Client end -->
+
+            <!-- Delivery start -->
+            <div class="order-place_delivery">
+              <h2 class="title_h2">Доставка</h2>
+              <!-- Client filter -->
+              <div class="order-place_tabs">
+                <!-- Filter list -->
+                <div class="nav tabs-order" id="nav-tab" role="tablist">
+                  <!-- Filter Физ.лицо -->
+                  <div 
+                    class="tabs-order_items delivery_courier title_h4 active" 
+                    id="nav-courier-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#nav-courier" 
+                    role="tab" 
+                    aria-controls="nav-courier" 
+                    aria-selected="true"
+                  >
+                    Курьером
+                  </div>
+                  <!-- Filter Юр.лицо -->
+                  <div 
+                    class="tabs-order_items delivery_pickup title_h4" 
+                    id="nav-pickup-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#nav-pickup" 
+                    role="tab" 
+                    aria-controls="nav-pickup" 
+                    aria-selected="false"
+                  >
+                    Самовывоз
+                  </div>
+                </div>
+              </div>
+              <!-- Client filter content -->
+              <div class="tab-content tabs-order_content" id="nav-tabContent">
+                <!-- Filter content Курьером -->
+                <div 
+                  class="tab-pane fade show active" 
+                  id="nav-courier" 
+                  role="tabpanel" 
+                  aria-labelledby="nav-courier-tab"
+                >
+                  <div class="tabs-order_content-delivery title_h6">
+                    <div>Бесплатно при заказе <b>от 20 000 ₽</b></div>
+                    <div><b>599 ₽</b> в пределах КАД</div>
+                    <div><b>1 000 ₽</b> по России</div>
+                  </div>
+                  <form action="">
+                    <div class="tabs-order_content-form">
+                      <div class="tabs-order_content-form-blog">
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Город">
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Квартира/офис">
+                      </div>
+                      <div>
+                        <input type="text" class="form_input tabs-order_content-input title_h6" placeholder="Улица, дом">
+                        <div class="tabs-order_content-input-small">
+                          <input type="text" class="form_input form_input-small title_h6" placeholder="Подъезд">
+                          <input type="number" class="form_input form_input-small title_h6" placeholder="Этаж">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs-order_content-textarea">
+                      <textarea class="form_textarea form_textarea-big" placeholder="Комментарий"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <!-- Filter content Самовывоз -->
+                <div 
+                  class="tab-pane fade" 
+                  id="nav-pickup" 
+                  role="tabpanel" 
+                  aria-labelledby="nav-pickup-tab"
+                >
+                  <div class="tabs-order_content-delivery title_h6">
+                    <div><b>Адрес пункта выдачи заказа</b></div>
+                    <div>Уральская ул., 13К</div>
+                    <div>Ближайшая станция метро Спортивная</div>
+                    <div>Время работы: Пн-Пт 10:00-21:00, Сб-Вс 10:00-18:00</div>
+                  </div>
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/catalog/?ll=30.264743%2C59.954189&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">534 819 организаций Санкт‑Петербурга — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.264743%2C59.954189&mode=catalog&z=18" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+              </div>
+            </div>
+            <!-- Delivery end -->
+
+            <!-- Payment start -->
+            <div class="order-place_payment">
+              <h2 class="title_h2">Оплата</h2>
+              <form class="order-place_payment-types">
+                <!-- Bank card -->
+                <div class="order-place_payment-types-item">
+                  <input class="order-place_payment-types-radio" checked type="radio" name="payment-type" id="bankcard">
+                  <label for="bankcard" class="order-place_payment-types-label title_h5">
+                    Банковской картой
+                    <span class="order-place_payment-types-checkbox-custom"></span>
+                  </label>
+                </div>
+                <!-- Cash -->
+                <div class="order-place_payment-types-item payment_courier">
+                  <input class="order-place_payment-types-radio" type="radio" name="payment-type" id="cash">
+                  <label for="cash" class="order-place_payment-types-label title_h5">
+                    Наличными курьеру
+                    <span class="order-place_payment-types-checkbox-custom"></span>
+                  </label>
+                </div>
+                <!-- Card -->
+                <div class="order-place_payment-types-item payment_courier">
+                  <input class="order-place_payment-types-radio" type="radio" name="payment-type" id="card">
+                  <label for="card" class="order-place_payment-types-label title_h5">
+                    Картой курьеру
+                    <span class="order-place_payment-types-checkbox-custom"></span>
+                  </label>
+                </div>
+                <!-- Cash place -->
+                <div class="order-place_payment-types-item payment_pickup">
+                  <input class="order-place_payment-types-radio" type="radio" name="payment-type" id="cashPlace">
+                  <label for="cashPlace" class="order-place_payment-types-label title_h5">
+                    Наличными
+                    <span class="order-place_payment-types-checkbox-custom"></span>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <!-- Payment end -->
+          </div>
+          <!-- Order end -->
+
+          <!-- Детали заказа start -->
+          <div class="col-12 col-xl-3">
+            <div class="order-place_details">
+
+              <h2 class="title_h2">Детали заказа</h2>
+
+              <div class="order-place_details-list">
+                <div class="order-place_details-list-item">
+                  <div class="order-place_details-list-gray title_h5">4 товара</div>
+                  <div class="title_h3">100 000 р.</div>
+                </div>
+                <div class="order-place_details-list-item">
+                  <div class="order-place_details-list-gray title_h5">Скидка</div>
+                  <div class="title_h3">200 р.</div>
+                </div>
+              </div>
+
+              <div class="order-place_details-total">
+                <div class="title_h5">Итого</div>
+                <div class="price">49 900 ₽</div>
+              </div>
+
+              <div class="order-place_details-promokod">
+                <input type="text" class="form_input form_input-promokod title_h6" placeholder="Есть промокод?">
+              </div>
+
+              <div class="order-place_details-contact title_h6">
+                <div class="order-place_details-contact-item">
+                  <span class="order-place_details-list-gray">Клиент: </span><b>Физлицо</b>
+                </div>
+                <div class="order-place_details-contact-item">
+                  <span class="order-place_details-list-gray">Доставка: </span><b>Курьером</b>
+                </div>
+                <div class="order-place_details-contact-item">
+                  <span class="order-place_details-list-gray">Оплата: </span><b>Банковской картой</b>
+                </div>
+              </div>
+
+              <div class="form_checkboxdata">
+                <input 
+                  type="checkbox" 
+                  class="form-checkbox pointer" 
+                  id="dialog-buy_form-checkbox">
+                <label class="form_checkbox-label small-text " for="dialog-buy_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+              </div>
+
+              <a href="./order-complete.html"><button class="btn_small-red btn_small-red-cart order-place_details-btn">Оформить заказ</button></a>
+
+            </div>
+          </div>
+          <!-- Детали заказа end -->
+        </div>
+      </section>
+      <!-- Order section end -->
+
+      <!-- Footer mobile start -->
+      <div class="fixed-bottom footer_mobile">
+        <div class="footer_mobile-body">
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/account.svg" alt="Account"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/eay.svg" alt="Eay"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/heart.svg" alt="Heart"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item icons_cart">
+            <a href="./cart.html">
+              <img src="/assets/img/footer/mobile/cart.svg" alt="cart">
+              <div class="icons_cart-count icons_cart-count-mob">12</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer mobile end -->
+    </main>
+    <!-- Main section end -->
+
+    <!-- Footer section start -->
+    <footer class="footer">
+      <!-- Footer first section -->
+      <section class="footer_first">
+        <div class="container">
+          <div class="footer_first-items">
+            <!-- Contacts -->
+            <div class="footer_first-blog">
+              <a 
+                href="#" 
+                class="footer_first-link link footer_first-contact"
+              >Заказать звонок</a>
+              <a 
+                href="#" 
+                class="title_h5 pointer footer_first-email footer_first-contact footer_first-mob"
+              >WhatsApp</a>
+              <a 
+                href="tel:+7999999999" 
+                type="tel" 
+                class="phone pointer footer_first-contact"
+              >+7 (999) 99-99-99</a>
+              <a 
+                href="#" 
+                type="email" 
+                class="title_h5 footer_first-email footer_first-contact footer_first-mob"
+              >example@yandex.ru</a>
+            </div>
+            <!-- Icons -->
+            <div class="footer_first-mob">
+              <button class="icons pointer">
+                <img src="../assets/img/icons/eay.svg" alt="eay">
+              </button>
+              <button class="icons pointer">
+                <img src="../assets/img/icons/heart.svg" alt="heart">
+              </button>
+              <button class="icons icons_cart pointer">
+                <a href="./cart.html">
+                  <img src="../assets/img/icons/cart.svg" alt="cart">
+                  <div class="icons_cart-count">12</div>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+      
+      <!-- Footer second section -->
+      <section class="footer_second container">
+        <div class="footer_second-items">
+          <div class="row">
+            <!-- First Group -->
+            <div class="footer_second-GroupFirst col-12 col-lg-3">
+              <a href="../index.html"><img src="../assets/img/footer/logo.png" alt="logo"></a>
+              <div class="footer_second-GroupFirst-icons">
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <div class="footer_second-GroupFirst-yandex">
+                <a href="#">
+                  <img src="../assets/img/footer/second/yandex.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 footer_second-center">
+              <div class="row">
+                <!-- Second Group -->
+                <div class="footer_second-GroupSecond col">
+                  <h3 class="footer_second-title title_h3">Интернет-магазин</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Люстры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Светильники</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Бра</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Настольные лампы</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Споты</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Торшеры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Уличное освещение</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Весь католог</a></li>
+                  </ul>
+                </div>
+                <!-- Third Group -->
+                <div class="footer_second-GroupThird col">
+                  <h3 class="footer_second-title title_h3">Покупателям</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Доставка</li>
+                    <li class="footer_second-menu-item title_h4">Оплата</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./return.html" class="footer_second-menu-item-link">Возврат</a></li>
+                    <li class="footer_second-menu-item title_h4">Гарантия</li>
+                  </ul>
+
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Услуги</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4">Установка светильников</li>
+                      <li class="footer_second-menu-item title_h4">Подбор по фото</li>
+                      <li class="footer_second-menu-item title_h4">Посчитать проект</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fourth Group -->
+                <div class="footer_second-GroupFourth col">
+                  <h3 class="footer_second-title title_h3">О компании</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Магазин Спб</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./contact.html" class="footer_second-menu-item-link">Контакты</a></li>
+                    <li class="footer_second-menu-item title_h4">Реквизиты</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./news/news-catalog.html" class="footer_second-menu-item-link">Новости</a></li>
+                  </ul>
+                
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Партнерам</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4"><a href="./designer.html" class="footer_second-menu-item-link">Дизайнерам</a></li>
+                      <li class="footer_second-menu-item title_h4">Поставщикам</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fifth Group -->
+            <div class="footer_second-GroupFifth col-12 col-lg-2">
+              <div class="footer_second-GroupFifth-icons">
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <h3 class="footer_second-title title_h3">+1 (000) 000-00-00</h3>
+              <h4 class="footer_second-GroupFifth-email title_h4">example@yandex.ru</h4>
+              <h5 class="footer_second-GroupFifth-address title_h5"><b>Адрес магазина в Санкт-петербурге:</b> 195000, Москва, ул. Академика Королева, 12</h5>
+            
+              <div class="footer_second-GroupFifth-banks">
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/mastercard.png" alt="Mastercard">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/visa.png" alt="Visa">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/maestro.png" alt="Maestro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+
+      <!-- Footer third section -->
+      <section class="footer_third">
+        <h5 class="title_h5">2023 © Все права защищены</h5>
+      </section>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/components/order-place.js"></script>
+    <script src="/js/components/footer.js"></script>
+  </body> 
+</html>

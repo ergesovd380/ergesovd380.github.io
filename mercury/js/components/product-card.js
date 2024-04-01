@@ -1,42 +1,22 @@
-// Banner section
-new Swiper('.banner-slider', {
-  scrollbar: {
-    el: '.banner_swiper-scrollbar',
-    draggable: true,
-  },
-})
-
-// Categories section
-new Swiper('.categories-slider', {
+// Tabs slider
+new Swiper('.tabs-slider', {
   breakpoints: {
-    200: {
+    300: {
       slidesPerView: 2,
       spaceBetween: 20,
-      centeredSlides: true,
-      loop: true
     },
-    450: {
+    500: {
       slidesPerView: 3,
-      spaceBetween: 40,
-      centeredSlides: false,
-      loop: false
+      spaceBetween: 20,
     },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 40,
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 5,
-      spaceBetween: 50,
-    },
-    1400: {
-      slidesPerView: 6,
-      spaceBetween: 50,
+      slidesPerView: 9,
+      spaceBetween: 20,
     }
-  },
-  navigation: {
-    nextEl: '.categories_next',
-    prevEl: '.categories_prev'
   }
 })
 
@@ -69,61 +49,70 @@ new Swiper('.product-slider', {
   },
 });
 
+// Проверка на кол-во img на карточке товара
 document.addEventListener('DOMContentLoaded', () => {
-  // Проверка кол-во фото в модальном окне
+  // Проверка на кол-во фото на карточке товара
+  const images = document.querySelectorAll('.product_card-images-small div');
+  if(images.length > 7) {
+    for(let i=7; i < images.length; i++) {
+      images[i].remove();
+    }
+  };
+
+  // Проверка на кол-во фото в модальном окне
   const imagesModal = document.querySelectorAll('.dialog-card_images-small div');
   if(imagesModal.length > 5) {
     for(let m=5; m < imagesModal.length; m++) {
       imagesModal[m].remove();
-    };
+    }
+  }
+
+  // Проверка кол-во карточек на мобильном (section collection)
+  const cardColection = document.querySelectorAll('.cards-colection-mobile .card_mobile');
+  if(cardColection.length > 3) {
+    for(let c=3; c < cardColection.length; c++) {
+      cardColection[c].remove();
+    }
+  }
+
+  // Проверка кол-во карточек на мобильном (section same)
+  const cardSame = document.querySelectorAll('.cards-same-mobile .card_mobile');
+  if(cardSame.length > 3) {
+    for(let s=3; s < cardSame.length; s++) {
+      cardSame[s].remove();
+    }
+  }
+
+  // Вызов функции в мобильном
+  const withWindow = window.innerWidth;
+  if(withWindow < 768) {
+    deleteLast();
   };
+});
 
-  // Проверка кол-во карточек на мобильном (section hit)
-  const cardHit = document.querySelectorAll('.cards-hit-mobile .card_mobile');
-  if(cardHit.length > 3) {
-    for(let h=3; h < cardHit.length; h++) {
-      cardHit[h].remove();
-    }
-  }
-
-  // Проверка кол-во карточек на мобильном (section new-prod)
-  const cardNewProd = document.querySelectorAll('.cards-newProd-mobile .card_mobile');
-  if(cardNewProd.length > 3) {
-    for(let np=3; np < cardNewProd.length; np++) {
-      cardNewProd[np].remove();
-    }
-  }
-
-  // Проверка кол-во карточек на мобильном (section spb-products)
-  const cardSpb = document.querySelectorAll('.cards-spb-mobile .card_mobile');
-  if(cardSpb.length > 3) {
-    for(let sp=3; sp < cardSpb.length; sp++) {
-      cardSpb[sp].remove();
-    }
-  }
-
-  // Проверка кол-во карточек на мобильном (section sale)
-  const cardSale = document.querySelectorAll('.cards-sale-mobile .card_mobile');
-  if(cardSale.length > 3) {
-    for(let s=3; s < cardSale.length; s++) {
-      cardSale[s].remove();
-    }
-  }
-
-  // Проверка кол-во карточек на мобильном (section viewed)
-  const cardViewed = document.querySelectorAll('.cards-viewed-mobile .card_mobile');
-  if(cardViewed.length > 3) {
-    for(let c=3; c < cardViewed.length; c++) {
-      cardViewed[c].remove();
-    }
+// Проверка на кол-во img на карточке товара на мобильном
+window.addEventListener('resize', (e) => {
+  const withWindow = window.innerWidth;
+  if(withWindow < 768) {
+    deleteLast();
   }
 })
+function deleteLast() {
+  const imagesProduct = document.querySelectorAll('.product_card-images-small div');
+  for(let i=6; i < imagesProduct.length; i++) {
+    imagesProduct[i].remove();
+  }
+}
 
 // Dialog-buy
 const dialogBuy = document.querySelector('.dialog-for-buy');
-const showBtnDialogBuy = document.querySelector('.dialog-card_btn-buy');
+const modalBuy = document.querySelector('.product_card-btn-buy');
+const showBtnDialogBuy = document.querySelector('.modal-buy');
 const closeBtnDialogBuy = document.querySelector('.dialog-buy_close');
 showBtnDialogBuy.addEventListener("click", () => {
+  dialogBuy.showModal();
+});
+modalBuy.addEventListener("click", () => {
   dialogBuy.showModal();
 });
 closeBtnDialogBuy.addEventListener("click", () => {
@@ -132,9 +121,13 @@ closeBtnDialogBuy.addEventListener("click", () => {
 
 // Dialog-cheep
 const dialogCheep = document.querySelector('.dialog-cheeper');
+const modalCheep = document.querySelector('.product_card-cheep');
 const showBtnDialogCheep = document.querySelector('.modal-cheeper');
 const closeBtnDialogCheep = document.querySelector('.dialog-cheep_close');
 showBtnDialogCheep.addEventListener("click", () => {
+  dialogCheep.showModal();
+});
+modalCheep.addEventListener("click", () => {
   dialogCheep.showModal();
 });
 closeBtnDialogCheep.addEventListener("click", () => {
@@ -143,16 +136,20 @@ closeBtnDialogCheep.addEventListener("click", () => {
 
 // Dialog-review
 const dialogReview = document.querySelector('.dialog-for-review');
+const modalReview = document.querySelector('.product-card-review');
 const showBtnDialogReview = document.querySelector('.modal-review');
 const closeBtnDialogReview = document.querySelector('.dialog-review_close');
 showBtnDialogReview.addEventListener("click", () => {
+  dialogReview.showModal();
+});
+modalReview.addEventListener("click", () => {
   dialogReview.showModal();
 });
 closeBtnDialogReview.addEventListener("click", () => {
   dialogReview.close();
 });
 
-// Counter product
+// Counter для модального окна
 let count = 1;
 let counter = document.querySelector('.count-value');
 function countPlus() {
@@ -166,6 +163,21 @@ function countMinus() {
     count--;
   }
   counter.innerHTML = count;
+};
+// Counter для карточки продукта
+let countProd = 1;
+let counterProd = document.querySelector('.count-value-prod');
+function countPlusProd() {
+  countProd++;
+  counterProd.innerHTML = countProd;
+};
+function countMinusProd() {
+  if(countProd < 1) {
+    countProd = 0;
+  } else {
+    countProd--;
+  }
+  counterProd.innerHTML = countProd;
 };
 
 // Add images

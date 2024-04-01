@@ -1,0 +1,77 @@
+.form {
+
+  &_input {
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid var(--optianal-gray);
+    border-radius: 5px;
+    color: var(--optianal-gray);
+    &:focus {
+      color: var(--dark);
+    }
+
+    @include for-mobile {
+      width: 100%;
+    }
+
+    &-promokod {
+      width: 100%;
+    }
+
+    &-small {
+      width: 150px;
+
+      @include for-mobile {
+        width: 45%;
+      }
+    }
+  }
+
+  &_textarea {
+    width: 320px;
+    height: 63px;
+    padding: 9px 20px;
+    border: 1px solid var(--optianal-gray);
+    border-radius: 5px;
+    color: var(--optianal-gray);
+    &:focus {
+      color: var(--dark);
+    }
+
+    @include for-mobile {
+      width: 100%;
+      height: 60px;
+    }
+
+    &-big {
+      width: 668px;
+
+      @include for-big-tablet {
+        width: 320px;
+        margin-top: 20px;
+      }
+
+      @include for-mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &_checkboxdata{
+    margin-top: 10px;
+    display: flex;
+    align-items: start;
+  }
+
+  &_checkbox {
+    border-radius: 5px;
+
+    &-label {
+      margin-left: 10px;
+      color: var(--gray-bcg);
+      line-height: 15.48px;
+    }
+  }
+  
+}

@@ -1,0 +1,184 @@
+.product {
+
+  &_card {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+    // Оценка
+    &-rate {
+      display: flex;
+      align-items: center;
+      // Комментарии
+      &-comment {
+        margin-right: 20px;
+      }
+    }
+    // Ссылки
+    &-link {
+      text-decoration: underline;
+      color: var(--optianal-gray);
+
+      &:hover {
+        color: var(--optianal-gray);
+      }
+    }
+    // Столбцы 
+    &-columns {
+      margin-top: 20px;
+      position: relative;
+
+      // 991.5px
+      @include for-big-tablet {
+        display: block;
+      }
+    }
+    // Цена
+    &-cost {
+      @include for-small-laptop {
+        margin-top: 30px;
+      }
+      &-price {
+        margin-bottom: 15px;
+      }
+    }
+    // Остаток
+    &-stock {
+      margin-top: 20px;
+      display: flex;
+
+      &-spb {
+        margin-left: 30px;
+      }
+      // 991.5px
+      @include for-big-tablet {
+        margin-top: 15px;
+      }
+    }
+    // Images
+    &-images {
+      display: flex;
+
+      @include for-tablet {
+        position: relative;
+      }
+      // Маленькие фотографии 
+      &-small {
+
+        &-img {
+          width: 60px;
+          height: 60px;
+          margin: 0 18px 10px 0;
+  
+          &:last-child {
+            margin-bottom: 0;
+          }
+  
+          // 575.5px
+          @include for-tablet {
+            width: 48px;
+            height: 48px;
+            margin: 0;
+          }
+        }
+
+        @include for-tablet {
+          position: absolute;
+          top: 490px;
+          left: 0;
+          width: 100%;
+          @include flex-all-sb;
+        }
+      }
+      // Большая фотография
+      &-big {
+
+
+        &-img {
+          width: 480px;
+          height: 480px;
+          border-radius: 5px;
+
+          @include for-tablet {
+            width: 100%;
+            margin-bottom: 60px;
+          }
+        }
+
+        @include for-small-laptop {
+          position: relative;
+        }
+        // 575.5px
+        @include for-mobile {
+          margin-top: 15px;
+        }
+      }
+      // Heart
+      &-heart {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include for-small-laptop {
+          top: 10px;
+          right: 10px;
+        }
+      }
+
+      // 575.5px
+      @include for-tablet {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  
+    // Кнопки
+    &-btn{
+      display: flex;
+      margin: 30px 0;
+
+      &-card {
+        // 575.5px
+        @include for-mobile {
+          width: 100%;
+        }
+      }
+
+      &-buy {
+        margin-left: 30px;
+        // 575.5px
+        @include for-mobile {
+          margin: 10px 0;
+          width: 100%;
+        }
+      }
+      // 575.5px
+      @include for-mobile {
+        display: block;
+        margin: 15px 0;
+      }
+    }
+    // Характеристики
+    &-characteristics {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      &-body {
+        line-height: 21px;
+      }
+
+      &-title {
+        margin-bottom: 10px;
+      }
+
+      @include for-tablet {
+        margin-top: 20px;
+        display: block;
+      } 
+    }
+
+    @include for-tablet {
+      padding: 10px;
+    }
+  }
+}

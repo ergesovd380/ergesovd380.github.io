@@ -1,0 +1,12 @@
+.brands {
+
+  &_img {
+    max-height: 125px;
+    margin-top: 30px;
+
+    @include for-tablet {
+      margin-top: 20px;
+    }
+  }
+}
+

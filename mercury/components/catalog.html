@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nouislider.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Mercury</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <!-- Topbar section -->
+      <div class="header_topbar container">
+        <div class="header_topbar_items">   
+          <!-- Place -->  
+          <div class="all_sb">
+            <img 
+              src="../assets/img/icons/map.svg" 
+              alt="icon" 
+              class="header_topbar_icon pointer"
+            >
+            <div class="title_h6 pointer">
+              Москва
+            </div>
+          </div>   
+          <div class="all_sb">
+            <!-- Shop -->
+            <div class="title_h6 header_topbar_adr pointer">Магазин в Санкт-Петербурге</div>
+            <!-- Phone -->
+            <a href="tel:+7999999999" type="tel" class="phone pointer">+7 (999) 99-99-99</a>
+            <!-- WhatsApp -->
+            <img src="../assets/img/header/whatsapp.svg" class="header_topbar_whatsapp" alt="whatsapp">
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondbar section -->
+      <div class="header_secondbar">
+        <!-- Secondbar first section -->
+        <div class="header_secondbar_fSection container">
+          <!-- Logo -->
+          <a href="../index.html"><img src="../assets/img/header/logo.png" class="header_secondbar-logo pointer" alt="logo"></a>
+          <!-- Form -->
+          <form class="all_sb header_secondbar-mob">
+            <!-- Search -->
+            <input 
+              type="text"
+              placeholder="Поиск..."
+              class="header_secondbar_input title_h4"
+            >
+            <!-- Select -->
+            <select class="header_secondbar_select title_h5 pointer">
+              <option 
+                value="all categories" 
+                disabled 
+                selected
+              ><h5>Все категории</h5></option>
+              <option value="first category"><h5>Первая категория</h5></option>
+              <option value="second category"><h5>Вторая категория</h5></option>
+              <option value="third category"><h5>Третья категория</h5></option>
+            </select>
+            <!-- Button -->
+            <button class="header_secondbar_btn pointer">
+              <img src="../assets/img/icons/search-line.svg" alt="search">
+            </button>
+          </form>
+
+          <!-- Header icons -->
+          <div class="all_sb header_secondbar-mob">
+            <button class="icons pointer">
+              <img src="../assets/img/icons/account.svg" alt="account">
+            </button>
+            <button class="icons pointer">
+              <img src="../assets/img/icons/eay.svg" alt="eay">
+            </button>
+            <button class="icons pointer">
+              <img src="../assets/img/icons/heart.svg" alt="heart">
+            </button>
+            <button class="icons icons_cart pointer">
+              <a href="./cart.html">
+                <img src="../assets/img/icons/cart.svg" alt="cart">
+                <div class="icons_cart-count">12</div>
+              </a>
+            </button>
+          </div>
+
+          <!-- Mobile burger -->
+          <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <button 
+              type="button" 
+              class="navbar navbar-toggler" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#myNavbar"
+              id="openmyNavbar"
+            >
+              <img src="../assets/img/header/burger.svg" alt="burger">
+            </button>
+          </nav>
+          <!-- Mobile Dialog -->
+          <div 
+            class="offcanvas offcanvas-end" 
+            tabindex="-1" 
+            id="myNavbar"
+          >
+            <div class="offcanvas-header">
+                <div></div>
+                <button class="btn" data-bs-dismiss="offcanvas">
+                  <img src="../assets/img/header/burger-close.svg" alt="Close navabar">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-first-item">
+                    <select class="header_secondbar_select title_h5 pointer">
+                      <option 
+                        value="all categories" 
+                        disabled 
+                        selected
+                      ><h5>Все категории</h5></option>
+                      <option value="first category"><h5>Первая категория</h5></option>
+                      <option value="second category"><h5>Вторая категория</h5></option>
+                      <option value="third category"><h5>Третья категория</h5></option>
+                    </select>
+                  </li>
+                  <li class="nav-first-item">
+                    <input 
+                      type="text"
+                      placeholder="Поиск..."
+                      class="header_secondbar_input title_h4"
+                    >
+                    <button class="header_secondbar_btn pointer">
+                      <img src="../assets/img/icons/search-line.svg" alt="search">
+                    </button>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./catalog.html"><h1 class="title_h1 pointer">Каталог</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./designer.html"><h1 class="title_h1 pointer">Дизайнерам</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./services.html"><h1 class="title_h1 pointer">Услуги</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./sale/sale-catalog.html"><h1 class="title_h1 pointer">Акции</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./brands.html"><h1 class="title_h1 pointer">Бренды</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <h1 class="title_h1 pointer">Покупателям</h1>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./about-company.html"><h1 class="title_h1 pointer">О компании</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./contact.html"><h1 class="title_h1 pointer">Контакты</h1></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header_divider"></div>
+
+        <!-- Secondbar second section -->
+        <div class="header_secondbar_sSection container all_sb">
+          <a href="./catalog.html"><h4 class="title_h4 pointer">Каталог</h4></a>
+          <a href="./designer.html"><h4 class="title_h4 pointer">Дизайнерам</h4></a>
+          <a href="./services.html"><h4 class="title_h4 pointer">Услуги</h4></a>
+          <a href="./sale/sale-catalog.html"><h4 class="title_h4 pointer">Акции</h4></a>
+          <a href="./brands.html"><h4 class="title_h4 pointer">Бренды</h4></a>
+          <h4 class="title_h4 pointer">Покупателям</h4>
+          <a href="./about-company.html"><h4 class="title_h4 pointer">О компании</h4></a>
+          <a href="./contact.html"><h4 class="title_h4 pointer">Контакты</h4></a>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main section start -->
+    <main class="main container">
+      <!-- Catalog section start -->
+      <section class="catalog" id="catalog">
+        <!-- Bred crumbs -->
+        <h6 class="breadCrumbs title_h6">Главная / Каталог / Люстры</h6>
+        <!-- ROW -->
+        <div class="row">
+          <!-- Блог фильтров start -->
+          <div class="col-lg-3 catalog_filters-desk">
+            <!-- Filter category -->
+            <div class="catalog_categories">
+              <!-- Category title -->
+              <h3 class="catalog_categories-title title_h3">Категория</h3>
+
+              <nav class="navbar">
+                <!-- Category list -->
+                <ul class="navbar-nav catalog_categories-list">
+                  <!-- Category-1 -->
+                  <li class="nav-item catalog_categories-list-item">
+                    <a class="nav-link catalog_categories-list-link active" href="#catalog">
+                      <img src="../assets/img/catalog/icon-1.svg" alt="icon" class="catalog_categories-list-icon">
+                      <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Люстры</h6>
+                      <h6 class="catalog_categories-list-pcs title_h6">678</h6>
+                    </a>
+                  </li>
+                  <!-- Category-2 -->
+                  <li class="nav-item catalog_categories-list-item">
+                    <a class="nav-link catalog_categories-list-link" href="#">
+                      <img src="../assets/img/catalog/icon-2.svg" alt="icon" class="catalog_categories-list-icon">
+                      <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Светильники</h6>
+                      <h6 class="catalog_categories-list-pcs title_h6">678</h6>
+                    </a>
+                  </li>
+                  <!-- Category-3 -->
+                  <li class="nav-item catalog_categories-list-item">
+                    <a class="nav-link catalog_categories-list-link" href="#">
+                      <img src="../assets/img/catalog/icon-3.svg" alt="icon" class="catalog_categories-list-icon">
+                      <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Настенные</h6>
+                      <h6 class="catalog_categories-list-pcs title_h6">34</h6>
+                    </a>
+                  </li>
+
+                  <li class="nav-item catalog_categories-list-item">
+                    <a class="nav-link catalog_categories-list-link" href="#">
+                      <img src="../assets/img/catalog/icon-4.svg" alt="icon" class="catalog_categories-list-icon">
+                      <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Настольные</h6>
+                      <h6 class="catalog_categories-list-pcs title_h6">34</h6>
+                    </a>
+                  </li>
+                  <!-- Category-5 -->
+                  <li class="nav-item catalog_categories-list-item">
+                    <a class="nav-link catalog_categories-list-link" href="#">
+                      <img src="../assets/img/catalog/icon-5.svg" alt="icon" class="catalog_categories-list-icon">
+                      <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Торшеры</h6>
+                      <h6 class="catalog_categories-list-pcs title_h6">123</h6>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Filter price and others -->
+            <div class="catalog_filters">
+              <!-- Filter title -->
+              <div class="catalog_filters-title">
+                <h3 class="title_h3">Фильтры</h3>
+                <!-- Filter link -->
+                <div class="link_gray">Сбросить фильтры</div>
+              </div>
+              <!-- Price filter -->
+              <div class="catalog_filters-price">
+                <!-- Price title -->
+                <h4 class="title_h4">Цена</h4>
+                <!-- Price inputs -->
+                <div class="catalog_filters-price-items">
+                  <input 
+                    type="number" 
+                    placeholder="0" 
+                    class="catalog_filters-price-items-input title_h4"
+                    id="catalog_filters-price-input0"
+                  >
+                  <input 
+                    type="number" 
+                    placeholder="1000" 
+                    class="catalog_filters-price-items-input title_h4"
+                    id="catalog_filters-price-input1"
+                  >
+                </div>
+                <!-- Price range -->
+                <div class="catalog_filters-price-range-slider">
+                  <div id="rangeSlider"></div>
+                </div>
+              </div>
+              <!-- Other filters -->
+              <div class="catalog_otherFilters">
+                <!-- Brands -->
+                <div class="catalog_filters-items">
+                  <!-- Brands title -->
+                  <h3 
+                    class="title_h3 catalog_filters-items-title" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#catalog-collapseOne" 
+                    aria-expanded="true" 
+                    role="button"
+                  >Бренды</h3>
+                  <div 
+                    id="catalog-collapseOne" 
+                    class="accordion-collapse collapse show" 
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <!-- Brands list -->
+                    <ul class="list-reset">
+                      <!-- Brand 1 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox1">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox1">EGLO EG-89833</label>
+                      </li>
+                      <!-- Brand 2 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox2">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox2">Brille BKL-138S</label>
+                      </li>
+                      <!-- Brand 3 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox3">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox3">Brille BKL</label>
+                      </li>
+                      <!-- Brand 4 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox4">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox4">EGLO EG-89833</label>
+                      </li>
+                      <!-- Brand 5 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox5">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox5">Brille BKL-138S</label>
+                      </li>
+                      <!-- Brand 6 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                      <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox6">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox6">Brille BKL</label>
+                      </li>
+                      <!-- Brand 7 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox7">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox7">EGLO EG-89833</label>
+                      </li>
+                      <!-- Brand 8 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox8">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox8">Brille BKL-138S</label>
+                      </li>
+                      <!-- Brand 9 -->
+                      <li class="catalog_filters-li catalog_filters-brands-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-brends-checkbox9">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox9">Brille BKL</label>
+                      </li>
+                    </ul>
+                    <!-- Btn Show more -->
+                    <div class="link_gray" onclick="showMore()">Show more</div>
+                  </div>
+                </div>
+                <!-- Size -->
+                <div class="catalog_filters-items">
+                  <!-- Size title -->
+                  <h3 
+                    class="title_h3 catalog_filters-items-title" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#catalog-collapseTwo" 
+                    aria-expanded="true" 
+                    role="button"
+                  >Размеры</h3>
+                  <div 
+                    id="catalog-collapseTwo" 
+                    class="accordion-collapse collapse show" 
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <!-- Size list -->
+                    <ul class="list-reset">
+                      <!-- Size 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-size-checkbox1">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox1">35</label>
+                      </li>
+                      <!-- Size 2 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-size-checkbox2">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox2">36</label>
+                      </li>
+                      <!-- Size 3 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-size-checkbox3">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox3">37</label>
+                      </li>
+                  </div>
+                </div>
+                <!-- Color -->
+                <div class="catalog_filters-items">
+                  <!-- Color title -->
+                  <h3 
+                    class="title_h3 catalog_filters-items-title" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#catalog-collapseThree" 
+                    aria-expanded="true" 
+                    role="button"
+                  >Цвет</h3>
+                  <div 
+                    id="catalog-collapseThree" 
+                    class="accordion-collapse collapse show" 
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <!-- Color list -->
+                    <ul class="list-reset">
+                      <!-- Color 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-color-checkbox1">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-color-checkbox1">Белый</label>
+                      </li>
+                      <!-- Color 2 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-color-checkbox2">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-color-checkbox2">Черный</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Power -->
+                <div class="catalog_filters-items">
+                  <!-- Power title -->
+                  <h3 
+                    class="title_h3 catalog_filters-items-title" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#catalog-collapseFour" 
+                    aria-expanded="true" 
+                    role="button"
+                  >Мощность, Вт.</h3>
+                  <div 
+                    id="catalog-collapseFour" 
+                    class="accordion-collapse collapse show" 
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <!-- Power list -->
+                    <ul class="list-reset">
+                      <!-- Power 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-power-checkbox1">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox1">35W</label>
+                      </li>
+                      <!-- Power 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-power-checkbox2">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox2">40W</label>
+                      </li>
+                      <!-- Power 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-power-checkbox3">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox3">60W</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Type -->
+                <div class="catalog_filters-items">
+                  <!-- Type title -->
+                  <h3 
+                    class="title_h3 catalog_filters-items-title" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#catalog-collapseFive" 
+                    aria-expanded="true" 
+                    role="button"
+                  >Тип цоколя</h3>
+                  <div 
+                    id="catalog-collapseFive" 
+                    class="accordion-collapse collapse show" 
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <!-- Type list -->
+                    <ul class="list-reset">
+                      <!-- Type 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-type-checkbox1">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox1">E14</label>
+                      </li>
+                      <!-- Type 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-type-checkbox2">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox2">E27</label>
+                      </li>
+                      <!-- Type 1 -->
+                      <li class="catalog_filters-li">
+                        <input 
+                        type="checkbox" 
+                        class="form-checkbox pointer" 
+                        id="catalog_filters-type-checkbox3">
+                        <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox3">E40</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Блог фильтров end -->
+
+          <!-- Catalog start-->
+          <div class="col-lg-9 col-12">
+            <!-- Catalog title -->
+            <h1 class="title_h1">Люстры</h1>
+            <!-- Catalog subtitle -->
+            <h5 class="catalog_subtitle title_h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+            <!-- Catalog banner -->
+            <div class="catalog_banner">
+              <img src="../assets/img/catalog/banner.png" class="catalog_banner-img" alt="Banner">
+              <div class="catalog_banner-text">
+                <h1 class="title_h1">Заголовок рекламного баннера</h1>
+                <h6 class="title_h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</h6>
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="catalog_mobile">
+              <!-- Catalog mobile filters -->
+              <div class="catalog_mobile-filters">
+                <!-- Btn open Category -->
+                <button class="catalog_mobile-filters-btn title_h3" data-bs-toggle="collapse" href="#collapseCategory" role="button" aria-expanded="false" aria-controls="collapseCategory">
+                  <img src="../assets/img/catalog/category.svg" width="30" height="30" class="catalog_mobile-filters-btn-icon" alt="Filter icon">
+                  Категория
+                </button>
+                <!-- Btn open Filters -->
+                <button class="catalog_mobile-filters-btn title_h3" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">
+                  <img src="../assets/img/catalog/filters.svg" class="catalog_mobile-filters-btn-icon" alt="Filter icon">
+                  Фильтры
+                </button>
+              </div>
+              <!-- Mobile collapse -->
+              <div class="catalog_mobile-collapse">
+                <!-- Collapse category -->
+                <div class="collapse" id="collapseCategory">
+                  <div class="card card-body">
+                    <div class="catalog_categories">
+                      <!-- Category title -->
+                      <h3 class="catalog_categories-title title_h3">Категория</h3>
+                      <nav class="navbar">
+                        <!-- Category list -->
+                        <ul class="navbar-nav catalog_categories-list">
+                          <!-- Category-1 -->
+                          <li class="nav-item catalog_categories-list-item">
+                            <a class="nav-link catalog_categories-list-link active" href="#catalog">
+                              <img src="../assets/img/catalog/icon-1.svg" alt="icon" class="catalog_categories-list-icon">
+                              <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Люстры</h6>
+                              <h6 class="catalog_categories-list-pcs title_h6">678</h6>
+                            </a>
+                          </li>
+                          <!-- Category-2 -->
+                          <li class="nav-item catalog_categories-list-item">
+                            <a class="nav-link catalog_categories-list-link" href="#">
+                              <img src="../assets/img/catalog/icon-2.svg" alt="icon" class="catalog_categories-list-icon">
+                              <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Светильники</h6>
+                              <h6 class="catalog_categories-list-pcs title_h6">678</h6>
+                            </a>
+                          </li>
+                          <!-- Category-3 -->
+                          <li class="nav-item catalog_categories-list-item">
+                            <a class="nav-link catalog_categories-list-link" href="#">
+                              <img src="../assets/img/catalog/icon-3.svg" alt="icon" class="catalog_categories-list-icon">
+                              <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Настенные</h6>
+                              <h6 class="catalog_categories-list-pcs title_h6">34</h6>
+                            </a>
+                          </li>
+        
+                          <li class="nav-item catalog_categories-list-item">
+                            <a class="nav-link catalog_categories-list-link" href="#">
+                              <img src="../assets/img/catalog/icon-4.svg" alt="icon" class="catalog_categories-list-icon">
+                              <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Настольные</h6>
+                              <h6 class="catalog_categories-list-pcs title_h6">34</h6>
+                            </a>
+                          </li>
+                          <!-- Category-5 -->
+                          <li class="nav-item catalog_categories-list-item">
+                            <a class="nav-link catalog_categories-list-link" href="#">
+                              <img src="../assets/img/catalog/icon-5.svg" alt="icon" class="catalog_categories-list-icon">
+                              <h6 class="catalog_categories-list-name catalog_categories-list-name-dark title_h6">Торшеры</h6>
+                              <h6 class="catalog_categories-list-pcs title_h6">123</h6>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <!-- Collapse filters -->
+                <div class="collapse" id="collapseFilters">
+                  <div class="card card-body">
+                    <!-- Filter price and others -->
+                    <div class="catalog_filters">
+                      <!-- Filter title -->
+                      <div class="catalog_filters-title">
+                        <h3 class="title_h3">Фильтры</h3>
+                        <!-- Filter link -->
+                        <div class="link_gray catalog_filters-title-link">Сбросить фильтры</div>
+                      </div>
+                      <!-- Price filter -->
+                      <div class="catalog_filters-price">
+                        <!-- Price title -->
+                        <h4 class="title_h4">Цена</h4>
+                        <!-- Price inputs -->
+                        <div class="catalog_filters-price-items">
+                          <input 
+                            type="number" 
+                            placeholder="0" 
+                            class="catalog_filters-price-items-input title_h4"
+                            id="catalog_filters-price-mob0"
+                          >
+                          <input 
+                            type="number" 
+                            placeholder="1000" 
+                            class="catalog_filters-price-items-input title_h4"
+                            id="catalog_filters-price-mob1"
+                          >
+                        </div>
+                        <!-- Price range -->
+                        <div class="catalog_filters-price-range-slider">
+                          <div id="rangeSliderMobile"></div>
+                        </div>
+                      </div>
+                      <!-- Other filters -->
+                      <div class="catalog_otherFilters">
+                        <!-- Brands -->
+                        <div class="catalog_filters-items">
+                          <!-- Brands title -->
+                          <h3 
+                            class="title_h3 catalog_filters-items-title" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#catalog-collapseOne" 
+                            aria-expanded="true" 
+                            role="button"
+                          >Бренды</h3>
+                          <div 
+                            id="catalog-collapseOne" 
+                            class="accordion-collapse collapse show" 
+                            aria-labelledby="panelsStayOpen-headingOne"
+                          >
+                            <!-- Brands list -->
+                            <ul class="list-reset">
+                              <!-- Brand 1 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox1">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox1">EGLO EG-89833</label>
+                              </li>
+                              <!-- Brand 2 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox2">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox2">Brille BKL-138S</label>
+                              </li>
+                              <!-- Brand 3 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox3">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox3">Brille BKL</label>
+                              </li>
+                              <!-- Brand 4 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox4">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox4">EGLO EG-89833</label>
+                              </li>
+                              <!-- Brand 5 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox5">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox5">Brille BKL-138S</label>
+                              </li>
+                              <!-- Brand 6 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                              <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox6">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox6">Brille BKL</label>
+                              </li>
+                              <!-- Brand 7 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox7">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox7">EGLO EG-89833</label>
+                              </li>
+                              <!-- Brand 8 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox8">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox8">Brille BKL-138S</label>
+                              </li>
+                              <!-- Brand 9 -->
+                              <li class="catalog_filters-li catalog_filters-brands-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-brends-checkbox9">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-brends-checkbox9">Brille BKL</label>
+                              </li>
+                            </ul>
+                            <!-- Btn Show more -->
+                            <div class="link_gray" onclick="showMore()">Show more</div>
+                          </div>
+                        </div>
+                        <!-- Size -->
+                        <div class="catalog_filters-items">
+                          <!-- Size title -->
+                          <h3 
+                            class="title_h3 catalog_filters-items-title" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#catalog-collapseTwo" 
+                            aria-expanded="true" 
+                            role="button"
+                          >Размеры</h3>
+                          <div 
+                            id="catalog-collapseTwo" 
+                            class="accordion-collapse collapse show" 
+                            aria-labelledby="panelsStayOpen-headingOne"
+                          >
+                            <!-- Size list -->
+                            <ul class="list-reset">
+                              <!-- Size 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-size-checkbox1">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox1">35</label>
+                              </li>
+                              <!-- Size 2 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-size-checkbox2">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox2">36</label>
+                              </li>
+                              <!-- Size 3 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-size-checkbox3">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-size-checkbox3">37</label>
+                              </li>
+                          </div>
+                        </div>
+                        <!-- Color -->
+                        <div class="catalog_filters-items">
+                          <!-- Color title -->
+                          <h3 
+                            class="title_h3 catalog_filters-items-title" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#catalog-collapseThree" 
+                            aria-expanded="true" 
+                            role="button"
+                          >Цвет</h3>
+                          <div 
+                            id="catalog-collapseThree" 
+                            class="accordion-collapse collapse show" 
+                            aria-labelledby="panelsStayOpen-headingOne"
+                          >
+                            <!-- Color list -->
+                            <ul class="list-reset">
+                              <!-- Color 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-color-checkbox1">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-color-checkbox1">Белый</label>
+                              </li>
+                              <!-- Color 2 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-color-checkbox2">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-color-checkbox2">Черный</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Power -->
+                        <div class="catalog_filters-items">
+                          <!-- Power title -->
+                          <h3 
+                            class="title_h3 catalog_filters-items-title" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#catalog-collapseFour" 
+                            aria-expanded="true" 
+                            role="button"
+                          >Мощность, Вт.</h3>
+                          <div 
+                            id="catalog-collapseFour" 
+                            class="accordion-collapse collapse show" 
+                            aria-labelledby="panelsStayOpen-headingOne"
+                          >
+                            <!-- Power list -->
+                            <ul class="list-reset">
+                              <!-- Power 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-power-checkbox1">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox1">35W</label>
+                              </li>
+                              <!-- Power 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-power-checkbox2">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox2">40W</label>
+                              </li>
+                              <!-- Power 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-power-checkbox3">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-power-checkbox3">60W</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Type -->
+                        <div class="catalog_filters-items">
+                          <!-- Type title -->
+                          <h3 
+                            class="title_h3 catalog_filters-items-title" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#catalog-collapseFive" 
+                            aria-expanded="true" 
+                            role="button"
+                          >Тип цоколя</h3>
+                          <div 
+                            id="catalog-collapseFive" 
+                            class="accordion-collapse collapse show" 
+                            aria-labelledby="panelsStayOpen-headingOne"
+                          >
+                            <!-- Type list -->
+                            <ul class="list-reset">
+                              <!-- Type 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-type-checkbox1">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox1">E14</label>
+                              </li>
+                              <!-- Type 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-type-checkbox2">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox2">E27</label>
+                              </li>
+                              <!-- Type 1 -->
+                              <li class="catalog_filters-li">
+                                <input 
+                                type="checkbox" 
+                                class="form-checkbox pointer" 
+                                id="catalog_filters-type-checkbox3">
+                                <label class="catalog_filters-items-label title_h5" for="catalog_filters-type-checkbox3">E40</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Catalog filter -->
+            <div class="swiper tabs-slider">
+              <!-- Filter list -->
+              <div class="nav swiper-wrapper tabs" id="nav-tab" role="tablist">
+                <!-- Filter Тип -->
+                <div 
+                  class="swiper-slide tabs_items title_h4 active" 
+                  id="nav-type-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-type" 
+                  role="tab" 
+                  aria-controls="nav-type" 
+                  aria-selected="true"
+                >
+                  Тип
+                </div>
+                <!-- Filter Цвет -->
+                <div 
+                  class="swiper-slide tabs_items title_h4" 
+                  id="nav-color-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-color" 
+                  role="tab" 
+                  aria-controls="nav-color" 
+                  aria-selected="false"
+                >
+                  Цвет
+                </div>
+                <!-- Filter Стиль -->
+                <div 
+                  class="swiper-slide tabs_items title_h4" 
+                  id="nav-style-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-style" 
+                  role="tab" 
+                  aria-controls="nav-style" 
+                  aria-selected="false"
+                >
+                  Стиль
+                </div>
+                <!-- Filter Размер -->
+                <div 
+                  class="swiper-slide tabs_items title_h4" 
+                  id="nav-style-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-style" 
+                  role="tab" 
+                  aria-controls="nav-style" 
+                  aria-selected="false"
+                >
+                  Размер
+                </div>
+                <!-- Filter Бренд -->
+                <div 
+                  class="swiper-slide tabs_items title_h4" 
+                  id="nav-style-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-style" 
+                  role="tab" 
+                  aria-controls="nav-style" 
+                  aria-selected="false"
+                >
+                  Бренд
+                </div>
+                <!-- Filter Страна -->
+                <div 
+                  class="swiper-slide tabs_items title_h4" 
+                  id="nav-style-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#nav-style" 
+                  role="tab" 
+                  aria-controls="nav-style" 
+                  aria-selected="false"
+                >
+                  Страна
+                </div>
+              </div>
+            </div>
+            <!-- Catalog filter content -->
+            <div class="tab-content tabs_content" id="nav-tabContent">
+              <!-- Filter content Тип -->
+              <div 
+                class="tab-pane fade show active" 
+                id="nav-type" 
+                role="tabpanel" 
+                aria-labelledby="nav-type-tab"
+              >
+                <!-- Swiper list -->
+                <div class="swiper tabs_body-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Подвесная</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Настенная</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Настольная</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Настольная</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter content Цыет -->
+              <div 
+                class="tab-pane fade" 
+                id="nav-color" 
+                role="tabpanel" 
+                aria-labelledby="nav-color-tab"
+              >
+                <div class="swiper tabs_body-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Белый</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Черный</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter content Стиль -->
+              <div 
+                class="tab-pane fade" 
+                id="nav-style" 
+                role="tabpanel" 
+                aria-labelledby="nav-style-tab"
+              >
+                <div class="swiper tabs_body-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Дизайнерские</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Скандинавский</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Классический</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="btn_tab title_h5">Современный</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Btn Choose filter -->
+            <select class="catalog_chooseFilter title_h5">
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+              <option class="catalog_chooseFilter-item" value="price">По цене</option>
+            </select>
+
+            <!-- Cards -->
+            <div class="catalog_cards">
+              <!-- Card-1 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-2 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-3 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-4 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-5 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-6 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-7 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-8 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-9 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-10 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-11 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card-12 -->
+              <div class="card">
+                  <div class="row">
+                    <div class="col-6 col-md-12">
+                      <!-- Img -->
+                      <div class="card_img">
+                        <a href="./product-card.html"><img src="../assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                        <!-- Types -->
+                        <div class="card_type">
+                          <div class="card_hit small-text card_type-item">
+                            Хит
+                          </div>
+                          <div class="card_new small-text card_type-item">
+                            Новинка
+                          </div>
+                          <div class="card_sale small-text card_type-item">
+                            Акция
+                          </div>
+                        </div>
+                        <!-- Heart -->
+                        <div class="card_heart">
+                          <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                      <!-- Name -->
+                      <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                      <!-- Rate -->
+                      <div class="rate">
+                        <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                        <div class="rate_grade">5.0</div>
+                        <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                      </div>
+                      <!-- Price -->
+                      <div class="card_cost">
+                        <div class="card_cost-price price">49 900₽</div>
+                        <div class="price-sale">49 900₽</div>
+                      </div>
+                      <!-- Stock -->
+                      <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                      <!-- Btn -->
+                      <button class="btn_card">В корзину</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- Catalog end -->
+        </div>
+
+        <!-- Catalog pagination -->
+        <div class="pagination-row">
+            <nav aria-label="navigation">
+              <ul class="pagination catalog_pagination-row">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </section>
+      <!-- Catalog section end -->
+
+      <!-- Modal start -->
+      <div class="modal fade" id="cardDialog" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="dialog-card">
+              <h1 class="title_h1">Название товара</h1>
+              <img src="../assets/img/icons/close.svg" data-bs-dismiss="modal" aria-label="Close"class="dialog-card_close pointer" alt="Close">
+              <div class="dialog-card_columns">
+                <!-- First column -->
+                <div class="dialog-card_firstColumn">
+                  <!-- Rate -->
+                  <div class="rate">
+                    <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                    <div class="rate_grade">5.0</div>
+                    <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                    <a class="link_gray modal-review">Написать отзыв</a>
+                  </div>
+                  <!-- Img -->
+                  <div class="dialog-card_images">
+                    <div class="dialog-card_images-small">
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                    </div>
+                    
+                    <div class="dialog-card_images-big">
+                      <img 
+                        src="../assets/img/dialog-card/img-big.png" 
+                        class="dialog-card_images-big-img"
+                        alt="big"
+                      >
+                      <div class="dialog-card_images-heart">
+                        <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Second column -->
+                <div class="dialog-card_secondColumn">
+                  <a href="./product-card.html" class="link_gray">Перейти на страницу товара</a>
+                  <!-- Data -->
+                  <div class="dialog-card_data">
+                    <!-- Price -->
+                    <div class="dialog-card_cost">
+                      <div class="dialog-card_cost-price price">49 900 ₽</div>
+                      <h4 class="price-sale">49 900 ₽</h4>
+                    </div>
+                    <!-- Stock -->
+                    <h4 class="dialog-card_stock title_h4">В наличии 6 шт.</h4>
+                    <!-- Count -->
+                    <div class="addCount">
+                      <div class="addCount-value addCount-value-50">
+                        <img onclick="countPlus()" src="../assets/img/dialog-card/plus.png" class="pointer" alt="plus">
+                        <div class="title_h3 count-value">1</div>
+                        <img onclick="countMinus()" src="../assets/img/dialog-card/minus.png" class="pointer" alt="minus">
+                      </div>
+                      <a class="link_gray modal-cheeper">Нашли дешевле?</a>
+                    </div>
+                    <!-- Btn -->
+                    <div class="dialog-card_btn">
+                      <button class="dialog-card_btn-card btn_small-red">В корзину</button>
+                      <button class="dialog-card_btn-buy modal-buy btn_small">Купить в 1 клик</button>
+                    </div>
+                    <!-- Characteristics -->
+                    <div>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Артикул - - - - - - - - - - - - - - - - - - 34LFD3456
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Производитель - - - - - - - - - - - ООО “Ромашка”
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Модельный  год - - - - - - - - - -  2023
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Коллекция - - - - - - - - - - - - - - -  Престиж
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Материал - - - - - - - - - - - - - - - -  Полипропилен
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
+
+      <!-- Dialog-buy start -->
+      <dialog class="dialog-for-buy">
+        <div class="dialog-buy">
+          <!-- Close -->
+          <img src="../assets/img/icons/close.svg" class="dialog-buy_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="title_h2">Купить в 1 клик</h2>
+          <div class="dialog-buy_product">
+            <!-- Image -->
+            <img src="../assets/img/dialog-buy/img.png" height="65" width="65" alt="img">
+            <div class="dialog-buy_product-data">
+              <!-- Name -->
+              <h5 class="title_h5">Длинное  название товара, которое отражает суть</h5>
+              <!-- Price -->
+              <div class="dialog-buy_product-cost">
+                <h4 class="dialog-buy_product-cost-price title_h4">49 900 ₽</h4>
+                <h5 class="dialog-buy_product-cost-price-sale title_h5">49 900 ₽</h5>
+                <!-- Stock -->
+                <h5 class="dialog-buy_product-cost-stock title_h5">1 шт</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Form -->
+          <form class="form dialog-buy_form">
+            <input type="text" placeholder="Имя" class="form_input title_h6">
+            <input type="text" placeholder="Телефон" class="form_input dialog-buy_form-input title_h6">
+            <div class="form_checkboxdata">
+              <input 
+                type="checkbox" 
+                class="form-checkbox pointer" 
+                id="dialog-buy_form-checkbox">
+              <label class="form_checkbox-label small-text " for="dialog-buy_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+            </div>
+            <button class="btn_med dialog-buy_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- Dialog-buy end -->
+
+      <!-- Dialog-cheep start -->
+      <dialog class="dialog-cheeper">
+        <div class="dialog-cheep">
+          <!-- Close -->
+          <img src="../assets/img/icons/close.svg" class="dialog-cheep_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="dialog-cheep_title title_h2">Нашли дешевле</h2>
+          <!-- Form -->
+          <form class="form dialog-cheep_form">
+            <input type="text" placeholder="Имя" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Телефон" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="E-mail" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Название товара" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Ссылка на сайт где дешевле" class="form_input dialog-cheep_form-input title_h6">
+            <div class="form_checkboxdata">
+              <input 
+                type="checkbox" 
+                class="form-checkbox pointer" 
+                id="dialog-cheep_form-checkbox">
+              <label class="form_checkbox-label small-text " for="dialog-cheep_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+            </div>
+            <button class="btn_med dialog-cheep_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- Dialog-cheep end -->
+
+      <!-- dialog-review start -->
+      <dialog class="dialog-for-review">
+        <div class="dialog-review">
+          <!-- Close -->
+          <img src="../assets/img/icons/close.svg" class="dialog-review_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="title_h2">Отзыв</h2>
+          <div class="dialog-review_product">
+            <!-- Image -->
+            <img src="../assets/img/dialog-buy/img.png" height="65" width="65" alt="img">
+            <div class="dialog-review_product-data">
+              <!-- Name -->
+              <h5 class="title_h5">Длинное  название товара, которое отражает суть</h5>
+              <!-- Price -->
+              <div class="dialog-review_product-cost">
+                <h4 class="dialog-review_product-cost-price title_h4">49 900 ₽</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Rate -->
+          <div class="dialog-review_rate">
+            <div class="dialog-review_gray-title title_h6">Ваша оценка</div>
+            <div class="dialog-review_rate-satrs">
+              <img src="../assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="../assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="../assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="../assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="../assets/img/product-card/review/gray-star.png" alt="Star">
+            </div>
+          </div>
+          <!-- Form -->
+          <form class="form dialog-review_form">
+            <input type="text" placeholder="Имя" class="form_input dialog-review_form-input title_h6">
+            <textarea placeholder="Текст отзыва" type="text" cols="auto" rows="10" class="dialog-review_form-input form_textarea title_h6"></textarea>
+            <div class="dialog-review_form-input">
+              <div class="dialog-review_gray-title title_h6">Размер файлов не более 10Мб.</div>
+              <label for="import-file" class="dialog-review_form-import">
+                <img src="../assets/img/dialog-review/camera.png" alt="Camera img">
+                <div class="dialog-review_gray-title dialog-review_form-import-text title_h6"><a href="" class="dialog-review_form-import-link">Нажмите на ссылку,</a> чтобы добавить фотографии или видео. Или просто перетащите их сюда.</div>
+              </label>
+            </div>
+            <input type="file" id="import-file" onchange="updateLabel()" name="Выбери" multiple class="dialog-review_form-file">
+            <button class="btn_med dialog-review_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- dialog-review end -->
+
+      <!-- Footer mobile start -->
+      <div class="fixed-bottom footer_mobile">
+        <div class="footer_mobile-body">
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/account.svg" alt="Account"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/eay.svg" alt="Eay"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="/assets/img/footer/mobile/heart.svg" alt="Heart"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item icons_cart">
+            <a href="./cart.html">
+              <img src="/assets/img/footer/mobile/cart.svg" alt="cart">
+              <div class="icons_cart-count icons_cart-count-mob">12</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer mobile end -->
+    </main>
+    <!-- Main section end -->
+
+    <!-- Footer section start -->
+    <footer class="footer">
+      <!-- Footer first section -->
+      <section class="footer_first">
+        <div class="container">
+          <div class="footer_first-items">
+            <!-- Contacts -->
+            <div class="footer_first-blog">
+              <a 
+                href="#" 
+                class="footer_first-link link footer_first-contact"
+              >Заказать звонок</a>
+              <a 
+                href="#" 
+                class="title_h5 pointer footer_first-email footer_first-contact footer_first-mob"
+              >WhatsApp</a>
+              <a 
+                href="tel:+7999999999" 
+                type="tel" 
+                class="phone pointer footer_first-contact"
+              >+7 (999) 99-99-99</a>
+              <a 
+                href="#" 
+                type="email" 
+                class="title_h5 footer_first-email footer_first-contact footer_first-mob"
+              >example@yandex.ru</a>
+            </div>
+            <!-- Icons -->
+            <div class="footer_first-mob">
+              <button class="icons pointer">
+                <img src="../assets/img/icons/eay.svg" alt="eay">
+              </button>
+              <button class="icons pointer">
+                <img src="../assets/img/icons/heart.svg" alt="heart">
+              </button>
+              <button class="icons icons_cart pointer">
+                <a href="./cart.html">
+                  <img src="../assets/img/icons/cart.svg" alt="cart">
+                  <div class="icons_cart-count">12</div>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+      
+      <!-- Footer second section -->
+      <section class="footer_second container">
+        <div class="footer_second-items">
+          <div class="row">
+            <!-- First Group -->
+            <div class="footer_second-GroupFirst col-12 col-lg-3">
+              <a href="../index.html"><img src="../assets/img/footer/logo.png" alt="logo"></a>
+              <div class="footer_second-GroupFirst-icons">
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="../assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <div class="footer_second-GroupFirst-yandex">
+                <a href="#">
+                  <img src="../assets/img/footer/second/yandex.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 footer_second-center">
+              <div class="row">
+                <!-- Second Group -->
+                <div class="footer_second-GroupSecond col">
+                  <h3 class="footer_second-title title_h3">Интернет-магазин</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Люстры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Светильники</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Бра</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Настольные лампы</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Споты</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Торшеры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Уличное освещение</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./catalog.html" class="footer_second-menu-item-link">Весь католог</a></li>
+                  </ul>
+                </div>
+                <!-- Third Group -->
+                <div class="footer_second-GroupThird col">
+                  <h3 class="footer_second-title title_h3">Покупателям</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Доставка</li>
+                    <li class="footer_second-menu-item title_h4">Оплата</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./return.html" class="footer_second-menu-item-link">Возврат</a></li>
+                    <li class="footer_second-menu-item title_h4">Гарантия</li>
+                  </ul>
+
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Услуги</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4">Установка светильников</li>
+                      <li class="footer_second-menu-item title_h4">Подбор по фото</li>
+                      <li class="footer_second-menu-item title_h4">Посчитать проект</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fourth Group -->
+                <div class="footer_second-GroupFourth col">
+                  <h3 class="footer_second-title title_h3">О компании</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Магазин Спб</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./contact.html" class="footer_second-menu-item-link">Контакты</a></li>
+                    <li class="footer_second-menu-item title_h4">Реквизиты</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./news/news-catalog.html" class="footer_second-menu-item-link"></a>Новости</a></li>
+                  </ul>
+                
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Партнерам</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4"><a href="./designer.html" class="footer_second-menu-item-link">Дизайнерам</a></li>
+                      <li class="footer_second-menu-item title_h4">Поставщикам</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fifth Group -->
+            <div class="footer_second-GroupFifth col-12 col-lg-2">
+              <div class="footer_second-GroupFifth-icons">
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="../assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <h3 class="footer_second-title title_h3">+1 (000) 000-00-00</h3>
+              <h4 class="footer_second-GroupFifth-email title_h4">example@yandex.ru</h4>
+              <h5 class="footer_second-GroupFifth-address title_h5"><b>Адрес магазина в Санкт-петербурге:</b> 195000, Москва, ул. Академика Королева, 12</h5>
+            
+              <div class="footer_second-GroupFifth-banks">
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/mastercard.png" alt="Mastercard">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/visa.png" alt="Visa">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="../assets/img/footer/second/maestro.png" alt="Maestro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+
+      <!-- Footer third section -->
+      <section class="footer_third">
+        <h5 class="title_h5">2023 © Все права защищены</h5>
+      </section>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/nouislider.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/components/catalog.js"></script>
+    <script src="/js/components/footer.js"></script>
+  </body> 
+</html>

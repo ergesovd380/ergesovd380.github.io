@@ -1,0 +1,107 @@
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--white);
+
+  &_mobile {
+    margin-top: 24px;
+    display: none;
+
+    @include for-tablet {
+      display: block;
+    }
+  }
+
+  &_desktop {
+    margin-top: 24px;
+    // 767.5px
+    @include for-tablet {
+      display: none;
+    }
+  }
+
+  &_img {
+    position: relative;
+    height: 298px;
+    border-radius: 5px;
+
+    @include for-tablet {
+      height: 180px;
+    }
+
+    @include for-mobile {
+      height: 100%;
+    }
+  }
+
+  &_heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  &_type {
+    position: absolute;
+    top: 5px;
+    z-index: 1000;
+    color: var(--white);
+
+    &-item {
+      @include flex_all_center;
+      margin: 5px 0 5px 10px;
+      height: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+
+  &_hit {
+    width: 35px;
+    background-color: var(--yellow);
+  }
+
+  &_new {
+    width: 64px;
+    background-color: var(--success);
+  }
+
+  &_sale {
+    width: 49px;
+    background-color: var(--danger);
+  }
+
+  &_title {
+    margin: 10px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &_cost {
+    display: flex;
+    margin-top: 20px;
+
+    &-price {
+      margin-right: 20px;
+
+      @include for-tablet {
+        margin-right: 10px;
+      }
+    }
+
+    @include for-tablet {
+      margin-top: 12px;
+    }
+  }
+
+  &_stock {
+    margin: 15px 0;
+    color: var(--optianal-gray);
+
+    @include for-tablet {
+      margin: 3px 0 20px 0;
+    }
+  }
+}
