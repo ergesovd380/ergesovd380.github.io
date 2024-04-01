@@ -1,4 +1,6 @@
+@charset "UTF-8";
 :root {
+  --font-family: "Roboto";
   --white: #fff;
   --danger: #d52027;
   --gray-bcg: #D7D7DA;
@@ -10,11 +12,30 @@
   --gold: #E7BB67; }
 
 /* stylelint-disable */
+@font-face {
+  font-weight: 400;
+  /* Соответствует значению normal */
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-400.ttf"); }
+@font-face {
+  font-weight: 700;
+  /* Соответствует значению bold */
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-700.ttf"); }
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-500.ttf"); }
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-300.ttf"); }
 html {
   box-sizing: border-box;
   height: 100%; }
 
 body {
+  font-family: var(--font-family);
   background-color: var(--gray-bcg);
   display: flex;
   flex-direction: column;
