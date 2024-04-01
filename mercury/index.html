@@ -1,0 +1,2888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mercury</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <!-- Topbar section -->
+      <div class="header_topbar container">
+        <div class="header_topbar_items">   
+          <!-- Place -->  
+          <div class="all_sb">
+            <img 
+              src="./assets/img/icons/map.svg" 
+              alt="icon" 
+              class="header_topbar_icon pointer"
+            >
+            <div class="title_h6 pointer">
+              Москва
+            </div>
+          </div>   
+          <div class="all_sb">
+            <!-- Shop -->
+            <div class="title_h6 header_topbar_adr pointer">Магазин в Санкт-Петербурге</div>
+            <!-- Phone -->
+            <a href="tel:+7999999999" type="tel" class="phone pointer">+7 (999) 99-99-99</a>
+            <!-- WhatsApp -->
+            <img src="./assets/img/header/whatsapp.svg" class="header_topbar_whatsapp" alt="whatsapp">
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondbar section -->
+      <div class="header_secondbar">
+        <!-- Secondbar first section -->
+        <div class="header_secondbar_fSection container">
+          <!-- Logo -->
+          <a href="./index.html"><img src="./assets/img/header/logo.png" class="header_secondbar-logo pointer" alt="logo"></a>
+          <!-- Form -->
+          <form class="all_sb header_secondbar-mob">
+            <!-- Search -->
+            <input 
+              type="text"
+              placeholder="Поиск..."
+              class="header_secondbar_input title_h4"
+            >
+            <!-- Select -->
+            <select class="header_secondbar_select title_h5 pointer">
+              <option 
+                value="all categories" 
+                disabled 
+                selected
+              ><h5>Все категории</h5></option>
+              <option value="first category"><h5>Первая категория</h5></option>
+              <option value="second category"><h5>Вторая категория</h5></option>
+              <option value="third category"><h5>Третья категория</h5></option>
+            </select>
+            <!-- Button -->
+            <button class="header_secondbar_btn pointer">
+              <img src="./assets/img/icons/search-line.svg" alt="search">
+            </button>
+          </form>
+
+          <!-- Header icons -->
+          <div class="all_sb header_secondbar-mob">
+            <button class="icons pointer">
+              <img src="./assets/img/icons/account.svg" alt="account">
+            </button>
+            <button class="icons pointer">
+              <img src="./assets/img/icons/eay.svg" alt="eay">
+            </button>
+            <button class="icons pointer">
+              <img src="./assets/img/icons/heart.svg" alt="heart">
+            </button>
+            <button class="icons icons_cart pointer">
+              <a href="./components/cart.html">
+                <img src="./assets/img/icons/cart.svg" alt="cart">
+                <div class="icons_cart-count">12</div>
+              </a>
+            </button>
+          </div>
+
+          <!-- Mobile burger -->
+          <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <button 
+              type="button" 
+              class="navbar navbar-toggler" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#myNavbar"
+              id="openmyNavbar"
+            >
+              <img src="./assets/img/header/burger.svg" alt="burger">
+            </button>
+          </nav>
+          <!-- Mobile Dialog -->
+          <div 
+            class="offcanvas offcanvas-end" 
+            tabindex="-1" 
+            id="myNavbar"
+          >
+            <div class="offcanvas-header">
+                <div></div>
+                <button class="btn" data-bs-dismiss="offcanvas">
+                  <img src="./assets/img/header/burger-close.svg" alt="Close navabar">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-first-item">
+                    <select class="header_secondbar_select title_h5 pointer">
+                      <option 
+                        value="all categories" 
+                        disabled 
+                        selected
+                      ><h5>Все категории</h5></option>
+                      <option value="first category"><h5>Первая категория</h5></option>
+                      <option value="second category"><h5>Вторая категория</h5></option>
+                      <option value="third category"><h5>Третья категория</h5></option>
+                    </select>
+                  </li>
+                  <li class="nav-first-item">
+                    <input 
+                      type="text"
+                      placeholder="Поиск..."
+                      class="header_secondbar_input title_h4"
+                    >
+                    <button class="header_secondbar_btn pointer">
+                      <img src="./assets/img/icons/search-line.svg" alt="search">
+                    </button>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/catalog.html"><h1 class="title_h1 pointer">Каталог</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/designer.html"><h1 class="title_h1 pointer">Дизайнерам</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/services.html"><h1 class="title_h1 pointer">Услуги</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/sale/sale-catalog.html"><h1 class="title_h1 pointer">Акции</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/brands.html"><h1 class="title_h1 pointer">Бренды</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <h1 class="title_h1 pointer">Покупателям</h1>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/about-company.html"><h1 class="title_h1 pointer">О компании</h1></a>
+                  </li>
+                  <li class="nav-second-item">
+                    <a href="./components/contact.html"><h1 class="title_h1 pointer">Контакты</h1></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header_divider"></div>
+
+        <!-- Secondbar second section -->
+        <div class="header_secondbar_sSection container all_sb">
+          <a href="./components/catalog.html"><h4 class="title_h4 pointer">Каталог</h4></a>
+          <a href="./components/designer.html"><h4 class="title_h4 pointer">Дизайнерам</h4></a>
+          <a href="./components/services.html"><h4 class="title_h4 pointer">Услуги</h4></a>
+          <a href="./components/sale/sale-catalog.html"><h4 class="title_h4 pointer">Акции</h4></a>
+          <a href="./components/brands.html"><h4 class="title_h4 pointer">Бренды</h4></a>
+          <h4 class="title_h4 pointer">Покупателям</h4>
+          <a href="./components/about-company.html"><h4 class="title_h4 pointer">О компании</h4></a>
+          <a href="./components/contact.html"><h4 class="title_h4 pointer">Контакты</h4></a>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main section start -->
+    <main class="main container">
+      <!-- Banner section start -->
+      <section class="banner">
+        <div class="row">
+          <!-- Banner swiper -->
+          <div class="col-lg-9">
+            <div class="swiper banner-slider banner_first-section">
+              <div class="swiper-wrapper">
+                <!-- Banner slide 1 -->
+                <div class="swiper-slide">
+                  <div class="banner_swiper-slide">
+                    <img src="./assets/img/home-page/banner/bannerBack.png" class="banner_swiper-slide-img" alt="Banner">
+                    <div class="row banner_swiper-slide-text">
+                      <div class="offset-4 offset-lg-6 col">
+                        <!-- Banner slide data -->
+                        <div class="banner_swiper_grid">
+                          <div class="title_h1">Ретро-винтажная лампа Эдисона</div>
+                          <h6 class="title_h6 banner_swiper_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+                          <button class="banner_btn btn_med pointer">Подробное</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Banner slide 2 -->
+                <div class="swiper-slide">
+                  <div class="banner_swiper-slide">
+                    <img src="./assets/img/home-page/banner/bannerBack.png" class="banner_swiper-slide-img" alt="Banner">
+                    <div class="row banner_swiper-slide-text">
+                      <div class="offset-4 offset-lg-6 col">
+                        <!-- Banner slide data -->
+                        <div class="banner_swiper_grid">
+                          <div class="title_h1">Ретро-винтажная лампа Эдисона</div>
+                          <h6 class="title_h6 banner_swiper_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+                          <button class="banner_btn btn_med pointer">Подробное</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Banner slide 3 -->
+                <div class="swiper-slide">
+                  <div class="banner_swiper-slide">
+                    <img src="./assets/img/home-page/banner/bannerBack.png" class="banner_swiper-slide-img" alt="Banner">
+                    <div class="row banner_swiper-slide-text">
+                      <div class="offset-4 offset-lg-6 col">
+                        <!-- Banner slide data -->
+                        <div class="banner_swiper_grid">
+                          <div class="title_h1">Ретро-винтажная лампа Эдисона</div>
+                          <h6 class="title_h6 banner_swiper_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+                          <button class="banner_btn btn_med pointer">Подробное</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Banner swiper scroll -->
+            <div class="banner_swiper-scrollbar"></div>
+          </div>
+          <!-- Banner small banners -->
+          <div class="col banner_second-section">
+            <div class="row">
+              <!-- First small banner -->
+              <div class="col-6 col-lg-12">
+                <div class="banner_small">
+                  <img src="./assets/img/home-page/banner/small-banner-1.png" class="banner_small-img" alt="Banner image">
+                  <div class="banner_small-text">
+                    <h2 class="title_h2">Калькулятор</h2>
+                    <h6 class="title_h6 banner_small_subtitle">Lorem ipsum dolor sit amet, <br> consectetur...</h6>
+                    <button class="banner_small_btn pointer">
+                      <img src="./assets/img/icons/arrow_right.svg" alt="arrow">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Second small banner -->
+              <div class="col-6 col-lg-12">
+                <div class="banner_small">
+                  <img src="./assets/img/home-page/banner/small-banner-2.png" class="banner_small-img" alt="Banner image">
+                  <div class="banner_small-text">
+                    <h2 class="title_h2">Доставка</h2>
+                    <h6 class="title_h6 banner_small_subtitle">Lorem ipsum dolor sit amet, <br> consectetur...</h6>
+                    <button class="banner_small_btn pointer">
+                      <img src="./assets/img/icons/arrow_right.svg" alt="arrow">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner section end -->
+
+      <!-- Categories section start-->
+      <section class="categories section">
+        <div class="categories_swiper">
+          <div class="swiper categories-slider">
+            <!-- Categories -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-1.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Люстры</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-2.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Светильники</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-3.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Бра</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-4.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Споты</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-5.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Торшеры</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-6.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Уличное освещение</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-1.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Люстры</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-2.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Светильники</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-slide">
+                  <img src="./assets/img/home-page/categories/swiper-3.png" class="categories-slide-img" alt="">
+                  <a href="./components/catalog.html" class="pointer categories-slide-text">Бра</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Buttons -->
+          <div class="categories_prev">
+            <img src="./assets/img/home-page/categories/arrow-left.svg" alt="Arrow-Left">
+          </div>
+          <div class="categories_next">
+            <img src="./assets/img/home-page/categories/arrow-right.svg" alt="Arrow-Right">
+          </div>
+        </div>
+      </section>
+      <!-- Categories section end-->
+
+      <!-- Hit section start -->
+      <section class="hit section">
+        <!-- Tilte -->
+        <div class="section_title">
+          <h1 class="title_h1">Хит</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <!-- Swiper -->
+        <div class="card_desktop">
+          <div class="hit_swiper">
+            <div class="swiper product-slider">
+              <div class="swiper-wrapper">
+                <!-- Card-1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hit cards for mobile -->
+        <div class="cards-hit-mobile">
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hit section start -->
+
+      <!-- New-prod section start -->
+      <section class="new-prod section">
+        <!-- Tilte -->
+        <div class="section_title">
+          <h1 class="title_h1">Новинки</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <!-- Swiper -->
+        <div class="card_desktop">
+          <div class="new-prod_swiper">
+            <div class="swiper product-slider">
+              <div class="swiper-wrapper">
+                <!-- Card-1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New-prod cards for mobile -->
+        <div class="cards-newProd-mobile">
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New-prod section start -->
+
+      <!-- Gallery section start -->
+      <section class="gallery section">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <!-- Gallery first item -->
+            <div class="gallery_item">
+              <img src="./assets/img/home-page/gallery/gallery-1.png" class="gallery_item-img" alt="Gallery image">
+              <div class="gallery_item-text">
+                <h1 class="title_h1 gallery_title">Светильник Even Lamp</h1>
+                <div class="small-text  gallery_subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!-- Gallery second item -->
+            <div class="gallery_item">
+              <img src="./assets/img/home-page/gallery/gallery-2.png" class="gallery_item-img" alt="Gallery image">
+              <div class="gallery_item-text">
+                <h1 class="title_h1 gallery_title">Even Lamp</h1>
+                <div class="small-text  gallery_subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery section end -->
+
+      <!-- Spb-products section start -->
+      <section class="spb-products section">
+        <!-- Tilte -->
+        <div class="section_title">
+          <h1 class="title_h1">Товары в магазине СПб</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <!-- Swiper -->
+        <div class="card_desktop">
+          <div class="spb-products_swiper">
+            <div class="swiper product-slider">
+              <div class="swiper-wrapper">
+                <!-- Card-1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Spb-products cards for mobile -->
+        <div class="cards-spb-mobile">
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Spb-products section start -->
+
+      <!-- Sale section start -->
+      <section class="sale section">
+        <!-- Tilte -->
+        <div class="section_title">
+          <h1 class="title_h1">Акции</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <!-- Swiper -->
+        <div class="card_desktop">
+          <div class="sale_swiper">
+            <div class="swiper product-slider">
+              <div class="swiper-wrapper">
+                <!-- Card-1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="price-sale">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sale cards for mobile -->
+        <div class="cards-sale-mobile">
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sale section start -->
+
+      <!-- Manufactures section start -->
+      <section class="manufactures section">
+        <div class="section_title">
+          <h1 class="title_h1">Производители</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <div class="manufactures_items">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-1.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+          <img src="./assets/img/home-page/manufactures/manufacter-2.png" class="manufactures_brand">
+        </div>
+      </section>
+      <!-- Manufactures section end -->
+
+      <!-- News section start -->
+      <section class="news section">
+        <div class="section_title">
+          <h1 class="title_h1">Новости</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <div class="news_items">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="news_card">
+                <div class="news_card-iblog">
+                  <img src="./assets/img/home-page/news/news-1.png" class="news_card-iblog-img" alt="News image">
+                  <div class="news_card-iblog-date small-text">21.01.2024</div>
+                </div>
+                <h3 class="news_card-title title_h3 pointer"><a href="./components/news/news.html">Заголовок новости/статьи</a></h3>
+                <h6 class="news_card-subtitle title_h6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.....
+                </h6>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="news_card">
+                <div class="news_card-iblog">
+                  <img src="./assets/img/home-page/news/news-2.png" class="news_card-iblog-img" alt="News image">
+                  <div class="news_card-iblog-date small-text">21.01.2024</div>
+                </div>
+                <h3 class="news_card-title title_h3 pointer"><a href="./components/news/news.html">Заголовок новости/статьи</a></h3>
+                <h6 class="news_card-subtitle title_h6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.....
+                </h6>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="news_card">
+                <div class="news_card-iblog">
+                  <img src="./assets/img/home-page/news/news-3.png" class="news_card-iblog-img" alt="News image">
+                  <div class="news_card-iblog-date small-text">21.01.2024</div>
+                </div>
+                <h3 class="news_card-title title_h3 pointer"><a href="./components/news/news.html">Заголовок новости/статьи</a></h3>
+                <h6 class="news_card-subtitle title_h6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.....
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News section end -->
+
+      <!-- Viewed products section start -->
+      <section class="viewed section">
+        <!-- Tilte -->
+        <div class="section_title">
+          <h1 class="title_h1">Просмотренные товары</h1>
+          <a href="#" class="section_link link">Смотреть все</a>
+        </div>
+        <!-- Swiper -->
+        <div class="card_desktop">
+          <div class="viewed_swiper">
+            <div class="swiper product-slider">
+              <div class="swiper-wrapper">
+                <!-- Card-1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="card_cost-price-viewed title_h4">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="card_cost-price-viewed title_h4">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="card_cost-price-viewed title_h4">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="card_cost-price-viewed title_h4">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="row">
+                      <div class="col-6 col-md-12">
+                        <!-- Img -->
+                        <div class="card_img">
+                          <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                          <!-- Types -->
+                          <div class="card_type">
+                            <div class="card_hit small-text card_type-item">
+                              Хит
+                            </div>
+                            <div class="card_new small-text card_type-item">
+                              Новинка
+                            </div>
+                            <div class="card_sale small-text card_type-item">
+                              Акция
+                            </div>
+                          </div>
+                          <!-- Heart -->
+                          <div class="card_heart">
+                            <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <!-- Name -->
+                        <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                        <!-- Rate -->
+                        <div class="rate">
+                          <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                          <div class="rate_grade">5.0</div>
+                          <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                        </div>
+                        <!-- Price -->
+                        <div class="card_cost">
+                          <div class="card_cost-price price">49 900₽</div>
+                          <div class="card_cost-price-viewed title_h4">49 900₽</div>
+                        </div>
+                        <!-- Stock -->
+                        <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                        <!-- Btn -->
+                        <button class="btn_card">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Viewed cards for mobile -->
+        <div class="cards-viewed-mobile">
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card_mobile">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <!-- Img -->
+                <div class="card_img">
+                  <a href="./components/product-card.html"><img src="./assets/img/card/card-1.png" width="100%" class="card_img" alt="card-img"></a>
+                  <!-- Types -->
+                  <div class="card_type">
+                    <div class="card_hit small-text card_type-item">
+                      Хит
+                    </div>
+                    <div class="card_new small-text card_type-item">
+                      Новинка
+                    </div>
+                    <div class="card_sale small-text card_type-item">
+                      Акция
+                    </div>
+                  </div>
+                  <!-- Heart -->
+                  <div class="card_heart">
+                    <img src="./assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- Name -->
+                <h3 class="card_title title_h3 pointer" data-bs-toggle="modal" data-bs-target="#cardDialog">Название товара</h3>
+                <!-- Rate -->
+                <div class="rate">
+                  <img src="./assets/img/icons/star.svg" alt="Star" class="rate_star">
+                  <div class="rate_grade">5.0</div>
+                  <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                </div>
+                <!-- Price -->
+                <div class="card_cost">
+                  <div class="card_cost-price price">49 900₽</div>
+                  <div class="price-sale">49 900₽</div>
+                </div>
+                <!-- Stock -->
+                <h4 class="card_stock title_h4">В наличии 6 шт.</h4>
+                <!-- Btn -->
+                <button class="btn_card">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Viewed products section start -->
+
+      <!-- Modal start -->
+      <div class="modal fade" id="cardDialog" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="dialog-card">
+              <h1 class="title_h1">Название товара</h1>
+              <img src="../assets/img/icons/close.svg" data-bs-dismiss="modal" aria-label="Close"class="dialog-card_close pointer" alt="Close">
+              <div class="dialog-card_columns">
+                <!-- First column -->
+                <div class="dialog-card_firstColumn">
+                  <!-- Rate -->
+                  <div class="rate">
+                    <img src="../assets/img/icons/star.svg" alt="Star" class="rate_star">
+                    <div class="rate_grade">5.0</div>
+                    <div class="rate_comment title_h6 pointer">2 отзывы</div>
+                    <a class="link_gray modal-review">Написать отзыв</a>
+                  </div>
+                  <!-- Img -->
+                  <div class="dialog-card_images">
+                    <div class="dialog-card_images-small">
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                      <div class="dialog-card_images-small-img">
+                        <img 
+                          src="../assets/img/dialog-card/img.png" 
+                          height="60px" 
+                          width="60px" 
+                          alt="img"
+                        >
+                      </div>
+                    </div>
+                    
+                    <div class="dialog-card_images-big">
+                      <img 
+                        src="../assets/img/dialog-card/img-big.png" 
+                        class="dialog-card_images-big-img"
+                        alt="big"
+                      >
+                      <div class="dialog-card_images-heart">
+                        <img src="../assets/img/icons/heart.svg" alt="Heart" class="pointer">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Second column -->
+                <div class="dialog-card_secondColumn">
+                  <a href="./components/product-card.html" class="link_gray">Перейти на страницу товара</a>
+                  <!-- Data -->
+                  <div class="dialog-card_data">
+                    <!-- Price -->
+                    <div class="dialog-card_cost">
+                      <div class="dialog-card_cost-price price">49 900 ₽</div>
+                      <h4 class="price-sale">49 900 ₽</h4>
+                    </div>
+                    <!-- Stock -->
+                    <h4 class="dialog-card_stock title_h4">В наличии 6 шт.</h4>
+                    <!-- Count -->
+                    <div class="addCount">
+                      <div class="addCount-value addCount-value-50">
+                        <img onclick="countPlus()" src="../assets/img/dialog-card/plus.png" class="pointer" alt="plus">
+                        <div class="title_h3 count-value">1</div>
+                        <img onclick="countMinus()" src="../assets/img/dialog-card/minus.png" class="pointer" alt="minus">
+                      </div>
+                      <a class="link_gray modal-cheeper">Нашли дешевле?</a>
+                    </div>
+                    <!-- Btn -->
+                    <div class="dialog-card_btn">
+                      <button class="dialog-card_btn-card btn_small-red">В корзину</button>
+                      <button class="dialog-card_btn-buy modal-buy btn_small">Купить в 1 клик</button>
+                    </div>
+                    <!-- Characteristics -->
+                    <div>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Артикул - - - - - - - - - - - - - - - - - - 34LFD3456
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Производитель - - - - - - - - - - - ООО “Ромашка”
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Модельный  год - - - - - - - - - -  2023
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Коллекция - - - - - - - - - - - - - - -  Престиж
+                      </h6>
+                      <h6 class="title_h6 dialog-card_characteristics">
+                        Материал - - - - - - - - - - - - - - - -  Полипропилен
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
+
+      <!-- Dialog-buy start -->
+      <dialog class="dialog-for-buy">
+        <div class="dialog-buy">
+          <!-- Close -->
+          <img src="../assets/img/icons/close.svg" class="dialog-buy_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="title_h2">Купить в 1 клик</h2>
+          <div class="dialog-buy_product">
+            <!-- Image -->
+            <img src="../assets/img/dialog-buy/img.png" height="65" width="65" alt="img">
+            <div class="dialog-buy_product-data">
+              <!-- Name -->
+              <h5 class="title_h5">Длинное  название товара, которое отражает суть</h5>
+              <!-- Price -->
+              <div class="dialog-buy_product-cost">
+                <h4 class="dialog-buy_product-cost-price title_h4">49 900 ₽</h4>
+                <h5 class="dialog-buy_product-cost-price-sale title_h5">49 900 ₽</h5>
+                <!-- Stock -->
+                <h5 class="dialog-buy_product-cost-stock title_h5">1 шт</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Form -->
+          <form class="form dialog-buy_form">
+            <input type="text" placeholder="Имя" class="form_input title_h6">
+            <input type="text" placeholder="Телефон" class="form_input dialog-buy_form-input title_h6">
+            <div class="form_checkboxdata">
+              <input 
+                type="checkbox" 
+                class="form-checkbox pointer" 
+                id="dialog-buy_form-checkbox">
+              <label class="form_checkbox-label small-text" for="dialog-buy_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+            </div>
+            <button class="btn_med dialog-buy_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- Dialog-buy end -->
+
+      <!-- Dialog-cheep start -->
+      <dialog class="dialog-cheeper">
+        <div class="dialog-cheep">
+          <!-- Close -->
+          <img src="./assets/img/icons/close.svg" class="dialog-cheep_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="dialog-cheep_title title_h2">Нашли дешевле</h2>
+          <!-- Form -->
+          <form class="form dialog-cheep_form">
+            <input type="text" placeholder="Имя" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Телефон" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="E-mail" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Название товара" class="form_input dialog-cheep_form-input title_h6">
+            <input type="text" placeholder="Ссылка на сайт где дешевле" class="form_input dialog-cheep_form-input title_h6">
+            <div class="form_checkboxdata">
+              <input 
+                type="checkbox" 
+                class="form-checkbox pointer" 
+                id="dialog-cheep_form-checkbox">
+              <label class="form_checkbox-label small-text " for="dialog-cheep_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+            </div>
+            <button class="btn_med dialog-cheep_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- Dialog-cheep end -->
+
+      <!-- dialog-review start -->
+      <dialog class="dialog-for-review">
+        <div class="dialog-review">
+          <!-- Close -->
+          <img src="./assets/img/icons/close.svg" class="dialog-review_close pointer" alt="Close">
+          <!-- Title -->
+          <h2 class="title_h2">Отзыв</h2>
+          <div class="dialog-review_product">
+            <!-- Image -->
+            <img src="./assets/img/dialog-buy/img.png" height="65" width="65" alt="img">
+            <div class="dialog-review_product-data">
+              <!-- Name -->
+              <h5 class="title_h5">Длинное  название товара, которое отражает суть</h5>
+              <!-- Price -->
+              <div class="dialog-review_product-cost">
+                <h4 class="dialog-review_product-cost-price title_h4">49 900 ₽</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Rate -->
+          <div class="dialog-review_rate">
+            <div class="dialog-review_gray-title title_h6">Ваша оценка</div>
+            <div class="dialog-review_rate-satrs">
+              <img src="./assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="./assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="./assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="./assets/img/product-card/review/red-star.png" alt="Star">
+              <img src="./assets/img/product-card/review/gray-star.png" alt="Star">
+            </div>
+          </div>
+          <!-- Form -->
+          <form class="form dialog-review_form">
+            <input type="text" placeholder="Имя" class="form_input dialog-review_form-input title_h6">
+            <textarea placeholder="Текст отзыва" type="text" cols="auto" rows="10" class="dialog-review_form-input form_textarea title_h6"></textarea>
+            <div class="dialog-review_form-input">
+              <div class="dialog-review_gray-title title_h6">Размер файлов не более 10Мб.</div>
+              <label for="import-file" class="dialog-review_form-import">
+                <img src="./assets/img/dialog-review/camera.png" alt="Camera img">
+                <div class="dialog-review_gray-title dialog-review_form-import-text title_h6"><a href="" class="dialog-review_form-import-link">Нажмите на ссылку,</a> чтобы добавить фотографии или видео. Или просто перетащите их сюда.</div>
+              </label>
+            </div>
+            <input type="file" id="import-file" onchange="updateLabel()" name="Выбери" multiple class="dialog-review_form-file">
+            <button class="btn_med dialog-review_form-btn">Отправить</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- dialog-review end -->
+          
+      <!-- Footer mobile start -->
+      <div class="fixed-bottom footer_mobile">
+        <div class="footer_mobile-body">
+          <div class="footer_mob-item">
+            <a href=""><img src="./assets/img/footer/mobile/account.svg" alt="Account"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="./assets/img/footer/mobile/eay.svg" alt="Eay"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item">
+            <a href=""><img src="./assets/img/footer/mobile/heart.svg" alt="Heart"></a>
+          </div>
+          <div class="divider-mob"></div>
+          <div class="footer_mob-item icons_cart">
+            <a href="./components/cart.html">
+              <img src="./assets/img/footer/mobile/cart.svg" alt="cart">
+              <div class="icons_cart-count icons_cart-count-mob">12</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer mobile end -->
+    </main> 
+    <!-- Main section end -->
+
+    <!-- Footer section start -->
+    <footer class="footer">
+      <!-- Footer first section -->
+      <section class="footer_first">
+        <div class="container">
+          <div class="footer_first-items">
+            <!-- Contacts -->
+            <div class="footer_first-blog">
+              <a 
+                href="#" 
+                class="footer_first-link link footer_first-contact"
+              >Заказать звонок</a>
+              <a 
+                href="#" 
+                class="title_h5 pointer footer_first-email footer_first-contact footer_first-mob"
+              >WhatsApp</a>
+              <a 
+                href="tel:+7999999999" 
+                type="tel" 
+                class="phone pointer footer_first-contact"
+              >+7 (999) 99-99-99</a>
+              <a 
+                href="#" 
+                type="email" 
+                class="title_h5 footer_first-email footer_first-contact footer_first-mob"
+              >example@yandex.ru</a>
+            </div>
+            <!-- Icons -->
+            <div class="footer_first-mob">
+              <button class="icons pointer">
+                <img src="./assets/img/icons/eay.svg" alt="eay">
+              </button>
+              <button class="icons pointer">
+                <img src="./assets/img/icons/heart.svg" alt="heart">
+              </button>
+              <button class="icons icons_cart pointer">
+                <a href="./components/cart.html">
+                  <img src="./assets/img/icons/cart.svg" alt="cart">
+                  <div class="icons_cart-count">12</div>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+      
+      <!-- Footer second section -->
+      <section class="footer_second container">
+        <div class="footer_second-items">
+          <div class="row">
+            <!-- First Group -->
+            <div class="footer_second-GroupFirst col-12 col-lg-3">
+              <a href="./index.html"><img src="./assets/img/footer/logo.png" alt="logo"></a>
+              <div class="footer_second-GroupFirst-icons">
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="./assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="./assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="./assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFirst-icons-item">
+                  <img src="./assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <div class="footer_second-GroupFirst-yandex">
+                <a href="#">
+                  <img src="./assets/img/footer/second/yandex.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7 footer_second-center">
+              <div class="row">
+                <!-- Second Group -->
+                <div class="footer_second-GroupSecond col">
+                  <h3 class="footer_second-title title_h3">Интернет-магазин</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Люстры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Светильники</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Бра</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Настольные лампы</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Споты</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Торшеры</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Уличное освещение</a></li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/catalog.html" class="footer_second-menu-item-link">Весь католог</a></li>
+                  </ul>
+                </div>
+                <!-- Third Group -->
+                <div class="footer_second-GroupThird col">
+                  <h3 class="footer_second-title title_h3">Покупателям</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Доставка</li>
+                    <li class="footer_second-menu-item title_h4">Оплата</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/return.html" class="footer_second-menu-item-link">Возврат</a></li>
+                    <li class="footer_second-menu-item title_h4">Гарантия</li>
+                  </ul>
+
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Услуги</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4">Установка светильников</li>
+                      <li class="footer_second-menu-item title_h4">Подбор по фото</li>
+                      <li class="footer_second-menu-item title_h4">Посчитать проект</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fourth Group -->
+                <div class="footer_second-GroupFourth col">
+                  <h3 class="footer_second-title title_h3">О компании</h3>
+                  <ul class="footer_second-menu list-reset">
+                    <li class="footer_second-menu-item title_h4">Магазин Спб</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/contact.html" class="footer_second-menu-item-link">Контакты</a></li>
+                    <li class="footer_second-menu-item title_h4">Реквизиты</li>
+                    <li class="footer_second-menu-item title_h4"><a href="./components/news/news-catalog.html" class="footer_second-menu-item-link">Новости</a></li>
+                  </ul>
+                
+                  <div class="footer_second-Group2">
+                    <h3 class="footer_second-title title_h3">Партнерам</h3>
+                    <ul class="footer_second-menu list-reset">
+                      <li class="footer_second-menu-item title_h4"><a href="./components/designer.html" class="footer_second-menu-item-link">Дизайнерам</a></li>
+                      <li class="footer_second-menu-item title_h4">Поставщикам</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fifth Group -->
+            <div class="footer_second-GroupFifth col-12 col-lg-2">
+              <div class="footer_second-GroupFifth-icons">
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="./assets/img/footer/second/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="./assets/img/footer/second/telegramm.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="./assets/img/footer/second/instagram.svg" alt="">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-icons-item">
+                  <img src="./assets/img/footer/second/youtube.svg" alt="">
+                </a>
+              </div>
+              <h3 class="footer_second-title title_h3">+1 (000) 000-00-00</h3>
+              <h4 class="footer_second-GroupFifth-email title_h4">example@yandex.ru</h4>
+              <h5 class="footer_second-GroupFifth-address title_h5"><b>Адрес магазина в Санкт-петербурге:</b> 195000, Москва, ул. Академика Королева, 12</h5>
+            
+              <div class="footer_second-GroupFifth-banks">
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="./assets/img/footer/second/mastercard.png" alt="Mastercard">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="./assets/img/footer/second/visa.png" alt="Visa">
+                </a>
+                <a href="#" class="footer_second-GroupFifth-banks-item">
+                  <img src="./assets/img/footer/second/maestro.png" alt="Maestro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer_divider"></div>
+
+      <!-- Footer third section -->
+      <section class="footer_third">
+        <h5 class="title_h5">2023 © Все права защищены</h5>
+      </section>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/components/footer.js"></script>
+  </body>
+</html>

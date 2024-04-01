@@ -1,0 +1,186 @@
+.title {
+  &_h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+
+    @include for-laptop {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @include for-big-tablet {
+      font-size: 24px;
+      line-height: 26.4px;
+    }
+  }
+
+  &_h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+
+    @include for-big-tablet {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  &_h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+
+    @include for-big-tablet {
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+  }
+
+  &_h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+
+    @include for-big-tablet {
+      font-size: 14px;
+    }
+  }
+
+  &_h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    @include for-big-tablet {
+      font-size: 12px;
+      line-height: 16.8px;
+    }
+  }
+
+  &_h6 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @include for-laptop {
+      font-size: 10px;
+    }
+  }
+}
+
+.phone {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--dark);
+
+  @include for-tablet {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+}
+
+.input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--optianal-gray);
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+
+  @include for-big-tablet {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+  }
+}
+
+.link_gray {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--optianal-gray);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--optianal-gray);
+  }
+
+  @include for-big-tablet {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+  }
+
+  @include for-tablet {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25.2px;
+  }
+}
+
+.small-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.card_grade {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+
+  @include for-big-tablet {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &-product {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 20px;
+  }
+
+  &-sale {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--optianal-gray);
+    text-decoration: line-through;
+
+    @include for-big-tablet {
+      font-size: 14px;
+    }
+  }
+}
+
+.error_404 {
+  font-size: 221px;
+  font-weight: 300;
+  line-height: 259px;
+
+  @include for-tablet {
+    font-size: 128px;
+    font-weight: 300;
+    line-height: 150px;
+  }
+}
+
+.breadCrumbs {
+  margin: 14px 0;
+  color: var(--optianal-gray);
+}

@@ -1,0 +1,167 @@
+.order-place {
+
+  &_title {
+    margin-bottom: 30px;
+  }
+
+  &_client {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+
+    &-confirmation {
+      height: 36px;
+      @include flex-all-center;
+      text-align: center;
+      border: none;
+      border-radius: 62px;
+      background-color: var(--gold);
+      color: var(--white);
+    }
+
+    &-title {
+      margin-top: 30px;
+    }
+  }
+
+  &_delivery {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+
+    &-confirmation {
+      height: 36px;
+      @include flex-all-center;
+      border: none;
+      border-radius: 62px;
+      background-color: var(--gold);
+      color: var(--white);
+    }
+  }
+  // Payment
+  &_payment {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+    // Form types payment
+    &-types {
+      margin-top: 20px;
+      display: flex;
+      // Radio hidden
+      &-radio {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1;
+      }
+      // Custom checkbox
+      &-checkbox-custom {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        border: 1px solid var(--optianal-gray);
+        border-radius: 5px;
+        vertical-align: sub;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 5px;
+          background-color: black;
+          background-image: url('../assets/img/icons/checkbox.svg');
+          transform: scale(0);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      // Label
+      &-label {
+        margin-right: 30px;
+        padding: 8px 10px;
+        border: 1px dashed var(--optianal-gray);
+        color: var(--optianal-gray);
+        border-radius: 5px;
+      }
+      // On active
+      &-radio:checked + &-label, 
+      &-radio:checked + &-label > &-checkbox-custom::before {
+        transform: scale(1);
+
+        border: 1px dashed var(--dark);
+        color: var(--dark);
+      }
+
+      &-item {
+        // 767.5px
+        @include for-tablet {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+
+      // 767.5px
+      @include for-tablet {
+        display: block;
+      }
+    }
+  }
+
+  // Details
+  &_details {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+    // Details list
+    &-list {
+      margin-top: 20px;
+      // List items
+      &-item {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      // Gray text
+      &-gray {
+        color: var(--optianal-gray);
+      }
+    }
+    // Total price
+    &-total {
+      margin-top: 20px;
+
+      @include flex-all-sb;
+    }
+    // Prormokod
+    &-promokod {
+      margin-top: 30px;
+    }
+    // Detail btn
+    &-btn {
+      margin-top: 20px;
+      // 1199.5px
+      @include for-small-laptop {
+        padding: 7.5px 38px;
+      }
+    }
+    // Detail contacts
+    &-contact {
+      margin: 20px 0;
+
+      &-item {
+        margin: 5px 0;
+      }
+    }
+    // 1199.5px
+    @include for-small-laptop {
+      margin-top: 20px;
+    }
+  }
+}
