@@ -37,7 +37,7 @@ new Swiper('.categories-slider', {
   navigation: {
     nextEl: '.categories_next',
     prevEl: '.categories_prev'
-  }
+  },
 })
 
 // Product swiper

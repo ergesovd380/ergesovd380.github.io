@@ -86,7 +86,7 @@ new Swiper('.tabs-slider', {
 new Swiper('.tabs_body-slider', {
   breakpoints: {
     300: {
-      slidesPerView: 4,
+      slidesPerView: 3.3,
       spaceBetween: 20,
     },
     575: {
@@ -101,7 +101,8 @@ new Swiper('.tabs_body-slider', {
       slidesPerView: 7,
       spaceBetween: 20,
     }
-  }
+  },
+  freeMode: true,
 })
 
 // Скрыть фильтры

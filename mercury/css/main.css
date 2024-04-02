@@ -760,6 +760,7 @@ input[type="file"]::-webkit-file-upload-button {
     border: none; }
 .btn_tab {
   padding: 7px 14px;
+  margin-right: 20px;
   border: 1px solid var(--dark);
   border-radius: 5px;
   background-color: transparent; }
