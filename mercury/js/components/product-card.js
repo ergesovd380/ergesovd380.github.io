@@ -15,7 +15,7 @@ new Swiper('.tabs-slider', {
     },
     1200: {
       slidesPerView: 9,
-      spaceBetween: 20,
+      spaceBetween: 0,
     }
   }
 })

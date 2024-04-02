@@ -814,6 +814,8 @@ input[type="file"]::-webkit-file-upload-button {
     padding-bottom: 7px;
     margin-bottom: -4px;
     cursor: pointer; }
+    .tabs-product_items-first {
+      margin-right: 40px; }
     .tabs-product_items:is(.active) {
       border-bottom: 4px solid var(--danger);
       border-radius: 4px; }

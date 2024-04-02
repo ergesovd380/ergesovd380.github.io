@@ -32,6 +32,10 @@
     margin-bottom: -4px;
     cursor: pointer;
 
+    &-first {
+      margin-right: 40px;
+    }
+
     &:is(.active) {
       border-bottom: 4px solid var(--danger);
       border-radius: 4px;
