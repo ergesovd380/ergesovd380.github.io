@@ -250,9 +250,9 @@ input[type="file"]::-webkit-file-upload-button {
   background-color: #F2F2F2; }
 .header .nav-first-item {
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
 .header .nav-second-item {
-  margin: 20px 0; }
+  margin: 15px 0; }
 
 .footer {
   margin-top: 50px;
