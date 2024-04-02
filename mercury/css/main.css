@@ -1618,7 +1618,8 @@ dialog {
   margin: 80px auto 150px auto;
   text-align: center; }
   .error_subtitle {
-    margin-top: 25px; }
+    margin-top: 25px;
+    max-width: 552px; }
   .error_btn {
     padding: 9px 42px;
     margin-top: 50px;
