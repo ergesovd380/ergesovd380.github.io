@@ -800,6 +800,9 @@ input[type="file"]::-webkit-file-upload-button {
     .tabs_items:is(.active) {
       border-bottom: 4px solid var(--danger);
       border-radius: 4px; }
+    @media (max-width: 450px) {
+      .tabs_items {
+        text-align: center; } }
   .tabs_content {
     padding-top: 20px;
     margin-top: -4px;

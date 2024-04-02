@@ -69,11 +69,11 @@ if(rangeSliderMobile) {
 new Swiper('.tabs-slider', {
   breakpoints: {
     300: {
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 20,
     },
     575: {
-      slidesPerView: 5,
+      slidesPerView: 7,
       spaceBetween: 30,
     },
     1200: {
@@ -86,7 +86,7 @@ new Swiper('.tabs-slider', {
 new Swiper('.tabs_body-slider', {
   breakpoints: {
     300: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 20,
     },
     575: {
