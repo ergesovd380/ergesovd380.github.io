@@ -1,0 +1,26 @@
+// @include font-face("Roboto", "../../assets/fonts/Roboto-Regular", 400, normal);
+// @include font-face("Roboto", "../../assets/fonts/Roboto-Bold", 700, normal);
+// @include font-face("Roboto", "../../assets/fonts/Roboto-Bold", 900, normal);
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-400.ttf");
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-700.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-500.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto-300.ttf");
+}

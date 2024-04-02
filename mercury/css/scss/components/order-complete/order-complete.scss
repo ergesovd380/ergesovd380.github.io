@@ -1,0 +1,20 @@
+.order-complete {
+  height: 608px;
+  margin-top: 50px;
+  padding: 0 50px;
+  @include flex-all-center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--white);
+
+  &_body {
+
+    &-title {
+      margin: 50px 0 30px;
+    }
+
+    &-subtitle {
+      margin-bottom: 20px;
+    }
+  }
+}

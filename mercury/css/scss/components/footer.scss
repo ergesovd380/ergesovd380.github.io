@@ -1,0 +1,229 @@
+.footer {
+  margin-top: 50px;
+  background-color: var(--dark);
+  // Firstbar
+  &_first {
+    background-color: var(--white);
+    // all items
+    &-items {
+      height: 64px;
+      @include flex-all-sb;
+    }
+    // Все контакты
+    &-contact {
+      margin-right: 70px;
+
+      &:last-child {
+        margin: 0;
+      }
+      // 991.5px
+      @include for-big-tablet {
+        margin: 0;
+      }
+    }
+    // Все ссылки
+    &-link {
+      color: var(--dark);
+      text-decoration: underline;
+    }
+    // E-mail
+    &-email {
+      color: var(--dark);
+    }
+    // Проподает в мобилке
+    &-mob {
+      // 991.5px
+      @include for-big-tablet {
+        display: none;
+      }
+    }
+    // Меняется в мобилке
+    &-blog {
+      // 991.5px
+      @include for-big-tablet {
+        width: 100%;
+        @include flex-all-sb;
+      }
+    }
+  }
+  // Secondbar
+  &_second {
+    margin: 0 auto;
+    padding: 60px 0;
+    color: var(--white);
+    // all items
+    &-items {
+      margin: 0 30px;
+      // 991.5px
+      @include for-big-tablet {
+        text-align: center;
+      }
+    }
+    // title
+    &-title {
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+    // menu
+    &-menu {
+      margin-top: 10px;
+      list-style: none;
+      cursor: pointer;
+
+      &-item {
+        margin-top: 15px;
+        
+        &-link {
+          color: var(--white);
+
+          &:hover {
+            color: var(--white);
+          }
+        }
+      }
+    }
+    // First Group
+    &-GroupFirst {
+      // Icons div
+      &-icons {
+        margin-top: 30px;
+        // Icons
+        &-item {
+          margin-right: 28px;
+
+          @include for-small-laptop {
+            margin: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        // 1199.5px
+        @include for-small-laptop {
+          @include flex-all-sb;
+        }
+        // 991.5px
+        @include for-big-tablet {
+          display: none;
+        }
+      }
+      // yandex icon
+      &-yandex {
+        margin-top: 39px;
+        // 991.5px
+        @include for-big-tablet {
+          display: none;
+        }
+      }
+    }
+    // Second Group
+    &-GroupSecond {
+      // 1199.5px
+      @include for-small-laptop {
+        display: none;
+      }
+    }
+    // Fifth Group
+    &-GroupFifth{
+      // E-mail
+      &-email {
+        margin-top: 28px;
+        cursor: pointer;
+        // 991.5px
+        @include for-big-tablet {
+          margin-top: 20px;
+        }
+      }
+      // Address
+      &-address {
+        margin-top: 30px;
+        cursor: pointer;
+        // 991.5px
+        @include for-big-tablet {
+          margin-top: 20px;
+        }
+      }
+      // Bank div
+      &-banks {
+        margin-top: 40px;
+        // Bank icons
+        &-item {
+          margin-right: 20px;
+          cursor: pointer;
+  
+          &:last-child {
+            margin: 0;
+          }
+        }
+        // 991.5px
+        @include for-big-tablet {
+          margin-top: 30px;
+        }
+      }
+      // Messengar icons
+      &-icons {
+        display: none;
+        // 991.5px
+        @include for-big-tablet {
+          display: block;
+          margin-bottom: 30px;
+
+          &-item {
+            margin-right: 28px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    // Bottom groups
+    &-Group2 {
+      margin-top: 50px;
+    }
+    // Secondbar center groups
+    &-center {
+      // 991.5px
+      @include for-big-tablet {
+        margin: 50px 0;
+      }
+      // 575.5px
+      @include for-small-tablet {
+        text-align: left;
+      }
+    }
+  }
+  // Thirdbar
+  &_third {
+    height: 82px;
+    @include flex-all-center;
+    color: var(--optianal-gray);
+  }
+  // Dividers
+  &_divider {
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
+  // Mobile
+  &_mobile{
+    display: none;
+
+    &-body {
+      padding: 0 40px;
+      height: 67px;
+      @include flex-all-sb;
+      background-color: var(--white);
+    }
+
+    @include for-big-tablet {
+      display: block;
+    }
+  }
+  // 767.5px
+  @include for-tablet {
+    padding: 0;
+  }
+}

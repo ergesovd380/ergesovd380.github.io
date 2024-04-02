@@ -1,0 +1,48 @@
+.sale {
+
+  &_title {
+    margin-bottom: 30px;
+
+    @include for-tablet {
+      margin: 0;
+    }
+  }
+
+  &_item {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+
+    &-img {
+      width: 100%;
+      max-height: 360px;
+      border-radius: 5px;
+    }
+
+    &-deadline {
+      margin-bottom: 20px;
+      
+      @include for-tablet {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-text {
+      margin-top: 20px;
+
+      @include for-tablet {
+        margin-top: 10px;
+      }
+    }
+
+    @include for-small-laptop {
+      padding: 20px;
+    }
+
+    @include for-tablet {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  }
+}
+

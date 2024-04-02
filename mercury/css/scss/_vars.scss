@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+// здесь храниться все глобальные размеры, цвета
+:root {
+  // base
+  --font-family: "Roboto";
+//   --content-width: 1362px;
+//   --container-offset: 15px;
+//   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+// // новый контейнер который я добавил
+//   --content-fluid-width: 1790px;
+//   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white: #fff;
+  --danger: #d52027;
+  --gray-bcg: #D7D7DA;
+  --gray: #D7D7D7;
+  --optianal-gray: #B4B4B4;
+  --dark: #1D1D1B;
+  --success: #33D03A;
+  --yellow: #F9AE1C;
+  --gold: #E7BB67;
+}
