@@ -157,18 +157,29 @@ input[type="file"]::-webkit-file-upload-button {
   .header_secondbar_fSection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 80px; }
+    @media (max-width: 1600px) {
+      .header_secondbar_fSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
   @media (max-width: 1399.5px) {
     .header_secondbar-logo {
       width: 190px;
       height: 39px; } }
+  .header_secondbar-icons {
+    display: flex; }
+  .header_secondbar-form {
+    margin: 0 80px 0 50px; }
+    @media (max-width: 1399.5px) {
+      .header_secondbar-form {
+        margin: 0; } }
   @media (max-width: 991.5px) {
     .header_secondbar-mob {
       display: none; } }
   .header_secondbar_input {
     height: 39px;
-    width: 563px;
+    width: 500px;
     border: 1px solid var(--gray);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -606,7 +617,7 @@ input[type="file"]::-webkit-file-upload-button {
         margin: 3px 0 20px 0; } }
 
 .icons {
-  margin-right: 35px;
+  margin-right: 30px;
   width: 35px;
   height: 35px;
   border-radius: 50px;
