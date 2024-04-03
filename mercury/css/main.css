@@ -667,7 +667,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 49px;
     background-color: var(--danger); }
   .card_title {
-    margin: 10px 0; }
+    margin: 10px 0;
+    -webkit-line-clamp: 2; }
     .card_title:hover {
       text-decoration: underline; }
   .card_cost {
@@ -897,6 +898,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .tabs-product_items {
     padding-bottom: 7px;
     margin-bottom: -4px;
+    text-align: center;
     cursor: pointer; }
     .tabs-product_items-first {
       margin-right: 40px; }
@@ -1946,6 +1948,10 @@ dialog {
       color: var(--dark); }
       .catalog_mobile-filters-btn-icon {
         margin-right: 10px; }
+  @media (max-width: 450px) {
+    .catalog_mobile-collapse {
+      margin: 10px 0 0 -12px;
+      width: 107%; } }
   @media (max-width: 991.5px) {
     .catalog_mobile {
       display: block; } }
