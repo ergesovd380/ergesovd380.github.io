@@ -1,8 +1,11 @@
 // Banner section
 new Swiper('.banner-slider', {
-  scrollbar: {
+  pagination: {
     el: '.banner_swiper-scrollbar',
-    draggable: true,
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '">' + '</div>';
+    }
   },
 })
 

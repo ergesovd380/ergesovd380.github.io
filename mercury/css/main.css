@@ -73,6 +73,8 @@ body {
     @media (max-width: 767.5px) {
       .section_banner {
         margin-top: 0; } }
+  .section_categories {
+    margin: 0 0 10px 0; }
 
 @media (max-width: 767.5px) {
   .title {
@@ -1617,12 +1619,18 @@ dialog {
     background-color: var(--white);
     color: var(--dark); }
 .banner_swiper-scrollbar {
-  border-radius: 40px;
-  height: 5px;
-  background-color: var(--white);
-  z-index: 1000; }
-.banner .swiper-scrollbar-drag {
-  background-color: var(--danger); }
+  display: flex;
+  margin-top: 3px;
+  position: relative;
+  z-index: 100; }
+.banner .swiper-pagination-bullet {
+  height: 3px;
+  flex-grow: 1;
+  border-radius: 0;
+  background-color: #fff;
+  opacity: 1; }
+.banner .swiper-pagination-bullet-active {
+  background: var(--danger); }
 .banner_small {
   height: 160px;
   position: relative;

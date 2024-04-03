@@ -76,13 +76,20 @@
 
   // Banner scroll
   &_swiper-scrollbar {
-    border-radius: 40px;
-    height: 5px;
-    background-color: var(--white); 
-    z-index: 1000;
+    display: flex;
+    margin-top: 3px;
+    position: relative;
+    z-index: 100;
   }
-  .swiper-scrollbar-drag {
-   background-color: var(--danger);  
+  .swiper-pagination-bullet {
+    height: 3px;
+    flex-grow: 1;
+    border-radius: 0;
+    background-color: #fff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--danger);
   }
 // Swiper end
 
