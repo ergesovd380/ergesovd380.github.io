@@ -35,6 +35,14 @@ body{
     color: var(--dark);
     text-decoration: underline;
   }
+
+  &_banner {
+    margin-top: 30px;
+
+    @include for-tablet {
+      margin-top: 0;
+    }
+  }
 }
 
 img {

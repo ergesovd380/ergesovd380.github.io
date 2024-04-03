@@ -16,6 +16,8 @@
 
   &_cart {
     position: relative;
+    width: 40px;
+    height: 40px;
 
     &-count {
       @include flex-all-center;
@@ -39,6 +41,11 @@
         top: -5px;
         right: -5px;
       }
+    }
+
+    &-img {
+      width: 30px;
+      height: 30px;
     }
   }
 

@@ -68,6 +68,11 @@ body {
     margin: 0 0 7px 50px;
     color: var(--dark);
     text-decoration: underline; }
+  .section_banner {
+    margin-top: 30px; }
+    @media (max-width: 767.5px) {
+      .section_banner {
+        margin-top: 0; } }
 
 img {
   height: auto;
@@ -159,7 +164,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .header_topbar_adr {
       display: none; } }
 .header_topbar_whatsapp {
-  margin-left: 20px; }
+  margin-left: 20px;
+  width: 18px;
+  height: 18px; }
 .header_secondbar {
   background-color: var(--white); }
   .header_secondbar_fSection {
@@ -317,19 +324,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       text-transform: uppercase; }
     .footer_second-number {
       margin-top: 20px;
-      color: var(--white); }
+      color: var(--white);
+      transition: color 0.5s ease-in-out; }
       .footer_second-number:hover {
-        color: var(--white); }
+        color: rgba(255, 255, 255, 0.6); }
     .footer_second-menu {
       margin-top: 10px;
       list-style: none;
       cursor: pointer; }
       .footer_second-menu-item {
-        margin-top: 15px; }
+        margin-top: 15px;
+        transition: color 0.5s ease-in-out; }
+        .footer_second-menu-item:hover {
+          color: rgba(255, 255, 255, 0.6); }
         .footer_second-menu-item-link {
-          color: var(--white); }
+          color: var(--white);
+          transition: color 0.5s ease-in-out; }
           .footer_second-menu-item-link:hover {
-            color: var(--white); }
+            color: rgba(255, 255, 255, 0.6); }
     .footer_second-GroupFirst-icons {
       margin-top: 30px; }
       .footer_second-GroupFirst-icons-item {
@@ -357,7 +369,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: none; } }
     .footer_second-GroupFifth-email {
       margin-top: 28px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: color 0.5s ease-in-out; }
+      .footer_second-GroupFifth-email:hover {
+        color: rgba(255, 255, 255, 0.6); }
       @media (max-width: 991.5px) {
         .footer_second-GroupFifth-email {
           margin-top: 20px; } }
@@ -664,7 +679,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .icons:hover {
     background-color: var(--gray); }
   .icons_cart {
-    position: relative; }
+    position: relative;
+    width: 40px;
+    height: 40px; }
     .icons_cart-count {
       display: flex;
       align-items: center;
@@ -683,6 +700,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       .icons_cart-count-mob {
         top: -5px;
         right: -5px; }
+    .icons_cart-img {
+      width: 30px;
+      height: 30px; }
   @media (max-width: 1199.5px) {
     .icons {
       margin-right: 15px; } }
@@ -795,7 +815,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .btn_card:hover {
     background-color: var(--danger);
     color: var(--white);
-    border: none; }
+    border-color: var(--danger); }
 .btn_tab {
   padding: 7px 14px;
   margin-right: 20px;

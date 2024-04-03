@@ -68,9 +68,10 @@
     &-number {
       margin-top: 20px;
       color: var(--white);
+      transition: color 0.5s ease-in-out;
 
       &:hover {
-        color: var(--white);
+        color: rgba(#fff, 0.6);
       }
     }
     // menu
@@ -81,12 +82,18 @@
 
       &-item {
         margin-top: 15px;
+        transition: color 0.5s ease-in-out;
+
+        &:hover {
+          color: rgba(#fff, 0.6);
+        }
         
         &-link {
           color: var(--white);
+          transition: color 0.5s ease-in-out;
 
           &:hover {
-            color: var(--white);
+            color: rgba(#fff, 0.6);
           }
         }
       }
@@ -139,6 +146,11 @@
       &-email {
         margin-top: 28px;
         cursor: pointer;
+        transition: color 0.5s ease-in-out;
+
+        &:hover {
+          color: rgba(#fff, 0.6);
+        }
         // 991.5px
         @include for-big-tablet {
           margin-top: 20px;
