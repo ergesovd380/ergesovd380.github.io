@@ -108,11 +108,20 @@ new Swiper('.tabs_body-slider', {
 // Скрыть фильтры
 function showMore() {
   const listItems = document.querySelectorAll('.catalog_filters-brands-li');
+  const listItemsMob = document.querySelectorAll('.catalog_filters-brands-mob-li');
   for (let i = 0; i < listItems.length; i++) {
     if (i >= 6 && listItems[i].style.display !== 'none') {
       listItems[i].style.display = 'none';
     } else {
       listItems[i].style.display = '';
+    }
+  }
+
+  for (let m = 0; m < listItemsMob.length; m++) {
+    if (m >= 6 && listItemsMob[m].style.display !== 'none') {
+      listItemsMob[m].style.display = 'none';
+    } else {
+      listItemsMob[m].style.display = '';
     }
   }
 }

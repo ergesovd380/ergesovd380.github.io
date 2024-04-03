@@ -2,12 +2,8 @@
 new Swiper('.tabs-slider', {
   breakpoints: {
     300: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    500: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 3.3,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 5,

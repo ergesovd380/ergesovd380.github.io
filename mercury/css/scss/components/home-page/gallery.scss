@@ -15,15 +15,29 @@
       top: 60px;
       left: 50px;
       color: var(--white);
+
+      @include for-mobile {
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 40px;
+      }
     }
 
     @include for-big-tablet {
       margin-bottom: 20px;
     }
+
+    @include for-mobile {
+      height: 216px;
+    }
   }
 
   &_title {
     margin-bottom: 20px;
+
+    @include for-mobile {
+      margin-bottom: 10px;
+    }
   }
 
   &_subtitle {

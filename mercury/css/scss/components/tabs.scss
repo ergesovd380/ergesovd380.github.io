@@ -40,6 +40,12 @@
       margin-right: 40px;
     }
 
+    &-second {
+      @include for-small-tablet {
+        margin-left: 20px;
+      }
+    }
+
     &:is(.active) {
       border-bottom: 4px solid var(--danger);
       border-radius: 4px;
@@ -53,6 +59,10 @@
 
     &-body {
       margin-top: 30px;
+
+      @include for-small-tablet {
+        margin-top: 20px;
+      }
     }
 
     &-title {
@@ -61,6 +71,10 @@
 
     &-text {
       line-height: 21px;
+
+      @include for-small-tablet {
+        line-height: 10px;
+      }
     }
   }
 
@@ -69,6 +83,11 @@
     &-title {
       display: flex;
       align-items: center;
+      margin-top: 30px;
+
+      @include for-small-tablet {
+        margin-top: 20px;
+      }
     }
 
     &-stars {
@@ -104,8 +123,15 @@
     }
 
     @include for-mobile {
-      width: 100%;
-      padding: 0 0 7px 0;
+      // padding: 0 15px 7px 15px;
+
+      &:first-child {
+        padding: 0 15px 7px 0;
+      }
+
+      &:last-child {
+        padding: 0 0 7px 15px;
+      }
     }
   }
 

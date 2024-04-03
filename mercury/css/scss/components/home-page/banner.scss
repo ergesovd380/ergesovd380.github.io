@@ -24,8 +24,9 @@
 
     &-img {
       height: 100%;
-      width: 100%;
       border-radius: 5px;
+      object-fit: cover;
+      object-position: 40% 50%;
     }
 
     &-text {
@@ -33,6 +34,7 @@
       width: 100%;
       position: absolute;
       top: 0;
+      right: 0;
       color: var(--white);
     }
   }
@@ -53,6 +55,11 @@
     // 991.5px
     @include for-big-tablet {
       margin: 14px 0;
+    }
+
+    @include for-mobile {
+      max-width: 175px;
+      text-align: left;
     }
   }
 
@@ -111,10 +118,9 @@
 
     // Small banner btn
     &_btn {
-      @include flex-all-center;
-
       width: 20px;
       height: 20px;
+      background: url(../../../../assets/img/icons/arrow_right.svg) no-repeat center;
       background-color: var(--white);
       border: none;
       border-radius: 5px;
@@ -122,6 +128,10 @@
       @include for-big-tablet {
         width: 30px;
         height: 30px;
+      }
+
+      @include for-mobile {
+
       }
     }
     // 991.5px

@@ -161,6 +161,7 @@
     width: 318px;
     border: 1px solid var(--dark);
     border-radius: 5px;
+    color: var(--dark);
     
     appearance: none;
     background: url(../assets/img/icons/arrow_select.svg) no-repeat;
@@ -187,6 +188,7 @@
         border: none;
         border-radius: 5px;
         background-color: var(--white);
+        color: var(--dark);
   
         &-icon {
           margin-right: 10px;

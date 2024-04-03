@@ -5,6 +5,10 @@
   &_subtitle{ 
     margin-top: 25px;
     max-width: 552px;
+
+    @include for-tablet {
+      margin-top: 20px;
+    }
   }
   // Error btn
   &_btn {
@@ -12,12 +16,17 @@
     margin-top: 50px;
     border: 1px solid var(--dark);
     border-radius: 5px;
+    color: var(--dark);
 
     font-size: 16px;
     font-weight: 600;
     line-height: 29px;
 
     background-color: transparent;
+
+    @include for-tablet {
+      margin-top: 40px;
+    }
   }
   // 767.5px
   @include for-tablet {

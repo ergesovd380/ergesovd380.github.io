@@ -6,9 +6,9 @@
     // grid-template-columns: repeat(3, 1fr);
     // gap: 30px;
 
-    // @include for-laptop {
-
-    // }
+    @include for-big-tablet {
+      margin-top: 0;
+    }
   }
 
   &_card {

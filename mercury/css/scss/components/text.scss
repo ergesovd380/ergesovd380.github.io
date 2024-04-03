@@ -153,6 +153,10 @@
     font-size: 36px;
     font-weight: 800;
     line-height: 20px;
+
+    @include for-small-tablet {
+      font-size: 32px;
+    }
   }
 
   &-sale {
@@ -168,7 +172,7 @@
   }
 }
 
-.error_404 {
+.error-404 {
   font-size: 221px;
   font-weight: 300;
   line-height: 259px;
@@ -177,6 +181,18 @@
     font-size: 128px;
     font-weight: 300;
     line-height: 150px;
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26.4px;
+
+    @include for-tablet {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
   }
 }
 

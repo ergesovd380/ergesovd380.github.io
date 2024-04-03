@@ -72,6 +72,8 @@
       border: 1px solid var(--gray);
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       padding-left: 20px;
 
       &:focus {
@@ -105,6 +107,7 @@
       height: 39px;
       border: 1px solid var(--gray);
       text-align: center;
+      color: var(--dark);
 
       appearance: none;
       background: url(../assets/img/icons/arrow_select.svg) no-repeat center;
@@ -125,13 +128,17 @@
         border-radius: 5px;
         background: url(../assets/img/icons/arrow_select.svg) no-repeat center;
         background-color: #F2F2F2;
-        background-position-x: calc(100% - 90px);
+        background-position-x: calc(100% - 80px);
       }
       
       @include for-mobile {
         width: 100%;
+        text-align: left;
+        padding: 0 0 0 35%;
+        background-position-x: calc(100% - 110px);
       }
     }
+    
 
     &_btn {
       width: 50px;
@@ -166,6 +173,11 @@
   .nav-first-item {
     width: 100%;
     margin-bottom: 15px;
+
+    @include for-mobile {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .nav-second-item {

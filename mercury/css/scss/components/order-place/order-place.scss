@@ -17,6 +17,10 @@
       border-radius: 62px;
       background-color: var(--gold);
       color: var(--white);
+
+      @include for-small-tablet {
+        padding: 7px 40px;
+      }
     }
 
     &-title {

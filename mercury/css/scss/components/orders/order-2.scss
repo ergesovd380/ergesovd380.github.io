@@ -101,6 +101,12 @@
         margin-bottom: 5px;
       }
     }
+    // Title 
+    &-title {
+      @include for-mobile {
+        width: 156px;
+      }
+    }
     // Product Data
     &-data {
       width: 100%;
