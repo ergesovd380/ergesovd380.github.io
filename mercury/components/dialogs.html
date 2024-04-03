@@ -175,12 +175,19 @@
               <input type="email" placeholder="E-mail" class="form_input dialog-proj_form-input title_h6">
               <input type="number" placeholder="Телефон" class="form_input dialog-proj_form-input title_h6">
               <textarea class="form_textarea dialog-proj_form-input title_h6" placeholder="Комментарий"></textarea>
+
               <div class="dialog-proj_form-input">
-                <label for="import-file" class="dialog-proj_form-label">
-                  <input type="file" id="import-file" name="Выбери" multiple>
+                <div class="dialog-proj_form-file-name">
+                  <img src="../assets/img/icons/folder.svg" alt="Folder icon">
+                  <span class="dialog-proj_form-file-name-text sale-text"></span>
+                  <img src="../assets/img/icons/close.svg" width="13" height="13" alt="Close icon" onclick="deleteFileProj()">
+                </div>
+                <input type="file" onchange="updateFileProj()"  class="dialog-proj_form-file" id="import-proj-file" name="Выбери">
+                <label for="import-proj-file" class="dialog-proj_form-label">
                   <div class="link_gray">+ Добавить документ</div>
                 </label>
               </div>
+
               <div class="form_checkboxdata">
                 <input 
                   type="checkbox" 
@@ -194,38 +201,45 @@
         <!-- Dialog-project end -->
       </div>
       <div class="col mt-5">
-        <!-- Dialog-project start -->
+        <!-- Dialog-analogue start -->
         <div class="dialog-project">
-          <div class="dialog-proj">
+          <div class="dialog_analog">
             <!-- Close -->
-            <img src="../assets/img/icons/close.svg" class="dialog-proj_close pointer" alt="Close">
+            <img src="../assets/img/icons/close.svg" class="dialog_analog_close pointer" alt="Close">
             <!-- Title -->
-            <h2 class="dialog-proj_title title_h2">Посчитать проект</h2>
+            <h2 class="dialog_analog_title title_h2">Подобрать аналог</h2>
             <!-- Subtitle -->
             <h5 class="title_h5">Оставьте заявку и мы подберем аналоги по фото.</h5>
             <!-- Form -->
-            <form class="form dialog-proj_form">
-              <input type="text" placeholder="Имя" class="form_input dialog-proj_form-input title_h6">
-              <input type="email" placeholder="E-mail" class="form_input dialog-proj_form-input title_h6">
-              <input type="number" placeholder="Телефон" class="form_input dialog-proj_form-input title_h6">
-              <textarea class="form_textarea dialog-proj_form-input title_h6" placeholder="Комментарий"></textarea>
-              <div class="dialog-proj_form-input">
-                <label for="import-file" class="dialog-proj_form-label">
-                  <input type="file" id="import-file" name="Выбери" multiple>
+            <form class="form dialog_analog_form">
+              <input type="text" placeholder="Имя" class="form_input dialog_analog_form-input title_h6">
+              <input type="email" placeholder="E-mail" class="form_input dialog_analog_form-input title_h6">
+              <input type="number" placeholder="Телефон" class="form_input dialog_analog_form-input title_h6">
+              <textarea class="form_textarea dialog_analog_form-input title_h6" placeholder="Комментарий"></textarea>
+
+              <div class="dialog_analog_form-input">
+                <div class="dialog_analog_form-file-name">
+                  <img src="../assets/img/icons/folder.svg" alt="Folder icon">
+                  <span class="dialog_analog_form-file-name-text sale-text"></span>
+                  <img src="../assets/img/icons/close.svg" width="13" height="13" alt="Close icon" onclick="deleteFileAnalog()">
+                </div>
+                <input type="file" onchange="updateFileAnalog()"  class="dialog_analog_form-file" id="import-analog-file" name="Выбери">
+                <label for="import-analog-file" class="dialog_analog_form-label">
                   <div class="link_gray">+ Добавить документ</div>
                 </label>
               </div>
+
               <div class="form_checkboxdata">
                 <input 
                   type="checkbox" 
                   class="form-checkbox pointer" 
-                  id="dialog-proj_form-checkbox">
-                <label class="form_checkbox-label dialog-proj_form-label small-text " for="dialog-proj_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
+                  id="dialog_analog_form-checkbox">
+                <label class="form_checkbox-label dialog_analog_form-label small-text " for="dialog_analog_form-checkbox">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и с публичной офертой</label>
               </div>
             </form>
           </div>
         </div>
-        <!-- Dialog-project end -->
+        <!-- Dialog-analogue end -->
       </div>
     </div>
     <div class="row my-5">

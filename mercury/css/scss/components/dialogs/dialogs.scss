@@ -202,14 +202,80 @@ dialog {
 
     &-input {
       margin-bottom: 20px;
+      position: relative;
+      text-align: left;
+    }
+    
+    &-file {
+      color: transparent;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      &-name {
+        margin-bottom: 10px;
+      }
     }
 
     &-text {
       color: var(--optianal-gray);
     }
+  }
 
-    &-label {
+  @include for-small-tablet {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+  }
+}
+
+// Dialog analogue
+.dialog_analog {
+  width: 400px;
+  padding: 50px 40px;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--white);
+  text-align: center;
+  // Кнопка close
+  &_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &_back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &_title {
+    margin-bottom: 20px;
+  }
+
+  &_form {
+    margin-top: 20px;
+
+    &-input {
+      margin-bottom: 20px;
+      position: relative;
       text-align: left;
+    }
+    
+    &-file {
+      color: transparent;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      &-name {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-text {
+      color: var(--optianal-gray);
     }
   }
 
