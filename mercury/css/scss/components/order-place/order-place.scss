@@ -98,12 +98,17 @@
         border-radius: 5px;
       }
       // On active
-      &-radio:checked + &-label, 
-      &-radio:checked + &-label > &-checkbox-custom::before {
-        transform: scale(1);
-
+      &-radio:checked + &-label {
         border: 1px dashed var(--dark);
         color: var(--dark);
+
+        .order-place_payment-types-checkbox-custom {
+          border: none;
+        }
+      }
+
+      &-radio:checked + &-label > &-checkbox-custom::before {
+        transform: scale(1);
       }
 
       &-item {

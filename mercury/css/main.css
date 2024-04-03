@@ -2423,10 +2423,13 @@ dialog {
       border: 1px dashed var(--optianal-gray);
       color: var(--optianal-gray);
       border-radius: 5px; }
-    .order-place_payment-types-radio:checked + .order-place_payment-types-label, .order-place_payment-types-radio:checked + .order-place_payment-types-label > .order-place_payment-types-checkbox-custom::before {
-      transform: scale(1);
+    .order-place_payment-types-radio:checked + .order-place_payment-types-label {
       border: 1px dashed var(--dark);
       color: var(--dark); }
+      .order-place_payment-types-radio:checked + .order-place_payment-types-label .order-place_payment-types-checkbox-custom {
+        border: none; }
+    .order-place_payment-types-radio:checked + .order-place_payment-types-label > .order-place_payment-types-checkbox-custom::before {
+      transform: scale(1); }
     @media (max-width: 767.5px) {
       .order-place_payment-types-item {
         margin-bottom: 20px; }
