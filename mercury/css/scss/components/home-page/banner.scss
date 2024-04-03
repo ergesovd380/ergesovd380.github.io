@@ -1,5 +1,10 @@
 .banner {
 
+
+  &_items {
+    @include flex-all-sb;
+  }
+
 // Swiper start
   &_first-section {
     height: 350px;
@@ -58,7 +63,7 @@
     }
 
     @include for-mobile {
-      max-width: 175px;
+      // max-width: 175px;
       text-align: left;
     }
   }

@@ -1672,6 +1672,10 @@ dialog {
       display: block;
       text-align: center; } }
 
+.banner_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 .banner_first-section {
   height: 350px; }
   @media (max-width: 991.5px) {
@@ -1709,7 +1713,6 @@ dialog {
       margin: 14px 0; } }
   @media (max-width: 450px) {
     .banner_swiper_subtitle {
-      max-width: 175px;
       text-align: left; } }
 .banner_btn {
   color: var(--white);

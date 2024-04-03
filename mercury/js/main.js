@@ -72,17 +72,17 @@ new Swiper('.product-slider', {
   },
 });
 
-const bannerDeleteContainer = function() {
-  const banner=document.body.querySelector('.home-page-banner-section');
-  if(window.innerWidth > 450){
-    banner.classList.add('container');
-  }else{
-    banner.classList.remove('container');
-  }
-}
+// const bannerDeleteContainer = function() {
+//   const banner=document.body.querySelector('.home-page-banner-section');
+//   if(window.innerWidth > 450){
+//     banner.classList.add('container');
+//   }else{
+//     banner.classList.remove('container');
+//   }
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
-  bannerDeleteContainer()
+  // bannerDeleteContainer()
   // Проверка кол-во фото в модальном окне
   const imagesModal = document.querySelectorAll('.dialog-card_images-small div');
   if(imagesModal.length > 5) {
@@ -131,9 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 })
-window.addEventListener('resize', () => {
-  bannerDeleteContainer();
-})
+// window.addEventListener('resize', () => {
+//   bannerDeleteContainer();
+// })
 
 // Dialog-buy
 const dialogBuy = document.querySelector('.dialog-for-buy');
