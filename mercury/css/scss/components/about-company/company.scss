@@ -14,10 +14,6 @@
     @include for-small-laptop {
       margin-top: 30px;
     }
-
-    @include for-tablet {
-      margin-top: 20px;
-    }
   }
 
   &_banner {
@@ -28,6 +24,7 @@
       height: 100%;
       width: 100%;
       border-radius: 5px;
+      object-fit: cover;
     }
 
     &-text {
@@ -90,7 +87,7 @@
     }
 
     @include for-big-tablet {
-      padding-bottom: 290px;
+      padding-bottom: 300px;
       position: relative;
     }
   }
@@ -131,7 +128,7 @@
       margin-bottom: 20px;
       
       @include for-tablet {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
     }
 

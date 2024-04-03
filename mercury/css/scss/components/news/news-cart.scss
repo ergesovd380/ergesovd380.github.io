@@ -4,7 +4,7 @@
     margin-bottom: 30px;
 
     @include for-tablet {
-      margin: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -41,6 +41,10 @@
       width: 100%;
       max-height: 360px;
       border-radius: 5px;
+
+      @include for-small-tablet {
+        height: 160px;
+      }
     }
 
     &-text {

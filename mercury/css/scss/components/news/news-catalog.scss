@@ -1,14 +1,14 @@
 .news-catalog {
 
   &_card {
-    margin-top: 30px;
-
-    @include for-small-laptop {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
 
     @include for-small-tablet {
-      margin-top: 10px;
+      margin: 0 0 10px 0;
+      
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 }

@@ -45,6 +45,12 @@ body{
   }
 }
 
+.title {
+  @include for-tablet {
+    margin-top: 30px;
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
