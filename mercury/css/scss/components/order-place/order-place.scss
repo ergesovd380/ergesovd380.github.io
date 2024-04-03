@@ -75,12 +75,14 @@
           display: inline-block;
           width: 16px;
           height: 16px;
+          border: 1px solid var(--optianal-gray);
           border-radius: 5px;
           background-color: black;
           background-image: url('../assets/img/icons/checkbox.svg');
           transform: scale(0);
           background-size: contain;
           background-repeat: no-repeat;
+          background-position: center;
         }
       }
       // Label

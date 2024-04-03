@@ -89,7 +89,7 @@
     color: var(--dark);
 
     &:hover,
-    &:active {
+    &:is(.active) {
       background-color: var(--dark);
       color: var(--white);
     }

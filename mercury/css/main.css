@@ -844,7 +844,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 5px;
   background-color: transparent;
   color: var(--dark); }
-  .btn_tab:hover, .btn_tab:active {
+  .btn_tab:hover, .btn_tab:is(.active) {
     background-color: var(--dark);
     color: var(--white); }
 
@@ -880,7 +880,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer; }
     .tabs_items:is(.active) {
       border-bottom: 4px solid var(--danger);
-      border-radius: 4px; }
+      border-radius: 3px; }
     @media (max-width: 450px) {
       .tabs_items {
         text-align: center; } }
@@ -888,7 +888,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-top: 20px;
     margin-top: -4px;
     border-top: 4px solid var(--white);
-    border-radius: 4px; }
+    border-radius: 3px; }
 
 .tabs-product {
   margin-top: 30px;
@@ -905,11 +905,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-left: 20px; } }
     .tabs-product_items:is(.active) {
       border-bottom: 4px solid var(--danger);
-      border-radius: 4px; }
+      border-radius: 3px; }
   .tabs-product_content {
     margin-top: -4px;
-    border-top: 4px solid var(--gray);
-    border-radius: 4px; }
+    border-top: 3px solid var(--gray);
+    border-radius: 3px; }
     .tabs-product_content-body {
       margin-top: 30px; }
       @media (max-width: 575.5px) {
@@ -1846,11 +1846,15 @@ dialog {
       color: var(--dark);
       border-radius: 5px; }
       .catalog_categories-list-link:hover {
-        color: var(--white);
         background-color: var(--dark); }
+        .catalog_categories-list-link:hover .catalog_categories-list-name {
+          text-decoration: underline;
+          color: var(--white); }
       .catalog_categories-list-link:is(.active) {
-        color: var(--white);
         background-color: var(--dark); }
+        .catalog_categories-list-link:is(.active) .catalog_categories-list-name {
+          text-decoration: underline;
+          color: var(--white); }
     .catalog_categories-list-name {
       margin: 0 15px; }
     .catalog_categories-list-pcs {
@@ -2289,12 +2293,14 @@ dialog {
         display: inline-block;
         width: 16px;
         height: 16px;
+        border: 1px solid var(--optianal-gray);
         border-radius: 5px;
         background-color: black;
         background-image: url("../assets/img/icons/checkbox.svg");
         transform: scale(0);
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-position: center; }
     .order-place_payment-types-label {
       margin-right: 30px;
       padding: 8px 10px;

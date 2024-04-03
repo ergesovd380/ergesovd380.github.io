@@ -49,13 +49,19 @@
         border-radius: 5px;
         
         &:hover {
-          color: var(--white);
           background-color: var(--dark);
+          .catalog_categories-list-name {
+            text-decoration: underline;
+            color: var(--white);
+          }
         }
 
         &:is(.active) {
-          color: var(--white);
           background-color: var(--dark);
+          .catalog_categories-list-name {
+            text-decoration: underline;
+            color: var(--white);
+          }
         }
       }
       // Filter category name
