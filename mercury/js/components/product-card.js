@@ -133,12 +133,16 @@ closeBtnDialogCheep.addEventListener("click", () => {
 // Dialog-review
 const dialogReview = document.querySelector('.dialog-for-review');
 const modalReview = document.querySelector('.product-card-review');
+const dialogReviewFilter = document.querySelector('.dialog-review-product-filter');
 const showBtnDialogReview = document.querySelector('.modal-review');
 const closeBtnDialogReview = document.querySelector('.dialog-review_close');
 showBtnDialogReview.addEventListener("click", () => {
   dialogReview.showModal();
 });
 modalReview.addEventListener("click", () => {
+  dialogReview.showModal();
+});
+dialogReviewFilter.addEventListener("click", () => {
   dialogReview.showModal();
 });
 closeBtnDialogReview.addEventListener("click", () => {
