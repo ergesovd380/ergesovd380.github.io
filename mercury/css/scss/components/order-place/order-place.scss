@@ -19,12 +19,16 @@
       color: var(--white);
 
       @include for-small-tablet {
-        padding: 7px 40px;
+        padding: 7px 30px;
       }
     }
 
     &-title {
       margin-top: 30px;
+    }
+
+    @include for-mobile {
+      padding: 20px;
     }
   }
 

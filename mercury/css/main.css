@@ -874,46 +874,63 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer; }
 
 .tabs {
-  margin-top: 30px;
-  border-bottom: 4px solid var(--white);
-  border-radius: 4px; }
+  margin-top: 30px; }
   .tabs_items {
-    padding-bottom: 7px;
-    margin-bottom: -4px;
-    cursor: pointer; }
-    .tabs_items:is(.active) {
-      border-bottom: 4px solid var(--danger);
-      border-radius: 3px; }
+    cursor: pointer;
+    z-index: 1; }
+    .tabs_items:is(.active)::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: var(--danger);
+      transition: all 0.3s ease;
+      display: block; }
     @media (max-width: 450px) {
       .tabs_items {
         text-align: center; } }
   .tabs_content {
-    padding-top: 20px;
-    margin-top: -4px;
-    border-top: 4px solid var(--white);
-    border-radius: 3px; }
+    margin-top: -4px; }
+    .tabs_content::before {
+      content: '';
+      width: 100%;
+      height: 4px;
+      margin: 0 0 20px 0;
+      border-radius: 10px;
+      background: var(--white);
+      display: block; }
 
 .tabs-product {
-  margin-top: 30px;
-  border-bottom: 4px solid var(--gray);
-  border-radius: 4px; }
+  margin-top: 30px; }
   .tabs-product_items {
-    padding-bottom: 7px;
-    margin-bottom: -4px;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 1; }
+    .tabs-product_items:is(.active)::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: var(--danger);
+      transition: all 0.3s ease;
+      display: block; }
     .tabs-product_items-first {
       margin-right: 40px; }
     @media (max-width: 575.5px) {
       .tabs-product_items-second {
         margin-left: 20px; } }
-    .tabs-product_items:is(.active) {
-      border-bottom: 4px solid var(--danger);
-      border-radius: 3px; }
   .tabs-product_content {
-    margin-top: -4px;
-    border-top: 3px solid var(--gray);
-    border-radius: 3px; }
+    margin-top: -4px; }
+    .tabs-product_content::before {
+      content: '';
+      width: 100%;
+      height: 4px;
+      margin: 0 0 20px 0;
+      border-radius: 10px;
+      background: var(--optianal-gray);
+      display: block; }
     .tabs-product_content-body {
       margin-top: 30px; }
       @media (max-width: 575.5px) {
@@ -944,25 +961,41 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tabs-order {
   margin-top: 20px;
   border-radius: 4px;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .tabs-order_items {
-    padding: 0 30px 7px 0;
+    padding: 0 30px 3px 0;
+    margin-bottom: -4px;
     color: var(--optianal-gray);
-    border-bottom: 4px solid var(--optianal-gray);
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 1; }
+    .tabs-order_items::after {
+      content: '';
+      width: 110%;
+      height: 4px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: var(--optianal-gray);
+      transition: all 0.3s ease;
+      display: block; }
     .tabs-order_items:is(.active) {
-      border-bottom: 4px solid var(--danger);
-      border-radius: 4px;
       color: var(--dark); }
-    @media (max-width: 450px) {
-      .tabs-order_items:first-child {
-        padding: 0 15px 7px 0; }
-      .tabs-order_items:last-child {
-        padding: 0 0 7px 15px; } }
+      .tabs-order_items:is(.active)::after {
+        background: var(--danger); }
+  .tabs-order_bottom-border {
+    width: 200px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--optianal-gray);
+    position: absolute;
+    bottom: -1px;
+    left: 10%;
+    z-index: 0; }
   .tabs-order_content {
-    margin-top: -4px;
-    padding-top: 30px;
-    border-radius: 4px; }
+    margin-top: 30px; }
+    @media (max-width: 991.5px) {
+      .tabs-order_content::before {
+        width: 90%; } }
     .tabs-order_content-form {
       display: flex; }
       .tabs-order_content-form-blog {
@@ -987,7 +1020,66 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-top: 20px; }
       .tabs-order_content-contactFace-title {
         margin-bottom: 20px; }
-    .tabs-order_content-delivery {
+
+.tabs-deliv {
+  margin-top: 20px;
+  border-radius: 4px;
+  display: flex;
+  position: relative; }
+  .tabs-deliv_items {
+    padding: 0 30px 3px 0;
+    margin-bottom: -4px;
+    color: var(--optianal-gray);
+    cursor: pointer;
+    z-index: 1; }
+    .tabs-deliv_items::after {
+      content: '';
+      width: 110%;
+      height: 4px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: var(--optianal-gray);
+      transition: all 0.3s ease;
+      display: block; }
+    .tabs-deliv_items:is(.active) {
+      color: var(--dark); }
+      .tabs-deliv_items:is(.active)::after {
+        background: var(--danger); }
+  .tabs-deliv_bottom-border {
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--optianal-gray);
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    z-index: 0; }
+  .tabs-deliv_content {
+    margin-top: 30px; }
+    @media (max-width: 991.5px) {
+      .tabs-deliv_content::before {
+        width: 90%; } }
+    .tabs-deliv_content-form {
+      display: flex; }
+      .tabs-deliv_content-form-blog {
+        margin-right: 30px; }
+        @media (max-width: 450px) {
+          .tabs-deliv_content-form-blog {
+            margin: 0; } }
+      @media (max-width: 991.5px) {
+        .tabs-deliv_content-form {
+          display: block; } }
+    .tabs-deliv_content-input {
+      display: block;
+      margin-bottom: 20px; }
+      .tabs-deliv_content-input-small {
+        width: 320px;
+        display: flex;
+        justify-content: space-between; }
+        @media (max-width: 450px) {
+          .tabs-deliv_content-input-small {
+            width: 100%; } }
+    .tabs-deliv_content-delivery {
       margin-bottom: 20px;
       line-height: 20px; }
 
@@ -2271,9 +2363,12 @@ dialog {
     color: var(--white); }
     @media (max-width: 575.5px) {
       .order-place_client-confirmation {
-        padding: 7px 40px; } }
+        padding: 7px 30px; } }
   .order-place_client-title {
     margin-top: 30px; }
+  @media (max-width: 450px) {
+    .order-place_client {
+      padding: 20px; } }
 .order-place_delivery {
   margin-top: 30px;
   padding: 30px;
