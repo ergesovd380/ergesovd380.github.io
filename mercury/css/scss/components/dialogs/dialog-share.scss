@@ -1,14 +1,13 @@
 .dialog-share-link {
   width: 400px;
-  padding: 50px 40px;
 
   @include for-small-tablet {
     width: 100%;
-    height: 369px;
-    padding: 30px 20px;
+    height: 340px;
   }
 }
 .dialog-share {
+  padding: 50px 40px;
   position: relative;
   border-radius: 5px;
   background-color: var(--white);
@@ -16,13 +15,8 @@
   // Кнопка close
   &_close {
     position: absolute;
-    top: -40px;
-    right: -30px;
-
-    @include for-small-tablet {
-      top: -20px;
-      right: -10px;
-    }
+    top: 10px;
+    right: 10px;
   }
 
   &_form {
@@ -38,8 +32,6 @@
   }
 
   @include for-small-tablet {
-    width: 100%;
-    height: 100%;
     padding: 30px 20px;
   }
 }

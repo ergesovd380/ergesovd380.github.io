@@ -1158,26 +1158,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-top: 15px; } }
 
 .dialog-for-buy {
-  width: 400px;
-  padding: 50px 40px; }
+  width: 400px; }
   @media (max-width: 575.5px) {
     .dialog-for-buy {
       width: 100%;
-      height: 468px;
-      padding: 30px 20px; } }
+      height: 473px; } }
 
 .dialog-buy {
+  padding: 50px 40px;
   position: relative;
   border-radius: 5px;
   background-color: var(--white); }
   .dialog-buy_close {
     position: absolute;
-    top: -40px;
-    right: -30px; }
-    @media (max-width: 575.5px) {
-      .dialog-buy_close {
-        top: -20px;
-        right: -10px; } }
+    top: 10px;
+    right: 10px; }
   .dialog-buy_product {
     margin-top: 30px;
     display: flex;
@@ -1210,31 +1205,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-top: 20px; }
   @media (max-width: 575.5px) {
     .dialog-buy {
-      width: 100%;
-      height: 100%;
       padding: 30px 20px; } }
 
 .dialog-for-review {
-  width: 400px;
-  padding: 50px 40px; }
+  width: 400px; }
   @media (max-width: 575.5px) {
     .dialog-for-review {
       width: 100%;
-      height: 600px;
-      padding: 30px 20px; } }
+      height: 635px; } }
 
 .dialog-review {
+  padding: 50px 40px;
   position: relative;
   border-radius: 5px;
   background-color: var(--white); }
   .dialog-review_close {
     position: absolute;
-    top: -40px;
-    right: -30px; }
-    @media (max-width: 575.5px) {
-      .dialog-review_close {
-        top: -20px;
-        right: -10px; } }
+    top: 10px;
+    right: 10px; }
   .dialog-review_product {
     margin-top: 30px;
     display: flex;
@@ -1300,6 +1288,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
           bottom: 70px; } }
     .dialog-review_form-btn {
       margin-top: 20px; }
+  @media (max-width: 575.5px) {
+    .dialog-review {
+      padding: 30px 20px; } }
 
 .dialog-card {
   width: 900px;
@@ -1446,27 +1437,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-top: 20px; }
 
 .dialog-share-link {
-  width: 400px;
-  padding: 50px 40px; }
+  width: 400px; }
   @media (max-width: 575.5px) {
     .dialog-share-link {
       width: 100%;
-      height: 369px;
-      padding: 30px 20px; } }
+      height: 340px; } }
 
 .dialog-share {
+  padding: 50px 40px;
   position: relative;
   border-radius: 5px;
   background-color: var(--white);
   text-align: center; }
   .dialog-share_close {
     position: absolute;
-    top: -40px;
-    right: -30px; }
-    @media (max-width: 575.5px) {
-      .dialog-share_close {
-        top: -20px;
-        right: -10px; } }
+    top: 10px;
+    right: 10px; }
   .dialog-share_form {
     margin-top: 20px; }
     .dialog-share_form-input {
@@ -1475,13 +1461,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin: 20px 0 30px; }
   @media (max-width: 575.5px) {
     .dialog-share {
-      width: 100%;
-      height: 100%;
       padding: 30px 20px; } }
-
-dialog {
-  border: none;
-  border-radius: 5px; }
 
 .lk {
   width: 341px;
@@ -1497,6 +1477,11 @@ dialog {
       display: flex; }
       .lk_blog-btns-prof {
         margin-right: 30px; }
+
+@media (max-width: 575.5px) {
+  .dialog-changePass {
+    width: 100%;
+    height: 417px; } }
 
 .dialog-change {
   width: 400px;
@@ -1521,8 +1506,14 @@ dialog {
       height: 100%;
       padding: 30px 20px; } }
 
+.dialog-prof {
+  width: 430px; }
+  @media (max-width: 575.5px) {
+    .dialog-prof {
+      width: 100%;
+      height: 454px; } }
+
 .dialog-profile {
-  width: 400px;
   padding: 50px 40px;
   position: relative;
   border-radius: 5px;
@@ -1540,8 +1531,6 @@ dialog {
         color: var(--optianal-gray); }
   @media (max-width: 575.5px) {
     .dialog-profile {
-      width: 100%;
-      height: 100%;
       padding: 30px 20px; } }
 
 .dialog-reg {
