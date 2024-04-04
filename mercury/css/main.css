@@ -659,13 +659,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 23px;
     height: 23px;
     z-index: 3;
-    background: url(../../../assets/img/icons/heart.svg);
+    background: url(../assets/img/icons/heart.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     cursor: pointer; }
     .card_heart:hover, .card_heart:is(.active) {
-      background: url(../../../assets/img/icons/red-heart.svg);
+      background: url(../assets/img/icons/red-heart.svg);
       background-repeat: no-repeat;
       background-size: fill;
       background-position: center; }

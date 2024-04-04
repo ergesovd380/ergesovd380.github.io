@@ -41,7 +41,7 @@
     width: 23px;
     height: 23px;
     z-index: 3;
-    background: url(../../../assets/img/icons/heart.svg);
+    background: url(../assets/img/icons/heart.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -49,7 +49,7 @@
 
     &:hover,
     &:is(.active) {
-      background: url(../../../assets/img/icons/red-heart.svg);
+      background: url(../assets/img/icons/red-heart.svg);
       background-repeat: no-repeat;
       background-size: fill;
       background-position: center;
