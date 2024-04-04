@@ -42,6 +42,10 @@
       display: flex;
       max-width: 100%;
       overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     
     .item {

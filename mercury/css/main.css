@@ -916,6 +916,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       display: flex;
       max-width: 100%;
       overflow-x: auto; }
+      .tabs_content-wrapper::-webkit-scrollbar {
+        display: none; }
     .tabs_content .item {
       margin-right: 20px; }
 
