@@ -38,7 +38,22 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000;
+    width: 23px;
+    height: 23px;
+    z-index: 3;
+    background: url(../../../assets/img/icons/heart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover,
+    &:is(.active) {
+      background: url(../../../assets/img/icons/red-heart.svg);
+      background-repeat: no-repeat;
+      background-size: fill;
+      background-position: center;
+    }
   }
 
   &_type {
