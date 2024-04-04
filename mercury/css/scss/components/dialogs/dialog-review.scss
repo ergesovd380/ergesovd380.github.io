@@ -1,5 +1,5 @@
 .dialog-for-review {
-  width: 400px;
+  width: 420px;
 
 
   @include for-small-tablet {
@@ -63,6 +63,7 @@
 
     &-input {
       margin: 10px 0;
+      width: 100%;
     }
 
     &-import {

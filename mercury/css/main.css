@@ -1158,7 +1158,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin-top: 15px; } }
 
 .dialog-for-buy {
-  width: 400px; }
+  width: 430px; }
   @media (max-width: 575.5px) {
     .dialog-for-buy {
       width: 100%;
@@ -1208,7 +1208,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       padding: 30px 20px; } }
 
 .dialog-for-review {
-  width: 400px; }
+  width: 420px; }
   @media (max-width: 575.5px) {
     .dialog-for-review {
       width: 100%;
@@ -1253,7 +1253,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 10px;
     position: relative; }
     .dialog-review_form-input {
-      margin: 10px 0; }
+      margin: 10px 0;
+      width: 100%; }
     .dialog-review_form-import {
       padding: 15px 20px;
       border: 1px dashed var(--optianal-gray);
