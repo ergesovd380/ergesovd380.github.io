@@ -63,9 +63,9 @@
     font-weight: 400;
     line-height: 16px;
 
-    @include for-laptop {
-      font-size: 10px;
-    }
+    // @include for-laptop {
+    //   font-size: 10px;
+    // }
   }
 }
 
