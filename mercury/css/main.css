@@ -735,7 +735,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       line-height: 12px; }
       .icons_cart-count-mob {
         top: -5px;
-        right: -5px; }
+        right: -3px; }
     .icons_cart-img {
       width: 25px;
       height: 25px; }
