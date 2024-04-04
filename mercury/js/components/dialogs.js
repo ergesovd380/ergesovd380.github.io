@@ -8,6 +8,14 @@ showBtnDialogProf.addEventListener("click", () => {
 closeBtnDialogProf.addEventListener("click", () => {
   dialogProf.close();
 });
+dialogProf.addEventListener('click', (e) => {
+  const dialogProf = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogProf;
+
+  if(isClickOnBackDrop) {
+    dialogProf.close();
+  }
+})
 
 // Dialog-change
 const dialogChange = document.querySelector('.dialog-changePass');
@@ -19,6 +27,14 @@ showBtnDialogChange.addEventListener("click", () => {
 closeBtnDialogChange.addEventListener("click", () => {
   dialogChange.close();
 });
+dialogChange.addEventListener('click', (e) => {
+  const dialogProf = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogChange;
+
+  if(isClickOnBackDrop) {
+    dialogChange.close();
+  }
+})
 
 
 // Dialog-project
@@ -43,7 +59,6 @@ function deleteFileProj() {
     Object.keys(files).forEach(key => delete items[key]);
   };
 };
-
 
 // Dialog analogue
 const fileNameAnalog = document.querySelector('.dialog_analog_form-file-name');

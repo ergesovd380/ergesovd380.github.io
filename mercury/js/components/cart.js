@@ -56,6 +56,14 @@ showBtnDialogBuy.addEventListener("click", () => {
 closeBtnDialogBuy.addEventListener("click", () => {
   dialogBuy.close();
 });
+dialogBuy.addEventListener('click', (e) => {
+  const dialogBuy = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogBuy;
+
+  if(isClickOnBackDrop) {
+    dialogBuy.close();
+  }
+})
 
 // Dialog share link
 const dialogShare = document.querySelector('.dialog-share-link');
@@ -67,3 +75,11 @@ showBtnDialogShare.addEventListener("click", () => {
 closeBtnDialogShare.addEventListener("click", () => {
   dialogShare.close();
 });
+dialogShare.addEventListener('click', (e) => {
+  const dialogShare = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogShare;
+
+  if(isClickOnBackDrop) {
+    dialogShare.close();
+  }
+})

@@ -204,8 +204,7 @@
 
     &-collapse {
       @include for-mobile {
-        margin: 10px 0 0 -12px;
-        width: 107%;
+        margin-top: 10px;
       }
     }
     // 991.5px

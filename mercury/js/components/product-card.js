@@ -114,6 +114,14 @@ modalBuy.addEventListener("click", () => {
 closeBtnDialogBuy.addEventListener("click", () => {
   dialogBuy.close();
 });
+dialogBuy.addEventListener('click', (e) => {
+  const dialogBuy = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogBuy;
+
+  if(isClickOnBackDrop) {
+    dialogBuy.close();
+  }
+})
 
 // Dialog-cheep
 const dialogCheep = document.querySelector('.dialog-cheeper');
@@ -129,6 +137,14 @@ modalCheep.addEventListener("click", () => {
 closeBtnDialogCheep.addEventListener("click", () => {
   dialogCheep.close();
 });
+dialogCheep.addEventListener('click', (e) => {
+  const dialogCheep = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogCheep;
+
+  if(isClickOnBackDrop) {
+    dialogCheep.close();
+  }
+})
 
 // Dialog-review
 const dialogReview = document.querySelector('.dialog-for-review');
@@ -148,6 +164,14 @@ dialogReviewFilter.addEventListener("click", () => {
 closeBtnDialogReview.addEventListener("click", () => {
   dialogReview.close();
 });
+dialogReview.addEventListener('click', (e) => {
+  const dialogReview = e.currentTarget;
+  const isClickOnBackDrop = e.target === dialogReview;
+
+  if(isClickOnBackDrop) {
+    dialogReview.close();
+  }
+})
 
 // Counter для модального окна
 let count = 1;
