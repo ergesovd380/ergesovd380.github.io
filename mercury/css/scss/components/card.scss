@@ -73,7 +73,10 @@
 
   &_title {
     margin: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    overflow: hidden;
 
     &:hover {
       text-decoration: underline;

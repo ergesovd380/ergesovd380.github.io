@@ -62,24 +62,13 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-
-    // @include for-laptop {
-    //   font-size: 10px;
-    // }
   }
 }
 
 .phone {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  color: var(--dark);
-
-  @include for-tablet {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-  }
+  line-height: 19px;
 
   &-contact {
     font-size: 18px;
@@ -124,12 +113,6 @@
     font-weight: 300;
     line-height: 28.8px;
   }
-
-  @include for-tablet {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 25.2px;
-  }
 }
 
 .small-text {
@@ -165,16 +148,24 @@
     }
   }
 
+  &-modal {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+  }
+
   &-sale {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     color: var(--optianal-gray);
     text-decoration: line-through;
+  }
 
-    @include for-big-tablet {
-      font-size: 14px;
-    }
+  &-detail {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 20px;
   }
 }
 
@@ -221,4 +212,28 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+.h4-h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  
+  @include for-tablet {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+}
+
+.footer-menu {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+}
+
+.footer-adres {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
