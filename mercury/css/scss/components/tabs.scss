@@ -37,6 +37,16 @@
       background: var(--white);
       display: block;
     }
+
+    &-wrapper {
+      display: flex;
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    
+    .item {
+      margin-right: 20px;
+    }
   }
 }
 
