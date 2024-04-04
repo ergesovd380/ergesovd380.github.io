@@ -1715,6 +1715,9 @@ dialog {
       border-radius: 5px;
       object-fit: cover;
       object-position: 40% 50%; }
+      @media (max-width: 450px) {
+        .banner_swiper-slide-img {
+          border-radius: 0; } }
     .banner_swiper-slide-text {
       height: 100%;
       padding-right: 100px;
@@ -1775,6 +1778,12 @@ dialog {
     width: 100%;
     height: 100%;
     border-radius: 5px; }
+    @media (max-width: 450px) {
+      .banner_small-img {
+        border-radius: 0 5px 5px 0; } }
+    @media (max-width: 450px) {
+      .banner_small-img-2 {
+        border-radius: 5px 0 0 5px; } }
   .banner_small-text {
     position: absolute;
     top: 25px;
