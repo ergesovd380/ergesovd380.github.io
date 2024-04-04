@@ -703,9 +703,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .icons:hover {
     background-color: var(--gray); }
   .icons_cart {
-    position: relative;
-    width: 40px;
-    height: 40px; }
+    position: relative; }
     .icons_cart-count {
       display: flex;
       align-items: center;
@@ -725,8 +723,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         top: -5px;
         right: -5px; }
     .icons_cart-img {
-      width: 30px;
-      height: 30px; }
+      width: 25px;
+      height: 25px; }
   @media (max-width: 1199.5px) {
     .icons {
       margin-right: 15px; } }
