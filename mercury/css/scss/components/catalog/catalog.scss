@@ -114,10 +114,10 @@
       // Other filters list name
       &-title {
         margin-bottom: 20px;
-        background: url(../../../../assets/img/catalog/arrow-top.svg) no-repeat right;
+        background: url(../assets/img/catalog/arrow-top.svg) no-repeat right;
 
         &:is(.collapsed) {
-          background: url(../../../../assets/img/catalog/arrow-right.svg) no-repeat right;
+          background: url(../assets/img/catalog/arrow-right.svg) no-repeat right;
         }
       }
       // Other filters checkbox label

@@ -2064,9 +2064,9 @@ dialog {
     margin-top: 30px; }
     .catalog_filters-items-title {
       margin-bottom: 20px;
-      background: url(../../../../assets/img/catalog/arrow-top.svg) no-repeat right; }
+      background: url(../assets/img/catalog/arrow-top.svg) no-repeat right; }
       .catalog_filters-items-title:is(.collapsed) {
-        background: url(../../../../assets/img/catalog/arrow-right.svg) no-repeat right; }
+        background: url(../assets/img/catalog/arrow-right.svg) no-repeat right; }
     .catalog_filters-items-label {
       margin-left: 10px; }
   .catalog_filters-li {
