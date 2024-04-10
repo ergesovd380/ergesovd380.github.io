@@ -160,6 +160,10 @@
     line-height: 19px;
     color: var(--optianal-gray);
     text-decoration: line-through;
+
+    @include for-tablet {
+      font-size: 14px;
+    }
   }
 
   &-detail {

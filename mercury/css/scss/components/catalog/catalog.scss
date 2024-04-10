@@ -73,6 +73,18 @@
         margin: 0;
         color: var(--optianal-gray);
       }
+
+      @include for-small-laptop {
+        margin-top: 0px;
+      }
+    }
+
+    @include for-small-laptop {
+      padding: 10px;
+    }
+
+    @include for-big-tablet {
+      padding: 20px;
     }
   }
   // Filters
@@ -92,6 +104,8 @@
     }
     // Price filter
     &-price {
+      margin-top: 20px;
+
       &-items {
         @include flex-all-sb;
         // price filter inputs
@@ -106,6 +120,10 @@
       // Price filter range
       &-range-slider{
         margin-top: 20px;
+      }
+
+      @include for-small-laptop {
+        margin-top: 10px;
       }
     }
     // Other filters
@@ -134,6 +152,15 @@
       @include for-big-tablet {
         display: none;
       }
+    }
+
+    @include for-small-laptop {
+      padding: 10px;
+    }
+
+    @include for-big-tablet {
+      margin-top: 0;
+      padding: 20px;
     }
   }
   // Banner
