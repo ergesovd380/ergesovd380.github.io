@@ -224,7 +224,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       width: 80%; } }
 
     .header_secondbar-form_search {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 0.5s,opacity 0.5s linear;
       padding: 10px 20px;
       position: absolute;
       top: 100%;
@@ -242,7 +244,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         .header_secondbar-form_search-title:hover {
           text-decoration: underline; }
     .header_secondbar-form_input:focus + .header_secondbar-form_search {
-      display: block; }
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s,opacity 0s linear; }
   @media (max-width: 991.5px) {
     .header_secondbar-mob {
       display: none; } }
