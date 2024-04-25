@@ -2589,6 +2589,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: var(--white); }
   .order-complete_body-title {
     margin: 50px 0 30px; }
+    .order-complete_body-title-empty {
+      margin: 40px 0; }
   .order-complete_body-subtitle {
     margin-bottom: 20px; }
 
