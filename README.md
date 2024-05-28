@@ -13,3 +13,5 @@
 [JS Colors](https://ergesovd380.github.io/jsColors/ "Пятая работа, jsColors") - Работа на Gituhub
 
 [EmpireLogistics](https://ergesovd380.github.io/EmpireLogistics/ "Ахал Сафаров") - Работа на Gituhub
+
+[Tetris](https://ergesovd380.github.io/TetrisProj/ "Off Group") - Работа на Gituhub
