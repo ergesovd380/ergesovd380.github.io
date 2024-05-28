@@ -16,19 +16,19 @@
 /* stylelint-disable */
 @font-face {
   font-family: AireExterior;
-  src: url(../../assets/fonts/AireExterior.ttf);
+  src: url(../assets/fonts/AireExterior.ttf);
 }
 @font-face {
   font-family: Inter Bolt;
-  src: url(../../assets/fonts/Inter-Bold.ttf);
+  src: url(../assets/fonts/Inter-Bold.ttf);
 }
 @font-face {
   font-family: Inter Semi Bolt;
-  src: url(../../assets/fonts/Inter-SemiBold.ttf);
+  src: url(../assets/fonts/Inter-SemiBold.ttf);
 }
 @font-face {
   font-family: Inter Regular;
-  src: url(../../assets/fonts/Inter-Regular.ttf);
+  src: url(../assets/fonts/Inter-Regular.ttf);
 }
 html {
   box-sizing: border-box;
