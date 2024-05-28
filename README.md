@@ -13,5 +13,3 @@
 [JS Colors](https://ergesovd380.github.io/jsColors/ "Пятая работа, jsColors") - Работа на Gituhub
 
 [EmpireLogistics](https://ergesovd380.github.io/EmpireLogistics/ "Ахал Сафаров") - Работа на Gituhub
-
-[Mercury](https://ergesovd380.github.io/mercury/ "Off-Group") - Работа на Gituhub
