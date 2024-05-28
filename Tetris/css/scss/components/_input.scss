@@ -1,0 +1,119 @@
+.input {
+  &_label {
+    margin-bottom: 10px;
+  }
+
+  &_small {
+    width: 178px;
+    padding: 15px 20px 14px;
+    color: var(--gray-input);
+    border: 1px solid var(--gray-input);
+    border-radius: 5px;
+
+    @include title_h5;
+
+    @include for-big-tablet {
+      width: 139px;
+    }
+
+    @include for-tablet {
+      width: 160px;
+    }
+
+    @include for-mobile {
+      width: 139px;
+    }
+  }
+
+  &_big {
+    width: 100%;
+    padding: 15px 20px 14px;
+    color: var(--gray-input);
+    border: 1px solid var(--gray-input);
+    border-radius: 5px;
+
+    @include title_h5;
+
+    &:focus {
+      color: var(--black);
+      border: 1px solid var(--black);
+    }
+  }
+}
+
+.custom-select {
+  color: var(--gray-input);
+  border: 1px solid var(--gray-input);
+  border-radius: 5px;
+  position: relative;
+
+  &-selected {
+    cursor: pointer;
+    background: url(../../assets/images/icons/arrow-gray.svg) no-repeat;
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 1;
+    // overflow: hidden;
+
+    &-big {
+      padding: 15px 20px 14px;
+      background-position: 95% center;
+    }
+
+    &-small {
+      padding: 15px 20px 14px;
+      background-position: 90% center;
+    }
+  }
+
+  &-items {
+    padding: 8px 0 15px;
+  }
+
+  &-item {
+    padding: 7px 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--black);
+      text-decoration: underline;
+    }
+  }
+  
+  &-small {
+    width: 178px;
+
+    @include for-big-tablet {
+      width: 139px;
+    }
+
+    @include for-tablet {
+      width: 160px;
+    }
+
+    @include for-mobile {
+      width: 139px;
+    }
+  }
+
+  &-big {
+    width: 100%;
+  }
+
+  &-line {
+    height: 1px;
+    background-color: var(--gray-input);
+    position: absolute;
+    top: 44px;
+
+    &-big {
+      width: 90%;
+      left: 5%;
+    }
+
+    &-small {
+      width: 80%;
+      left: 10%;
+    }
+  }
+}
