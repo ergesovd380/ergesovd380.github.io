@@ -1309,7 +1309,7 @@ select:focus {
   height: 20px;
   border-radius: 5px;
   background-color: black;
-  background-image: url("../../assets/images/icons/checkbox.svg");
+  background-image: url("../assets/images/icons/checkbox.svg");
   transform: scale(0);
   background-size: auto;
   background-repeat: no-repeat;
@@ -1847,16 +1847,16 @@ select:focus {
 }
 .object-card_sale-item-1 {
   gap: 15px;
-  background-image: url("../../assets/images/object-card/sale-1.svg");
+  background-image: url("../assets/images/object-card/sale-1.svg");
   border-bottom: 5px solid var(--green);
 }
 .object-card_sale-item-2 {
-  background-image: url("../../assets/images/object-card/sale-2.svg");
+  background-image: url("../assets/images/object-card/sale-2.svg");
   border-bottom: 5px solid var(--blue);
 }
 .object-card_sale-item-3 {
   margin-top: 20px;
-  background-image: url("../../assets/images/object-card/sale-3.svg");
+  background-image: url("../assets/images/object-card/sale-3.svg");
   border-bottom: 5px solid var(--yellow);
 }
 @media (max-width: 991.5px) {
@@ -1866,7 +1866,7 @@ select:focus {
 }
 .object-card_sale-item-4 {
   margin-top: 20px;
-  background-image: url("../../assets/images/object-card/sale-4.svg");
+  background-image: url("../assets/images/object-card/sale-4.svg");
   border-bottom: 5px solid var(--red);
 }
 @media (max-width: 991.5px) {
@@ -1967,7 +1967,7 @@ select:focus {
 }
 .object-card_type-accordion-header:is(.collapsed) > .object-card_type-accordion-header-btn {
   color: var(--orange);
-  background-image: url(../../assets/images/icons/arrow-orange.svg);
+  background-image: url(../assets/images/icons/arrow-orange.svg);
   background-repeat: no-repeat;
   background-position: 100% center;
 }
@@ -1982,14 +1982,14 @@ select:focus {
 .object-card_type-accordion-header-btn {
   display: flex;
   justify-content: end;
-  background-image: url(../../assets/images/icons/arrow-top.svg);
+  background-image: url(../assets/images/icons/arrow-top.svg);
   background-repeat: no-repeat;
   background-position: 100% center;
   cursor: pointer;
 }
 .object-card_type-accordion-header-btn:hover {
   color: var(--orange);
-  background-image: url(../../assets/images/icons/arrow-orange.svg);
+  background-image: url(../assets/images/icons/arrow-orange.svg);
   background-repeat: no-repeat;
   background-position: 100% center;
 }
@@ -2121,14 +2121,14 @@ select:focus {
 .object-card_type-list-body-heart {
   width: 20px;
   height: 20px;
-  background-image: url(../../assets/images/icons/heart.svg);
+  background-image: url(../assets/images/icons/heart.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .object-card_type-list-body-heart:hover, .object-card_type-list-body-heart:is(.active) {
   width: 20px;
   height: 20px;
-  background-image: url(../../assets/images/icons/heart-active.svg);
+  background-image: url(../assets/images/icons/heart-active.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2535,11 +2535,11 @@ select:focus {
   height: 20px;
 }
 .object-card_bank-items-status:is(.true) {
-  background-image: url(../../assets/images/icons/true.svg);
+  background-image: url(../assets/images/icons/true.svg);
   background-repeat: no-repeat;
 }
 .object-card_bank-items-status:is(.false) {
-  background-image: url(../../assets/images/icons/false.svg);
+  background-image: url(../assets/images/icons/false.svg);
   background-repeat: no-repeat;
 }
 .object-card_bank-items::after {
@@ -2612,7 +2612,7 @@ select:focus {
   min-width: 37px;
   height: 20px;
   margin-right: 10px;
-  background-image: url("../../assets/images/icons/checkbox-notactive.svg");
+  background-image: url("../assets/images/icons/checkbox-notactive.svg");
   background-position: left center;
   border: 2px solid #DCDCDC;
   box-shadow: inset 0px 4px 3px 1px rgba(0, 0, 0, 0.1);
@@ -2621,11 +2621,11 @@ select:focus {
   cursor: pointer;
 }
 .form-switch .form-check-input:focus {
-  background-image: url("../../assets/images/icons/checkbox-notactive.svg");
+  background-image: url("../assets/images/icons/checkbox-notactive.svg");
 }
 .form-switch .form-check-input:checked {
   background-color: var(--green);
-  background-image: url("../../assets/images/icons/checkbox-active.svg");
+  background-image: url("../assets/images/icons/checkbox-active.svg");
   border: 2px solid #00AA40;
 }
 .form-switch .form-check-input:checked + .form-check-label {
@@ -3389,7 +3389,7 @@ select:focus {
   width: 137px;
   padding: 15px 20px 14px;
   background-color: transparent;
-  background-image: url(../../assets/images/icons/select-arrow.svg);
+  background-image: url(../assets/images/icons/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: 90% center;
   border: 1px solid var(--gray-input);
