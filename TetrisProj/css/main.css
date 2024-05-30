@@ -299,6 +299,7 @@ select:focus {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+  color: var(--black);
   background-color: var(--white);
 }
 
@@ -366,7 +367,7 @@ select:focus {
   background-position: 90% center;
 }
 .custom-select-items {
-  padding: 8px 0 15px;
+  padding: 0 0 15px;
 }
 .custom-select-item {
   padding: 7px 20px;
@@ -398,18 +399,20 @@ select:focus {
   width: 100%;
 }
 .custom-select-line {
-  height: 1px;
-  background-color: var(--gray-input);
-  position: absolute;
-  top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 .custom-select-line-big {
+  height: 1px;
   width: 90%;
-  left: 5%;
+  background-color: var(--gray-input);
 }
 .custom-select-line-small {
+  height: 1px;
   width: 80%;
-  left: 10%;
+  background-color: var(--gray-input);
 }
 
 .nav-cards {
@@ -918,6 +921,7 @@ select:focus {
 .header_account-select {
   padding: 8px 20px 10px;
   margin-right: 124px;
+  color: var(--black);
   border: 1px solid var(--black);
   border-radius: 26px;
   font-family: "Inter Regular";
@@ -977,7 +981,7 @@ select:focus {
   align-items: center;
   justify-content: center;
 }
-.header_pages-item:hover, .header_pages-item:is(.active) {
+.header_pages-item:hover, .header_pages-item:active, .header_pages-item:is(.active) {
   background-color: var(--orange);
 }
 @media (max-width: 991.5px) {
@@ -1016,6 +1020,7 @@ select:focus {
 }
 .header_tsec-data {
   margin-right: 40px;
+  color: var(--black);
 }
 @media (max-width: 991.5px) {
   .header_tsec-data {
@@ -1383,6 +1388,7 @@ select:focus {
 }
 @media (max-width: 767.5px) {
   .object_form-remove-garbage {
+    margin-right: 0;
     margin-bottom: 6px;
   }
 }
@@ -1498,6 +1504,7 @@ select:focus {
   width: 222px;
   border: none;
   border-radius: 35px;
+  color: var(--black);
   background-color: var(--yellow);
   cursor: pointer;
 }
@@ -1751,6 +1758,21 @@ select:focus {
 }
 .object-card_zaf {
   margin-top: 20px;
+  color: var(--black);
+}
+.object-card-price {
+  font-family: "Inter Bolt";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+}
+@media (max-width: 400px) {
+  .object-card-price {
+    font-family: "Inter Semi Bolt";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.75px;
+  }
 }
 .object-card_inf {
   margin-top: 30px;
@@ -3366,6 +3388,7 @@ select:focus {
 }
 .client-search-input {
   width: 289px;
+  height: 45px;
   padding: 15px 20px 14px;
   color: var(--gray-input);
   background-color: transparent;
@@ -3387,12 +3410,15 @@ select:focus {
 }
 .client-search-select {
   width: 137px;
+  height: 45px;
   padding: 15px 20px 14px;
+  color: var(--black);
   background-color: transparent;
   background-image: url(../assets/images/icons/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: 90% center;
   border: 1px solid var(--gray-input);
+  border-left: none;
   cursor: pointer;
   font-family: "Inter Regular";
   font-size: 14px;
@@ -3405,6 +3431,7 @@ select:focus {
   }
 }
 .client-search-btn {
+  height: 45px;
   padding: 14px 30px;
   color: var(--white);
   background-color: var(--black);
@@ -3703,7 +3730,7 @@ select:focus {
 @media (max-width: 991.5px) and (max-width: 400px) {
   .agencies-filter-btn {
     width: 150px;
-    white-space: wrap;
+    white-space: inherit;
   }
 }
 .agencies-cancel {
@@ -3943,6 +3970,11 @@ select:focus {
 }
 
 .profil-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+.profil-img-div {
   width: 230px;
   height: 230px;
   border-radius: 10px;

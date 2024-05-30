@@ -182,6 +182,7 @@
         margin-right: 10px;
 
         @include for-tablet {
+          margin-right: 0;
           margin-bottom: 6px;
         }
       }
@@ -304,6 +305,7 @@
     width: 222px;
     border: none;
     border-radius: 35px;
+    color: var(--black);
     background-color: var(--yellow);
     cursor: pointer;
 

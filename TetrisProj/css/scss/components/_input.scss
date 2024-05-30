@@ -50,10 +50,6 @@
   &-selected {
     cursor: pointer;
     background: url(../../assets/images/icons/arrow-gray.svg) no-repeat;
-    // display: -webkit-box;
-    // -webkit-box-orient: vertical;
-    // -webkit-line-clamp: 1;
-    // overflow: hidden;
 
     &-big {
       padding: 15px 20px 14px;
@@ -67,7 +63,7 @@
   }
 
   &-items {
-    padding: 8px 0 15px;
+    padding: 0 0 15px;
   }
 
   &-item {
@@ -101,19 +97,21 @@
   }
 
   &-line {
-    height: 1px;
-    background-color: var(--gray-input);
-    position: absolute;
-    top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
 
     &-big {
+      height: 1px;
       width: 90%;
-      left: 5%;
+      background-color: var(--gray-input);
     }
 
     &-small {
+      height: 1px;
       width: 80%;
-      left: 10%;
+      background-color: var(--gray-input);
     }
   }
 }

@@ -11,6 +11,14 @@
   }
   &_zaf {
     margin-top: 20px;
+    color: var(--black);
+  }
+  &-price {
+    @include title_h3;
+
+    @include for-mobile {
+      @include title_h4;
+    }
   }
 
   // information
