@@ -18,6 +18,10 @@
       color: var(--gray-input);
       cursor: pointer;
 
+      &:hover {
+        color: var(--orange);
+      }
+
       @include for-tablet {
         margin: 10px 0;
       }
@@ -146,6 +150,20 @@
           padding: 6px 13px 7px 14px;
           border-radius: 33px;
           background-color: var(--yellow);
+        }
+
+        &-close {
+          width: 12.73px;
+          height: 12.73px;
+          cursor: pointer;
+          background-image: url(../../../assets/images/icons/close-modal.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+    
+          &:hover {
+            background-image: url(../../../assets/images/icons/close-modal-black.svg);
+          }
         }
       }
 
