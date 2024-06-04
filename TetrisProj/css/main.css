@@ -1019,6 +1019,10 @@ select:focus {
   align-items: center;
   justify-content: space-between;
 }
+.header_account-data-reg {
+  text-align: center;
+  cursor: pointer;
+}
 .header_account-img {
   margin-right: 16px;
   width: 39px;
